@@ -667,7 +667,7 @@ body ::-webkit-scrollbar {
 /* line 610, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent {
   height: auto;
-  width: 265px;
+  width: auto;
   margin-top: 140px;
   margin-bottom: 220px;
   margin-left: 28%;
@@ -679,9 +679,9 @@ body ::-webkit-scrollbar {
   font-family: gastromond, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.06em;
-  margin-bottom: 15px;
+  margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
 }
 /* line 628, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .h2 {
@@ -689,7 +689,7 @@ body ::-webkit-scrollbar {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.04em;
   margin-bottom: 15px;
 }
@@ -699,7 +699,7 @@ body ::-webkit-scrollbar {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.01em;
   line-height: 1.4em;
   margin-bottom: 15px;
@@ -786,7 +786,7 @@ body ::-webkit-scrollbar {
 /* line 732, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent {
   height: auto;
-  width: 265px;
+  width: auto;
   margin-top: 140px;
   margin-bottom: 220px;
   margin-left: 28%;
@@ -798,9 +798,9 @@ body ::-webkit-scrollbar {
   font-family: gastromond, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.06em;
-  margin-bottom: 15px;
+  margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
 }
 /* line 750, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .h2 {
@@ -808,7 +808,7 @@ body ::-webkit-scrollbar {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.04em;
   margin-bottom: 15px;
 }
@@ -818,7 +818,7 @@ body ::-webkit-scrollbar {
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.01em;
   line-height: 1.4em;
   margin-bottom: 15px;

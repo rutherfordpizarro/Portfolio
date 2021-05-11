@@ -609,7 +609,7 @@ body {
 
     .resumecontent {
       height: auto;
-      width: 265px;
+      width: auto;
       margin-top: 140px;
       margin-bottom: 220px;
       margin-left: 28%;
@@ -620,9 +620,9 @@ body {
         font-family: gastromond, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.06em;
-        margin-bottom: 15px;
+        margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
       }
 
       .h2 {
@@ -630,7 +630,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.04em;
         margin-bottom: 15px;
       }
@@ -640,7 +640,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.01em;
         line-height: 1.4em;
         margin-bottom: 15px;
@@ -731,7 +731,7 @@ body {
 
     .resumecontent {
       height: auto;
-      width: 265px;
+      width: auto;
       margin-top: 140px;
       margin-bottom: 220px;
       margin-left: 28%;
@@ -742,9 +742,9 @@ body {
         font-family: gastromond, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.06em;
-        margin-bottom: 15px;
+        margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
       }
 
       .h2 {
@@ -752,7 +752,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.04em;
         margin-bottom: 15px;
       }
@@ -762,7 +762,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.01em;
         line-height: 1.4em;
         margin-bottom: 15px;
