@@ -23,7 +23,7 @@
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
@@ -37,9 +37,6 @@
   flex-direction: column;
   justify-content: flex-end;
   @extend %nav-font;
-
-  &:hover {
-  }
 }
 
 %h-words {
@@ -51,7 +48,7 @@
 %casenumbers {
   font-family: gastromond, sans-serif;
   font-weight: 400;
-  font-size: 46px;
+  font-size: calc(36px + (92 - 36) * ((100vw - 1024px) / (2560 - 1024)));
   font-variant-numeric: lining-nums tabular-nums;
   -moz-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
@@ -60,8 +57,8 @@
 
 %casecard {
   background-color: rgba(255, 65, 65, 0);
-  height: 100%;
-  width: 364px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: row;
   -webkit-transition-property: margin-top;
@@ -74,17 +71,17 @@
   .details {
     background-color: rgba(65, 255, 214, 0);
     color: white;
-    height: 100%;
-    width: 90px;
+    height: auto;
+    width: auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 
     .casenumber {
       @extend %casenumbers;
       background-color: rgba(48, 163, 58, 0);
       height: auto;
-      width: 100%;
+      width: auto;
+      margin-bottom: calc(100px + (200 - 100) * ((100vw - 1024px) / (2560 - 1024)));
       display: flex;
       flex-direction: row;
       align-items: baseline;
@@ -127,34 +124,39 @@
         font-family: gastromond, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        padding-bottom: 8px;
+        letter-spacing: 0.04em;
+        font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
+        padding-bottom: calc(8px + (16 - 8) * ((100vw - 1024px) / (2560 - 1024)));
+        white-space: nowrap;
       }
 
       .heading {
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.04em;
-        padding-top: 14px;
+        padding-top: calc(12px + (28 - 12) * ((100vw - 1024px) / (2560 - 1024)));
       }
 
       .subheading {
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.06em;
-        padding-top: 6px;
+        padding-top: calc(4px + (12 - 4) * ((100vw - 1024px) / (2560 - 1024)));
       }
     }
   }
 
   a {
-    height: 68%;
+    height: auto;
     width: auto;
-    margin-left: 76px;
-    margin-top: auto;
-    margin-bottom: 30px;
+    margin-left: calc(60px + (120 - 60) * ((100vw - 1024px) / (2560 - 1024)));
+    margin-right: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     cursor: pointer;
     text-decoration: none;
     color: none;
@@ -164,8 +166,8 @@
     }
 
     .pic {
-      height: 100%;
-      width: auto;
+      height: auto;
+      width: calc((132px * .75) + ((132 * 1.5) - (132 * .75)) * ((100vw - 1024px) / (2560 - 1024))); 
     }
   }
 }
@@ -258,7 +260,6 @@ body {
   position: fixed;
   padding-bottom: 77px;
   top: 0px;
-  z-index: 2;
 
   .logo_nav {
     height: auto;
@@ -266,19 +267,19 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    z-index: 2;
-    padding-top: 10px;
+    padding-top: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+    align-items: flex-end;
 
     .logo {
       height: auto;
       width: auto;
-      margin-left: 40px;
+      margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+      padding-bottom: 1px;
       display: flex;
-      align-self: center;
 
       .logosvg {
         height: auto;
-        width: 32px;
+        width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
         cursor: pointer;
       }
     }
@@ -288,8 +289,7 @@ body {
       width: auto;
       display: flex;
       flex-direction: column;
-      margin-right: 40px;
-      margin-top: 53px;
+      margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 
       .links {
         height: auto;
@@ -303,53 +303,42 @@ body {
         .resume {
           @extend %links;
         }
-        .contact {
-          @extend %links;
-        }
       }
 
       .openedlink.home {
-        height: 6px;
+        height: 0px;
         width: 0px;
         transform: translateX(15px);
-        margin-top: 3px;
+        margin-top: 0px;
         background-color: #ffffff;
-        transition-property: transform, width;
-        transition-duration: 1000ms;
-        transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        will-change: transform;
+        transition-property: transform, width, height, margin-top;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
       }
 
       .openedlink.studies {
-        height: 6px;
-        width: 79.41px;
+        height: calc(4px + (8 - 4) * ((100vh - 640px) / (1440 - 640)));
+        width: calc(67px + (160 - 67) * ((100vh - 640px) / (1440 - 640)));
         transform: translateX(15px);
-        margin-top: 3px;
+        margin-top: calc(3px + (6 - 3) * ((100vh - 640px) / (1440 - 640)));
         background-color: #ffffff;
-        transition-property: transform, width;
-        transition-duration: 1000ms;
-        transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        will-change: transform;
+        transition-property: transform, width, height, margin-top;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
       }
 
       .openedlink.resume {
-        height: 6px;
-        width: 50px;
-        transform: translateX(111px);
-        margin-top: 3px;
+        height: calc(4px + (8 - 4) * ((100vh - 640px) / (1440 - 640)));
+        width: calc(41px + (100 - 41) * ((100vh - 640px) / (1440 - 640)));
+        transform: translateX(calc(98px + (190 - 98) * ((100vh - 640px) / (1440 - 640))));
+        margin-top: calc(3px + (6 - 3) * ((100vh - 640px) / (1440 - 640)));
         background-color: #ffffff;
-        transition-property: transform, width;
-        transition-duration: 1000ms;
-        transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
-      }
-
-      .openedlink.contact {
-        height: 6px;
-        width: 50px;
-        transform: translateX(176px);
-        margin-top: 3px;
-        background-color: #ffffff;
-        transition-property: transform, width;
-        transition-duration: 1000ms;
-        transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+        will-change: transform;
+        transition-property: transform, width, height, margin-top;
+        transition-duration: 200ms;
+        transition-timing-function: ease-in-out;
       }
     }
   }
@@ -394,11 +383,11 @@ body {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 40px;
-  left: 64px;
-  @extend %nav-font;
+  bottom: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  left: calc(48px + (120 - 48) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 300;
   cursor: text;
+  @extend %nav-font;
 
   &::selection {
     background: #ffa910;
@@ -410,12 +399,15 @@ body {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 110px;
-  transform: rotate(-90deg);
-  left: -5px;
-  @extend %nav-font;
+  bottom: -3px;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  left: -2px;
   font-weight: 300;
   cursor: text;
+  margin-left: calc(24px + (65 - 24) * ((100vh - 640px) / (1440 - 640)));
+  margin-bottom: calc(48px + (128 - 48) * ((100vh - 640px) / (1440 - 640)));
+  @extend %nav-font;
 
   &::selection {
     background: #ffa910;
@@ -427,11 +419,11 @@ body {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 40px;
-  right: 64px;
-  @extend %nav-font;
+  bottom: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  right: calc(48px + (120 - 48) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 300;
   cursor: text;
+  @extend %nav-font;
 
   &::selection {
     background: #2261e0;
@@ -442,12 +434,14 @@ body {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 110px;
-  right: -5px;
-  transform: rotate(90deg);
-  @extend %nav-font;
+  bottom: -1px;
+  writing-mode: vertical-lr;
+  margin-right: calc(24px + (83 - 24) * ((100vh - 640px) / (1440 - 640)));
+  margin-bottom: calc(48px + (128 - 48) * ((100vh - 640px) / (1440 - 640)));
+  right: -2px;
   font-weight: 300;
   cursor: text;
+  @extend %nav-font;
 
   &::selection {
     background: #2261e0;
@@ -495,7 +489,7 @@ body {
   border-radius: 2px;
   text-decoration: none;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 800;
   line-height: 16px;
   text-align: center;
@@ -524,7 +518,7 @@ body {
     border-radius: 2px;
     text-decoration: none;
     font-family: Open Sans;
-    font-size: 12px;
+    font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
     font-weight: 800;
     line-height: 16px;
     text-align: center;
@@ -566,12 +560,11 @@ body {
     transition-timing-function: ease-in-out;
 
     .cases {
-      height: 346px;
-      width: 82%;
+      height: auto;
+      width: auto;
       margin-bottom: 2%;
-      margin-left: 5vw;
+      margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
       display: flex;
-      justify-content: space-between;
       flex-direction: row;
 
       .case1 {
@@ -689,12 +682,11 @@ body {
     transition-timing-function: ease-in-out;
 
     .cases {
-      height: 346px;
-      width: 82%;
+      height: auto;
+      width: auto;
       margin-bottom: 2%;
-      margin-left: 5vw;
+      margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
       display: flex;
-      justify-content: space-between;
       flex-direction: row;
 
       .case1 {
@@ -812,12 +804,11 @@ body {
     transition-timing-function: ease-in-out;
 
     .cases {
-      height: 346px;
-      width: 82%;
+      height: auto;
+      width: auto;
       margin-bottom: 2%;
-      margin-left: 5vw;
+      margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
       display: flex;
-      justify-content: space-between;
       flex-direction: row;
 
       .case1 {
@@ -862,7 +853,7 @@ body {
 
     .resumecontent {
       height: auto;
-      width: 265px;
+      width: auto;
       margin-top: 140px;
       margin-bottom: 220px;
       margin-left: 28%;
@@ -873,9 +864,9 @@ body {
         font-family: gastromond, sans-serif;
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
+        font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.06em;
-        margin-bottom: 15px;
+        margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
       }
 
       .h2 {
@@ -883,7 +874,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 700;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.04em;
         margin-bottom: 15px;
       }
@@ -893,7 +884,7 @@ body {
         color: #ffffff;
         font-family: "Open Sans", sans-serif;
         font-weight: 300;
-        font-size: 12px;
+        font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
         letter-spacing: 0.01em;
         line-height: 1.4em;
         margin-bottom: 15px;
