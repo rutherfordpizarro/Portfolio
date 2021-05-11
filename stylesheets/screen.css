@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://use.typekit.net/qly3yul.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
-/* line 5, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,62 +26,62 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
 /* line 22, ../sass/screen.scss */
-.navwrapper .logo_nav .nav .links .casestudies, .navwrapper .logo_nav .nav .links .resume, .navwrapper .logo_nav .nav .links .contact, .myname, .jobtitle, .myemail, .mynumber {
+.navwrapper .logo_nav .nav .links .casestudies, .navwrapper .logo_nav .nav .links .resume, .myname, .jobtitle, .myemail, .mynumber {
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
 }
 
 /* line 32, ../sass/screen.scss */
-.navwrapper .logo_nav .nav .links .casestudies, .navwrapper .logo_nav .nav .links .resume, .navwrapper .logo_nav .nav .links .contact {
+.navwrapper .logo_nav .nav .links .casestudies, .navwrapper .logo_nav .nav .links .resume {
   height: auto;
   width: auto;
   margin-left: 16px;
@@ -90,29 +90,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   justify-content: flex-end;
 }
 
-/* line 45, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .herowords .intuition, .herowords .compassion, .herowords .curiosity {
   text-decoration: none;
   font-size: calc(18px + (37 - 18) * ((100vw - 300px) / (1600 - 300)));
   color: white;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .casenumber, .clickedlink.home .box1 .cases .case2 .details .casenumber, .clickedlink.home .box1 .cases .case3 .details .casenumber, .clickedlink.studies .box1 .cases .case1 .details .casenumber, .clickedlink.studies .box1 .cases .case2 .details .casenumber, .clickedlink.studies .box1 .cases .case3 .details .casenumber, .clickedlink.resume .box1 .cases .case1 .details .casenumber, .clickedlink.resume .box1 .cases .case2 .details .casenumber, .clickedlink.resume .box1 .cases .case3 .details .casenumber {
   font-family: gastromond, sans-serif;
   font-weight: 400;
-  font-size: 46px;
+  font-size: calc(36px + (92 - 36) * ((100vw - 1024px) / (2560 - 1024)));
   font-variant-numeric: lining-nums tabular-nums;
   -moz-font-feature-settings: "lnum";
   -webkit-font-feature-settings: "lnum";
   font-feature-settings: "lnum";
 }
 
-/* line 61, ../sass/screen.scss */
+/* line 58, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1, .clickedlink.home .box1 .cases .case2, .clickedlink.home .box1 .cases .case3, .clickedlink.studies .box1 .cases .case1, .clickedlink.studies .box1 .cases .case2, .clickedlink.studies .box1 .cases .case3, .clickedlink.resume .box1 .cases .case1, .clickedlink.resume .box1 .cases .case2, .clickedlink.resume .box1 .cases .case3 {
   background-color: rgba(255, 65, 65, 0);
-  height: 100%;
-  width: 364px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: row;
   -webkit-transition-property: margin-top;
@@ -122,27 +122,27 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
 }
-/* line 74, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details, .clickedlink.home .box1 .cases .case2 .details, .clickedlink.home .box1 .cases .case3 .details, .clickedlink.studies .box1 .cases .case1 .details, .clickedlink.studies .box1 .cases .case2 .details, .clickedlink.studies .box1 .cases .case3 .details, .clickedlink.resume .box1 .cases .case1 .details, .clickedlink.resume .box1 .cases .case2 .details, .clickedlink.resume .box1 .cases .case3 .details {
   background-color: rgba(65, 255, 214, 0);
   color: white;
-  height: 100%;
-  width: 90px;
+  height: auto;
+  width: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
-/* line 83, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .casenumber, .clickedlink.home .box1 .cases .case2 .details .casenumber, .clickedlink.home .box1 .cases .case3 .details .casenumber, .clickedlink.studies .box1 .cases .case1 .details .casenumber, .clickedlink.studies .box1 .cases .case2 .details .casenumber, .clickedlink.studies .box1 .cases .case3 .details .casenumber, .clickedlink.resume .box1 .cases .case1 .details .casenumber, .clickedlink.resume .box1 .cases .case2 .details .casenumber, .clickedlink.resume .box1 .cases .case3 .details .casenumber {
   background-color: rgba(48, 163, 58, 0);
   height: auto;
-  width: 100%;
+  width: auto;
+  margin-bottom: calc(100px + (200 - 100) * ((100vw - 1024px) / (2560 - 1024)));
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: flex-end;
 }
-/* line 93, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .casenumber .dot, .clickedlink.home .box1 .cases .case2 .details .casenumber .dot, .clickedlink.home .box1 .cases .case3 .details .casenumber .dot, .clickedlink.studies .box1 .cases .case1 .details .casenumber .dot, .clickedlink.studies .box1 .cases .case2 .details .casenumber .dot, .clickedlink.studies .box1 .cases .case3 .details .casenumber .dot, .clickedlink.resume .box1 .cases .case1 .details .casenumber .dot, .clickedlink.resume .box1 .cases .case2 .details .casenumber .dot, .clickedlink.resume .box1 .cases .case3 .details .casenumber .dot {
   background-color: rgba(190, 240, 11, 0);
   height: auto;
@@ -150,7 +150,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 40px;
   text-align: end;
 }
-/* line 101, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .casenumber .zero, .clickedlink.home .box1 .cases .case2 .details .casenumber .zero, .clickedlink.home .box1 .cases .case3 .details .casenumber .zero, .clickedlink.studies .box1 .cases .case1 .details .casenumber .zero, .clickedlink.studies .box1 .cases .case2 .details .casenumber .zero, .clickedlink.studies .box1 .cases .case3 .details .casenumber .zero, .clickedlink.resume .box1 .cases .case1 .details .casenumber .zero, .clickedlink.resume .box1 .cases .case2 .details .casenumber .zero, .clickedlink.resume .box1 .cases .case3 .details .casenumber .zero {
   background-color: rgba(69, 48, 163, 0);
   height: auto;
@@ -161,66 +161,71 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-font-feature-settings: "onum", "clig";
   font-feature-settings: "onum", "clig";
 }
-/* line 112, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .casenumber .number, .clickedlink.home .box1 .cases .case2 .details .casenumber .number, .clickedlink.home .box1 .cases .case3 .details .casenumber .number, .clickedlink.studies .box1 .cases .case1 .details .casenumber .number, .clickedlink.studies .box1 .cases .case2 .details .casenumber .number, .clickedlink.studies .box1 .cases .case3 .details .casenumber .number, .clickedlink.resume .box1 .cases .case1 .details .casenumber .number, .clickedlink.resume .box1 .cases .case2 .details .casenumber .number, .clickedlink.resume .box1 .cases .case3 .details .casenumber .number {
   text-align: end;
   background-color: rgba(21, 224, 207, 0);
   height: auto;
   width: auto;
 }
-/* line 120, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .caseinfo, .clickedlink.home .box1 .cases .case2 .details .caseinfo, .clickedlink.home .box1 .cases .case3 .details .caseinfo, .clickedlink.studies .box1 .cases .case1 .details .caseinfo, .clickedlink.studies .box1 .cases .case2 .details .caseinfo, .clickedlink.studies .box1 .cases .case3 .details .caseinfo, .clickedlink.resume .box1 .cases .case1 .details .caseinfo, .clickedlink.resume .box1 .cases .case2 .details .caseinfo, .clickedlink.resume .box1 .cases .case3 .details .caseinfo {
   background-color: rgba(69, 48, 163, 0);
   height: auto;
   width: 100%;
   text-align: end;
 }
-/* line 126, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .caseinfo .title, .clickedlink.home .box1 .cases .case2 .details .caseinfo .title, .clickedlink.home .box1 .cases .case3 .details .caseinfo .title, .clickedlink.studies .box1 .cases .case1 .details .caseinfo .title, .clickedlink.studies .box1 .cases .case2 .details .caseinfo .title, .clickedlink.studies .box1 .cases .case3 .details .caseinfo .title, .clickedlink.resume .box1 .cases .case1 .details .caseinfo .title, .clickedlink.resume .box1 .cases .case2 .details .caseinfo .title, .clickedlink.resume .box1 .cases .case3 .details .caseinfo .title {
   font-family: gastromond, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  padding-bottom: 8px;
+  letter-spacing: 0.04em;
+  font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
+  padding-bottom: calc(8px + (16 - 8) * ((100vw - 1024px) / (2560 - 1024)));
+  white-space: nowrap;
 }
-/* line 134, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .caseinfo .heading, .clickedlink.home .box1 .cases .case2 .details .caseinfo .heading, .clickedlink.home .box1 .cases .case3 .details .caseinfo .heading, .clickedlink.studies .box1 .cases .case1 .details .caseinfo .heading, .clickedlink.studies .box1 .cases .case2 .details .caseinfo .heading, .clickedlink.studies .box1 .cases .case3 .details .caseinfo .heading, .clickedlink.resume .box1 .cases .case1 .details .caseinfo .heading, .clickedlink.resume .box1 .cases .case2 .details .caseinfo .heading, .clickedlink.resume .box1 .cases .case3 .details .caseinfo .heading {
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.04em;
-  padding-top: 14px;
+  padding-top: calc(12px + (28 - 12) * ((100vw - 1024px) / (2560 - 1024)));
 }
-/* line 142, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 .details .caseinfo .subheading, .clickedlink.home .box1 .cases .case2 .details .caseinfo .subheading, .clickedlink.home .box1 .cases .case3 .details .caseinfo .subheading, .clickedlink.studies .box1 .cases .case1 .details .caseinfo .subheading, .clickedlink.studies .box1 .cases .case2 .details .caseinfo .subheading, .clickedlink.studies .box1 .cases .case3 .details .caseinfo .subheading, .clickedlink.resume .box1 .cases .case1 .details .caseinfo .subheading, .clickedlink.resume .box1 .cases .case2 .details .caseinfo .subheading, .clickedlink.resume .box1 .cases .case3 .details .caseinfo .subheading {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.06em;
-  padding-top: 6px;
+  padding-top: calc(4px + (12 - 4) * ((100vw - 1024px) / (2560 - 1024)));
 }
-/* line 152, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 a, .clickedlink.home .box1 .cases .case2 a, .clickedlink.home .box1 .cases .case3 a, .clickedlink.studies .box1 .cases .case1 a, .clickedlink.studies .box1 .cases .case2 a, .clickedlink.studies .box1 .cases .case3 a, .clickedlink.resume .box1 .cases .case1 a, .clickedlink.resume .box1 .cases .case2 a, .clickedlink.resume .box1 .cases .case3 a {
-  height: 68%;
+  height: auto;
   width: auto;
-  margin-left: 76px;
-  margin-top: auto;
-  margin-bottom: 30px;
+  margin-left: calc(60px + (120 - 60) * ((100vw - 1024px) / (2560 - 1024)));
+  margin-right: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
+  margin-top: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   cursor: pointer;
   text-decoration: none;
   color: none;
 }
-/* line 162, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 a:focus, .clickedlink.home .box1 .cases .case2 a:focus, .clickedlink.home .box1 .cases .case3 a:focus, .clickedlink.studies .box1 .cases .case1 a:focus, .clickedlink.studies .box1 .cases .case2 a:focus, .clickedlink.studies .box1 .cases .case3 a:focus, .clickedlink.resume .box1 .cases .case1 a:focus, .clickedlink.resume .box1 .cases .case2 a:focus, .clickedlink.resume .box1 .cases .case3 a:focus {
   outline: none;
 }
-/* line 166, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 a .pic, .clickedlink.home .box1 .cases .case2 a .pic, .clickedlink.home .box1 .cases .case3 a .pic, .clickedlink.studies .box1 .cases .case1 a .pic, .clickedlink.studies .box1 .cases .case2 a .pic, .clickedlink.studies .box1 .cases .case3 a .pic, .clickedlink.resume .box1 .cases .case1 a .pic, .clickedlink.resume .box1 .cases .case2 a .pic, .clickedlink.resume .box1 .cases .case3 a .pic {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: calc((132px * .75) + ((132 * 1.5) - (132 * .75)) * ((100vw - 1024px) / (2560 - 1024)));
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .clickedlink.home .box2, .clickedlink.studies .box2, .clickedlink.resume .box2 {
   height: 100%;
   width: 100%;
@@ -230,7 +235,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: column;
 }
 
-/* line 181, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 html,
 body {
   overscroll-behavior: none;
@@ -238,18 +243,18 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 188, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .mobile {
   display: none;
 }
 @media only screen and (max-width: 1024px) and (min-width: 600px) and (orientation: portrait) {
-  /* line 193, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   .mobile {
     display: inline;
     height: 100%;
@@ -262,7 +267,7 @@ body ::-webkit-scrollbar {
     align-items: center;
     z-index: 30;
   }
-  /* line 207, ../sass/screen.scss */
+  /* line 209, ../sass/screen.scss */
   .mobile .mobilet {
     text-decoration: none;
     font-size: 16px;
@@ -270,7 +275,7 @@ body ::-webkit-scrollbar {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 217, ../sass/screen.scss */
   .mobile .logo {
     height: auto;
     width: 32px;
@@ -279,7 +284,7 @@ body ::-webkit-scrollbar {
   }
 }
 @media only screen and (max-width: 599px) and (min-width: 300px) and (orientation: portrait) {
-  /* line 193, ../sass/screen.scss */
+  /* line 195, ../sass/screen.scss */
   .mobile {
     display: inline;
     height: 100%;
@@ -292,7 +297,7 @@ body ::-webkit-scrollbar {
     align-items: center;
     z-index: 30;
   }
-  /* line 234, ../sass/screen.scss */
+  /* line 236, ../sass/screen.scss */
   .mobile .mobilet {
     text-decoration: none;
     font-size: 16px;
@@ -300,7 +305,7 @@ body ::-webkit-scrollbar {
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
   }
-  /* line 242, ../sass/screen.scss */
+  /* line 244, ../sass/screen.scss */
   .mobile .logo {
     height: auto;
     width: 32px;
@@ -309,7 +314,7 @@ body ::-webkit-scrollbar {
   }
 }
 
-/* line 251, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .navwrapper {
   background: linear-gradient(0deg, transparent 0%, black 49%);
   height: auto;
@@ -320,40 +325,38 @@ body ::-webkit-scrollbar {
   position: fixed;
   padding-bottom: 77px;
   top: 0px;
-  z-index: 2;
 }
-/* line 263, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .navwrapper .logo_nav {
   height: auto;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  z-index: 2;
-  padding-top: 10px;
+  padding-top: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  align-items: flex-end;
 }
-/* line 272, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .navwrapper .logo_nav .logo {
   height: auto;
   width: auto;
-  margin-left: 40px;
+  margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  padding-bottom: 1px;
   display: flex;
-  align-self: center;
 }
-/* line 279, ../sass/screen.scss */
+/* line 280, ../sass/screen.scss */
 .navwrapper .logo_nav .logo .logosvg {
   height: auto;
-  width: 32px;
+  width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
   cursor: pointer;
 }
-/* line 286, ../sass/screen.scss */
+/* line 287, ../sass/screen.scss */
 .navwrapper .logo_nav .nav {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
-  margin-top: 53px;
+  margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
 /* line 294, ../sass/screen.scss */
 .navwrapper .logo_nav .nav .links {
@@ -362,52 +365,44 @@ body ::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
 }
-/* line 311, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .navwrapper .logo_nav .nav .openedlink.home {
-  height: 6px;
+  height: 0px;
   width: 0px;
   transform: translateX(15px);
-  margin-top: 3px;
+  margin-top: 0px;
   background-color: #ffffff;
-  transition-property: transform, width;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+  will-change: transform;
+  transition-property: transform, width, height, margin-top;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
-/* line 322, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .navwrapper .logo_nav .nav .openedlink.studies {
-  height: 6px;
-  width: 79.41px;
+  height: calc(4px + (8 - 4) * ((100vh - 640px) / (1440 - 640)));
+  width: calc(67px + (160 - 67) * ((100vh - 640px) / (1440 - 640)));
   transform: translateX(15px);
-  margin-top: 3px;
+  margin-top: calc(3px + (6 - 3) * ((100vh - 640px) / (1440 - 640)));
   background-color: #ffffff;
-  transition-property: transform, width;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+  will-change: transform;
+  transition-property: transform, width, height, margin-top;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
-/* line 333, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .navwrapper .logo_nav .nav .openedlink.resume {
-  height: 6px;
-  width: 50px;
-  transform: translateX(111px);
-  margin-top: 3px;
+  height: calc(4px + (8 - 4) * ((100vh - 640px) / (1440 - 640)));
+  width: calc(41px + (100 - 41) * ((100vh - 640px) / (1440 - 640)));
+  transform: translateX(calc(98px + (190 - 98) * ((100vh - 640px) / (1440 - 640))));
+  margin-top: calc(3px + (6 - 3) * ((100vh - 640px) / (1440 - 640)));
   background-color: #ffffff;
-  transition-property: transform, width;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
-}
-/* line 344, ../sass/screen.scss */
-.navwrapper .logo_nav .nav .openedlink.contact {
-  height: 6px;
-  width: 50px;
-  transform: translateX(176px);
-  margin-top: 3px;
-  background-color: #ffffff;
-  transition-property: transform, width;
-  transition-duration: 1000ms;
-  transition-timing-function: cubic-bezier(0.3, 0, 0, 1);
+  will-change: transform;
+  transition-property: transform, width, height, margin-top;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 .herowords {
   background-color: rgba(0, 110, 255, 0);
   height: auto;
@@ -419,13 +414,13 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 39vh;
 }
-/* line 369, ../sass/screen.scss */
+/* line 358, ../sass/screen.scss */
 .herowords .intuition {
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
-/* line 376, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .herowords .compassion {
   position: relative;
   font-family: gastromond, sans-serif;
@@ -433,78 +428,83 @@ body ::-webkit-scrollbar {
   margin-left: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
   margin-right: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
 }
-/* line 385, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .herowords .curiosity {
   position: relative;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
 }
 
-/* line 393, ../sass/screen.scss */
+/* line 382, ../sass/screen.scss */
 .myname {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 40px;
-  left: 64px;
+  bottom: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  left: calc(48px + (120 - 48) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 300;
   cursor: text;
 }
-/* line 403, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .myname::selection {
   background: #ffa910;
   color: black;
 }
 
-/* line 409, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .jobtitle {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 110px;
-  transform: rotate(-90deg);
-  left: -5px;
+  bottom: -3px;
+  writing-mode: vertical-lr;
+  transform: rotate(-180deg);
+  left: -2px;
   font-weight: 300;
   cursor: text;
+  margin-left: calc(24px + (65 - 24) * ((100vh - 640px) / (1440 - 640)));
+  margin-bottom: calc(48px + (128 - 48) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 420, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .jobtitle::selection {
   background: #ffa910;
   color: black;
 }
 
-/* line 426, ../sass/screen.scss */
+/* line 418, ../sass/screen.scss */
 .myemail {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 40px;
-  right: 64px;
+  bottom: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  right: calc(48px + (120 - 48) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 300;
   cursor: text;
 }
-/* line 436, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .myemail::selection {
   background: #2261e0;
 }
 
-/* line 441, ../sass/screen.scss */
+/* line 433, ../sass/screen.scss */
 .mynumber {
   height: auto;
   width: auto;
   position: fixed;
-  bottom: 110px;
-  right: -5px;
-  transform: rotate(90deg);
+  bottom: -1px;
+  writing-mode: vertical-lr;
+  margin-right: calc(24px + (83 - 24) * ((100vh - 640px) / (1440 - 640)));
+  margin-bottom: calc(48px + (128 - 48) * ((100vh - 640px) / (1440 - 640)));
+  right: -2px;
   font-weight: 300;
   cursor: text;
 }
-/* line 452, ../sass/screen.scss */
+/* line 446, ../sass/screen.scss */
 .mynumber::selection {
   background: #2261e0;
 }
 
-/* line 457, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .bottom_fade.low {
   height: 270px;
   width: 100%;
@@ -519,7 +519,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-out;
 }
 
-/* line 472, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .bottom_fade.high {
   height: 270px;
   width: 100%;
@@ -533,7 +533,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 485, ../sass/screen.scss */
+/* line 479, ../sass/screen.scss */
 .fullresume.hide {
   height: auto;
   width: auto;
@@ -547,7 +547,7 @@ body ::-webkit-scrollbar {
   border-radius: 2px;
   text-decoration: none;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 800;
   line-height: 16px;
   text-align: center;
@@ -557,13 +557,13 @@ body ::-webkit-scrollbar {
   transition-duration: 500ms;
   transition-timing-function: ease-out;
 }
-/* line 508, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .fullresume.hide:hover {
   background-color: white;
   color: black;
 }
 
-/* line 514, ../sass/screen.scss */
+/* line 508, ../sass/screen.scss */
 .fullresume.download {
   height: auto;
   width: auto;
@@ -577,7 +577,7 @@ body ::-webkit-scrollbar {
   border-radius: 2px;
   text-decoration: none;
   font-family: Open Sans;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vh - 640px) / (1440 - 640)));
   font-weight: 800;
   line-height: 16px;
   text-align: center;
@@ -588,13 +588,13 @@ body ::-webkit-scrollbar {
   transition-delay: 500ms;
   transition-timing-function: ease-in-out;
 }
-/* line 538, ../sass/screen.scss */
+/* line 532, ../sass/screen.scss */
 .fullresume.download:hover {
   background-color: white;
   color: black;
 }
 
-/* line 544, ../sass/screen.scss */
+/* line 538, ../sass/screen.scss */
 .clickedlink.home {
   background-color: transparent;
   height: 100%;
@@ -606,7 +606,7 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 555, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 .clickedlink.home .box1 {
   height: 100%;
   width: 100%;
@@ -620,17 +620,16 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 568, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .clickedlink.home .box1 .cases {
-  height: 346px;
-  width: 82%;
+  height: auto;
+  width: auto;
   margin-bottom: 2%;
-  margin-left: 5vw;
+  margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
-/* line 577, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case1 {
   will-change: transform;
   transition-property: transform;
@@ -639,7 +638,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 587, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case2 {
   will-change: transform;
   transition-property: transform;
@@ -648,7 +647,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 597, ../sass/screen.scss */
+/* line 590, ../sass/screen.scss */
 .clickedlink.home .box1 .cases .case3 {
   will-change: transform;
   transition-property: transform;
@@ -657,7 +656,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 609, ../sass/screen.scss */
+/* line 602, ../sass/screen.scss */
 .clickedlink.home .box2 {
   will-change: transform;
   transform: translateX(100%);
@@ -665,7 +664,7 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 617, ../sass/screen.scss */
+/* line 610, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent {
   height: auto;
   width: 265px;
@@ -673,7 +672,7 @@ body ::-webkit-scrollbar {
   margin-bottom: 220px;
   margin-left: 28%;
 }
-/* line 624, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .h1 {
   text-decoration: none;
   color: #ffffff;
@@ -684,7 +683,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.06em;
   margin-bottom: 15px;
 }
-/* line 635, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .h2 {
   text-decoration: none;
   color: #ffffff;
@@ -694,7 +693,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.04em;
   margin-bottom: 15px;
 }
-/* line 645, ../sass/screen.scss */
+/* line 638, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .h3 {
   text-decoration: none;
   color: #ffffff;
@@ -705,16 +704,16 @@ body ::-webkit-scrollbar {
   line-height: 1.4em;
   margin-bottom: 15px;
 }
-/* line 656, ../sass/screen.scss */
+/* line 649, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .separate {
   margin-bottom: 32px;
 }
-/* line 660, ../sass/screen.scss */
+/* line 653, ../sass/screen.scss */
 .clickedlink.home .box2 .resumecontent .m1 {
   line-height: 1.4em;
 }
 
-/* line 667, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 .clickedlink.studies {
   background-color: rgba(0, 0, 0, 0.92);
   height: 100%;
@@ -726,7 +725,7 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 678, ../sass/screen.scss */
+/* line 671, ../sass/screen.scss */
 .clickedlink.studies .box1 {
   height: 100%;
   width: 100%;
@@ -740,17 +739,16 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 691, ../sass/screen.scss */
+/* line 684, ../sass/screen.scss */
 .clickedlink.studies .box1 .cases {
-  height: 346px;
-  width: 82%;
+  height: auto;
+  width: auto;
   margin-bottom: 2%;
-  margin-left: 5vw;
+  margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
-/* line 700, ../sass/screen.scss */
+/* line 692, ../sass/screen.scss */
 .clickedlink.studies .box1 .cases .case1 {
   will-change: transform;
   transition-property: transform;
@@ -759,7 +757,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 710, ../sass/screen.scss */
+/* line 702, ../sass/screen.scss */
 .clickedlink.studies .box1 .cases .case2 {
   will-change: transform;
   transition-property: transform;
@@ -768,7 +766,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 720, ../sass/screen.scss */
+/* line 712, ../sass/screen.scss */
 .clickedlink.studies .box1 .cases .case3 {
   will-change: transform;
   transition-property: transform;
@@ -777,7 +775,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 732, ../sass/screen.scss */
+/* line 724, ../sass/screen.scss */
 .clickedlink.studies .box2 {
   will-change: transform;
   transform: translateX(100%);
@@ -785,7 +783,7 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 740, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent {
   height: auto;
   width: 265px;
@@ -793,7 +791,7 @@ body ::-webkit-scrollbar {
   margin-bottom: 220px;
   margin-left: 28%;
 }
-/* line 747, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .h1 {
   text-decoration: none;
   color: #ffffff;
@@ -804,7 +802,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.06em;
   margin-bottom: 15px;
 }
-/* line 758, ../sass/screen.scss */
+/* line 750, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .h2 {
   text-decoration: none;
   color: #ffffff;
@@ -814,7 +812,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.04em;
   margin-bottom: 15px;
 }
-/* line 768, ../sass/screen.scss */
+/* line 760, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .h3 {
   text-decoration: none;
   color: #ffffff;
@@ -825,16 +823,16 @@ body ::-webkit-scrollbar {
   line-height: 1.4em;
   margin-bottom: 15px;
 }
-/* line 779, ../sass/screen.scss */
+/* line 771, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .separate {
   margin-bottom: 32px;
 }
-/* line 783, ../sass/screen.scss */
+/* line 775, ../sass/screen.scss */
 .clickedlink.studies .box2 .resumecontent .m1 {
   line-height: 1.4em;
 }
 
-/* line 790, ../sass/screen.scss */
+/* line 782, ../sass/screen.scss */
 .clickedlink.resume {
   background-color: rgba(0, 0, 0, 0.92);
   height: 100%;
@@ -846,7 +844,7 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 801, ../sass/screen.scss */
+/* line 793, ../sass/screen.scss */
 .clickedlink.resume .box1 {
   height: 100%;
   width: 100%;
@@ -860,17 +858,16 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 814, ../sass/screen.scss */
+/* line 806, ../sass/screen.scss */
 .clickedlink.resume .box1 .cases {
-  height: 346px;
-  width: 82%;
+  height: auto;
+  width: auto;
   margin-bottom: 2%;
-  margin-left: 5vw;
+  margin-left: calc(60px + (180 - 60) * ((100vw - 1024px) / (2560 - 1024)));
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
 }
-/* line 823, ../sass/screen.scss */
+/* line 814, ../sass/screen.scss */
 .clickedlink.resume .box1 .cases .case1 {
   will-change: transform;
   transition-property: transform;
@@ -879,7 +876,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 833, ../sass/screen.scss */
+/* line 824, ../sass/screen.scss */
 .clickedlink.resume .box1 .cases .case2 {
   will-change: transform;
   transition-property: transform;
@@ -888,7 +885,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 843, ../sass/screen.scss */
+/* line 834, ../sass/screen.scss */
 .clickedlink.resume .box1 .cases .case3 {
   will-change: transform;
   transition-property: transform;
@@ -897,7 +894,7 @@ body ::-webkit-scrollbar {
   transition-delay: 100ms;
   transition-timing-function: ease-in-out;
 }
-/* line 855, ../sass/screen.scss */
+/* line 846, ../sass/screen.scss */
 .clickedlink.resume .box2 {
   will-change: transform;
   transform: translateX(0%);
@@ -905,51 +902,51 @@ body ::-webkit-scrollbar {
   transition-duration: 1000ms;
   transition-timing-function: ease-in-out;
 }
-/* line 863, ../sass/screen.scss */
+/* line 854, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent {
   height: auto;
-  width: 265px;
+  width: auto;
   margin-top: 140px;
   margin-bottom: 220px;
   margin-left: 28%;
 }
-/* line 870, ../sass/screen.scss */
+/* line 861, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent .h1 {
   text-decoration: none;
   color: #ffffff;
   font-family: gastromond, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(14px + (32 - 14) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.06em;
-  margin-bottom: 15px;
+  margin-bottom: calc(20px + (44 - 20) * ((100vw - 1024px) / (2560 - 1024)));
 }
-/* line 881, ../sass/screen.scss */
+/* line 872, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent .h2 {
   text-decoration: none;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.04em;
   margin-bottom: 15px;
 }
-/* line 891, ../sass/screen.scss */
+/* line 882, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent .h3 {
   text-decoration: none;
   color: #ffffff;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: calc(10px + (24 - 10) * ((100vw - 1024px) / (2560 - 1024)));
   letter-spacing: 0.01em;
   line-height: 1.4em;
   margin-bottom: 15px;
 }
-/* line 902, ../sass/screen.scss */
+/* line 893, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent .separate {
   margin-bottom: 32px;
 }
-/* line 906, ../sass/screen.scss */
+/* line 897, ../sass/screen.scss */
 .clickedlink.resume .box2 .resumecontent .m1 {
   line-height: 1.4em;
 }
