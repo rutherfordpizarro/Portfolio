@@ -144,7 +144,6 @@ body {
   top: 40vh;
   opacity: 0;
   filter: blur(6px);
-  will-change: opacity filter;
   transition-property: opacity filter;
   transition-duration: 900ms;
   transition-timing-function: ease-in-out;
@@ -208,7 +207,6 @@ body {
   top: 40vh;
   opacity: 1;
   filter: blur(0px);
-  will-change: opacity filter;
   transition-property: opacity filter;
   transition-duration: 900ms;
   transition-timing-function: ease-in-out;
@@ -527,7 +525,6 @@ body {
     margin-bottom: 20vh;
     margin-left: 28vw;
     transform: translateX(100%);
-    will-change: transform;
     transition-property: transform;
     transition-duration: 700ms;
     transition-delay: 200ms;
@@ -638,7 +635,6 @@ body {
     text-align: center;
     cursor: pointer;
     opacity: 0;
-    will-change: transform opacity;
     transform: translateY(180%);
     transition-property: transform opacity;
     transition-duration: 600ms;
@@ -658,7 +654,6 @@ body {
     top: 0px;
     opacity: 1;
     background: linear-gradient(180deg, $bg-color 46.15%, $bg-transparent 100%);
-    will-change: opacity;
     transition-property: opacity;
     transition-duration: 1ms;
     transition-delay: 900ms;
@@ -672,7 +667,6 @@ body {
     bottom: 0px;
     opacity: 1;
     background: linear-gradient(360deg, $bg-color 82%, $bg-transparent 100%);
-    will-change: opacity;
     transition-property: opacity;
     transition-duration: 1ms;
     transition-delay: 900ms;
@@ -702,7 +696,6 @@ body {
     margin-top: 20vh;
     margin-bottom: 20vh;
     margin-left: 28vw;
-    will-change: transform;
     transform: translateX(0%);
     transition-property: transform;
     transition-duration: 700ms;
@@ -815,7 +808,6 @@ body {
     text-align: center;
     cursor: pointer;
     opacity: 1;
-    will-change: transform opacity;
     transform: translateY(0%);
     transition-property: transform opacity;
     transition-duration: 600ms;
@@ -835,7 +827,6 @@ body {
     top: 0px;
     opacity: 1;
     background: linear-gradient(180deg, $bg-color 46.15%, $bg-transparent 100%);
-    will-change: opacity;
     transition-property: opacity;
     transition-duration: 1ms;
     transition-timing-function: ease-in-out;
@@ -848,7 +839,6 @@ body {
     bottom: 0px;
     opacity: 1;
     background: linear-gradient(360deg, $bg-color 82%, $bg-transparent 100%);
-    will-change: opacity;
     transition-property: opacity;
     transition-duration: 1ms;
     transition-timing-function: ease-in-out;
@@ -863,7 +853,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 700ms;
@@ -880,7 +869,6 @@ body {
     .case_1 {
       @extend %casecontent;
       transform: translateY(500%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -889,7 +877,6 @@ body {
     .case_2 {
       @extend %casecontent;
       transform: translateY(300%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -898,7 +885,6 @@ body {
     .case_3 {
       @extend %casecontent;
       transform: translateY(100%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
@@ -918,7 +904,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(0%);
   transition-property: transform;
   transition-duration: 700ms;
@@ -935,7 +920,6 @@ body {
     .case_1 {
       @extend %casecontent;
       transform: translateY(0%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -944,7 +928,6 @@ body {
     .case_2 {
       @extend %casecontent;
       transform: translateY(0%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -953,7 +936,6 @@ body {
     .case_3 {
       @extend %casecontent;
       transform: translateY(0%);
-      will-change: transform;
       transition-duration: 700ms;
       transition-delay: 100ms;
       transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

@@ -4,7 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://use.typekit.net/qly3yul.css");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;700&display=swap");
-/* line 5, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +26,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -199,12 +199,11 @@ body ::-webkit-scrollbar {
   top: 40vh;
   opacity: 0;
   filter: blur(6px);
-  will-change: opacity filter;
   transition-property: opacity filter;
   transition-duration: 900ms;
   transition-timing-function: ease-in-out;
 }
-/* line 152, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .herowords.inactive .intuition {
   height: auto;
   width: auto;
@@ -220,7 +219,7 @@ body ::-webkit-scrollbar {
   margin-left: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
   margin-right: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
 }
-/* line 168, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .herowords.inactive .compassion {
   height: auto;
   width: auto;
@@ -235,7 +234,7 @@ body ::-webkit-scrollbar {
   margin-left: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
   margin-right: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
 }
-/* line 183, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .herowords.inactive .curiosity {
   height: auto;
   width: auto;
@@ -252,7 +251,7 @@ body ::-webkit-scrollbar {
   margin-right: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .herowords.active {
   height: auto;
   width: 100%;
@@ -264,12 +263,11 @@ body ::-webkit-scrollbar {
   top: 40vh;
   opacity: 1;
   filter: blur(0px);
-  will-change: opacity filter;
   transition-property: opacity filter;
   transition-duration: 900ms;
   transition-timing-function: ease-in-out;
 }
-/* line 216, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .herowords.active .intuition {
   height: auto;
   width: auto;
@@ -285,7 +283,7 @@ body ::-webkit-scrollbar {
   margin-left: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
   margin-right: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
 }
-/* line 232, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .herowords.active .compassion {
   height: auto;
   width: auto;
@@ -300,7 +298,7 @@ body ::-webkit-scrollbar {
   margin-left: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
   margin-right: calc(5px + (10 - 5) * ((100vw - 300px) / (1600 - 300)));
 }
-/* line 247, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .herowords.active .curiosity {
   height: auto;
   width: auto;
@@ -317,7 +315,7 @@ body ::-webkit-scrollbar {
   margin-right: calc(0px + (0 - 0) * ((100vw - 300px) / (1600 - 300)));
 }
 
-/* line 264, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 .logo_nav.h {
   z-index: 3;
   height: auto;
@@ -330,7 +328,7 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 277, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .logo_nav.h .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
@@ -338,7 +336,7 @@ body ::-webkit-scrollbar {
   cursor: pointer;
   opacity: .2;
 }
-/* line 285, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .logo_nav.h .nav {
   height: auto;
   width: auto;
@@ -347,7 +345,7 @@ body ::-webkit-scrollbar {
   column-gap: 16px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 293, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .logo_nav.h .nav .cs_link {
   height: auto;
   width: auto;
@@ -355,11 +353,11 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 301, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .logo_nav.h .nav .cs_link:hover {
   font-weight: 700;
 }
-/* line 305, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .logo_nav.h .nav .r_link {
   height: auto;
   width: auto;
@@ -367,12 +365,12 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 313, ../sass/screen.scss */
+/* line 311, ../sass/screen.scss */
 .logo_nav.h .nav .r_link:hover {
   font-weight: 700;
 }
 
-/* line 320, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .logo_nav.cs {
   z-index: 3;
   height: auto;
@@ -385,7 +383,7 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 333, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .logo_nav.cs .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
@@ -393,7 +391,7 @@ body ::-webkit-scrollbar {
   cursor: pointer;
   opacity: .2;
 }
-/* line 341, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .logo_nav.cs .nav {
   height: auto;
   width: auto;
@@ -402,7 +400,7 @@ body ::-webkit-scrollbar {
   column-gap: 16px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 349, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
 .logo_nav.cs .nav .cs_link {
   height: auto;
   width: auto;
@@ -411,11 +409,11 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 358, ../sass/screen.scss */
+/* line 356, ../sass/screen.scss */
 .logo_nav.cs .nav .cs_link:hover {
   font-weight: 700;
 }
-/* line 362, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .logo_nav.cs .nav .r_link {
   height: auto;
   width: auto;
@@ -423,12 +421,12 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 370, ../sass/screen.scss */
+/* line 368, ../sass/screen.scss */
 .logo_nav.cs .nav .r_link:hover {
   font-weight: 700;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .logo_nav.r {
   z-index: 3;
   height: auto;
@@ -441,7 +439,7 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 390, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .logo_nav.r .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
@@ -449,7 +447,7 @@ body ::-webkit-scrollbar {
   cursor: pointer;
   opacity: .2;
 }
-/* line 398, ../sass/screen.scss */
+/* line 396, ../sass/screen.scss */
 .logo_nav.r .nav {
   height: auto;
   width: auto;
@@ -458,7 +456,7 @@ body ::-webkit-scrollbar {
   column-gap: 16px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 406, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .logo_nav.r .nav .cs_link {
   height: auto;
   width: auto;
@@ -466,11 +464,11 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 414, ../sass/screen.scss */
+/* line 412, ../sass/screen.scss */
 .logo_nav.r .nav .cs_link:hover {
   font-weight: 700;
 }
-/* line 418, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .logo_nav.r .nav .r_link {
   height: auto;
   width: auto;
@@ -479,12 +477,12 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.24em;
   text-transform: uppercase;
 }
-/* line 427, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .logo_nav.r .nav .r_link:hover {
   font-weight: 700;
 }
 
-/* line 434, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .myname {
   z-index: 3;
   height: auto;
@@ -496,13 +494,13 @@ body ::-webkit-scrollbar {
   cursor: text;
   letter-spacing: 0.24em;
 }
-/* line 446, ../sass/screen.scss */
+/* line 444, ../sass/screen.scss */
 .myname::selection {
   background: #ffa910;
   color: black;
 }
 
-/* line 452, ../sass/screen.scss */
+/* line 450, ../sass/screen.scss */
 .jobtitle {
   z-index: 3;
   height: auto;
@@ -517,13 +515,13 @@ body ::-webkit-scrollbar {
   margin-bottom: calc(48px + (128 - 48) * ((100vh - 640px) / (1440 - 640)));
   letter-spacing: 0.24em;
 }
-/* line 467, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 .jobtitle::selection {
   background: #ffa910;
   color: black;
 }
 
-/* line 473, ../sass/screen.scss */
+/* line 471, ../sass/screen.scss */
 .mynumber {
   z-index: 3;
   height: auto;
@@ -537,12 +535,12 @@ body ::-webkit-scrollbar {
   cursor: text;
   letter-spacing: 0.24em;
 }
-/* line 487, ../sass/screen.scss */
+/* line 485, ../sass/screen.scss */
 .mynumber::selection {
   background: #2261e0;
 }
 
-/* line 492, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .myemail {
   z-index: 3;
   height: auto;
@@ -553,12 +551,12 @@ body ::-webkit-scrollbar {
   cursor: text;
   letter-spacing: 0.24em;
 }
-/* line 503, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .myemail::selection {
   background: #2261e0;
 }
 
-/* line 508, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .resume.inactive {
   z-index: 1;
   height: 100%;
@@ -570,11 +568,11 @@ body ::-webkit-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-/* line 519, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .resume.inactive::-webkit-scrollbar {
   display: none;
 }
-/* line 523, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 .resume.inactive .content {
   height: auto;
   width: auto;
@@ -582,96 +580,95 @@ body ::-webkit-scrollbar {
   margin-bottom: 20vh;
   margin-left: 28vw;
   transform: translateX(100%);
-  will-change: transform;
   transition-property: transform;
   transition-duration: 700ms;
   transition-delay: 200ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 536, ../sass/screen.scss */
+/* line 533, ../sass/screen.scss */
 .resume.inactive .content .h1 {
   font-family: Gastromond;
   font-weight: 400;
   font-size: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
   letter-spacing: 0.06em;
 }
-/* line 543, ../sass/screen.scss */
+/* line 540, ../sass/screen.scss */
 .resume.inactive .content .h2 {
   font-weight: 700;
   font-size: calc((10px * 1) + ((10 * 3.53) - (10 * 1)) * ((100vh - 568px) / (2520 - 568)));
   letter-spacing: 0.1em;
 }
-/* line 550, ../sass/screen.scss */
+/* line 547, ../sass/screen.scss */
 .resume.inactive .content .h3 {
   font-size: calc((12px * 1) + ((12 * 3.53) - (12 * 1)) * ((100vh - 568px) / (2520 - 568)));
   line-height: calc((18px * 1) + ((18 * 3.53) - (18 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 556, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .resume.inactive .content .line_one {
   margin-top: none;
 }
-/* line 560, ../sass/screen.scss */
+/* line 557, ../sass/screen.scss */
 .resume.inactive .content .line_two {
   margin-top: -.25%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 565, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .resume.inactive .content .line_three {
   margin-top: -.72%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 570, ../sass/screen.scss */
+/* line 567, ../sass/screen.scss */
 .resume.inactive .content .line_four {
   margin-top: -1.25%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 575, ../sass/screen.scss */
+/* line 572, ../sass/screen.scss */
 .resume.inactive .content .line_five {
   margin-top: -.75%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 580, ../sass/screen.scss */
+/* line 577, ../sass/screen.scss */
 .resume.inactive .content .line_six {
   margin-top: -.67%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 585, ../sass/screen.scss */
+/* line 582, ../sass/screen.scss */
 .resume.inactive .content .line_seven {
   margin-top: -.97%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 590, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 .resume.inactive .content .line_eight {
   margin-top: -.2%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 595, ../sass/screen.scss */
+/* line 592, ../sass/screen.scss */
 .resume.inactive .content .line_nine {
   margin-top: -.7%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 600, ../sass/screen.scss */
+/* line 597, ../sass/screen.scss */
 .resume.inactive .content .line_ten {
   margin-top: -.97%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 605, ../sass/screen.scss */
+/* line 602, ../sass/screen.scss */
 .resume.inactive .content .line_eleven {
   margin-top: -.2%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 610, ../sass/screen.scss */
+/* line 607, ../sass/screen.scss */
 .resume.inactive .content .line_twelve {
   margin-top: -.4%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 615, ../sass/screen.scss */
+/* line 612, ../sass/screen.scss */
 .resume.inactive .content .line_thirteen {
   margin-top: -.8%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
   line-height: calc((18px * 1) + ((18 * 3.53) - (18 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 622, ../sass/screen.scss */
+/* line 619, ../sass/screen.scss */
 .resume.inactive .fullresume {
   position: fixed;
   bottom: 18%;
@@ -690,19 +687,18 @@ body ::-webkit-scrollbar {
   text-align: center;
   cursor: pointer;
   opacity: 0;
-  will-change: transform opacity;
   transform: translateY(180%);
   transition-property: transform opacity;
   transition-duration: 600ms;
   transition-timing-function: ease-in-out;
 }
-/* line 647, ../sass/screen.scss */
+/* line 643, ../sass/screen.scss */
 .resume.inactive .fullresume:hover {
   background-color: #1A1C21;
   color: #ECEDF1;
   transition-duration: 300ms;
 }
-/* line 654, ../sass/screen.scss */
+/* line 650, ../sass/screen.scss */
 .resume.inactive .resume_top_fade {
   height: 20%;
   width: 100%;
@@ -710,13 +706,12 @@ body ::-webkit-scrollbar {
   top: 0px;
   opacity: 1;
   background: linear-gradient(180deg, #ECEDF1 46.15%, #ecedf100 100%);
-  will-change: opacity;
   transition-property: opacity;
   transition-duration: 1ms;
   transition-delay: 900ms;
   transition-timing-function: ease-in-out;
 }
-/* line 668, ../sass/screen.scss */
+/* line 663, ../sass/screen.scss */
 .resume.inactive .resume_bottom_fade {
   height: 34%;
   width: 100%;
@@ -724,14 +719,13 @@ body ::-webkit-scrollbar {
   bottom: 0px;
   opacity: 1;
   background: linear-gradient(360deg, #ECEDF1 82%, #ecedf100 100%);
-  will-change: opacity;
   transition-property: opacity;
   transition-duration: 1ms;
   transition-delay: 900ms;
   transition-timing-function: ease-in-out;
 }
 
-/* line 683, ../sass/screen.scss */
+/* line 677, ../sass/screen.scss */
 .resume.active {
   z-index: 1;
   height: 100%;
@@ -744,108 +738,107 @@ body ::-webkit-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-/* line 695, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .resume.active::-webkit-scrollbar {
   display: none;
 }
-/* line 699, ../sass/screen.scss */
+/* line 693, ../sass/screen.scss */
 .resume.active .content {
   height: auto;
   width: auto;
   margin-top: 20vh;
   margin-bottom: 20vh;
   margin-left: 28vw;
-  will-change: transform;
   transform: translateX(0%);
   transition-property: transform;
   transition-duration: 700ms;
   transition-delay: 200ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 713, ../sass/screen.scss */
+/* line 706, ../sass/screen.scss */
 .resume.active .content .h1 {
   font-family: Gastromond;
   font-weight: 400;
   font-size: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
   letter-spacing: 0.06em;
 }
-/* line 720, ../sass/screen.scss */
+/* line 713, ../sass/screen.scss */
 .resume.active .content .h2 {
   font-weight: 700;
   font-size: calc((10px * 1) + ((10 * 3.53) - (10 * 1)) * ((100vh - 568px) / (2520 - 568)));
   letter-spacing: 0.1em;
 }
-/* line 727, ../sass/screen.scss */
+/* line 720, ../sass/screen.scss */
 .resume.active .content .h3 {
   font-size: calc((12px * 1) + ((12 * 3.53) - (12 * 1)) * ((100vh - 568px) / (2520 - 568)));
   line-height: calc((18px * 1) + ((18 * 3.53) - (18 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 733, ../sass/screen.scss */
+/* line 726, ../sass/screen.scss */
 .resume.active .content .line_one {
   margin-top: none;
 }
-/* line 737, ../sass/screen.scss */
+/* line 730, ../sass/screen.scss */
 .resume.active .content .line_two {
   margin-top: -.25%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 742, ../sass/screen.scss */
+/* line 735, ../sass/screen.scss */
 .resume.active .content .line_three {
   margin-top: -.72%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 747, ../sass/screen.scss */
+/* line 740, ../sass/screen.scss */
 .resume.active .content .line_four {
   margin-top: -1.25%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 752, ../sass/screen.scss */
+/* line 745, ../sass/screen.scss */
 .resume.active .content .line_five {
   margin-top: -.75%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 757, ../sass/screen.scss */
+/* line 750, ../sass/screen.scss */
 .resume.active .content .line_six {
   margin-top: -.67%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 762, ../sass/screen.scss */
+/* line 755, ../sass/screen.scss */
 .resume.active .content .line_seven {
   margin-top: -.97%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 767, ../sass/screen.scss */
+/* line 760, ../sass/screen.scss */
 .resume.active .content .line_eight {
   margin-top: -.2%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 772, ../sass/screen.scss */
+/* line 765, ../sass/screen.scss */
 .resume.active .content .line_nine {
   margin-top: -.7%;
   padding-top: calc((16px * 1) + ((16 * 3.53) - (16 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 777, ../sass/screen.scss */
+/* line 770, ../sass/screen.scss */
 .resume.active .content .line_ten {
   margin-top: -.97%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 782, ../sass/screen.scss */
+/* line 775, ../sass/screen.scss */
 .resume.active .content .line_eleven {
   margin-top: -.2%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 787, ../sass/screen.scss */
+/* line 780, ../sass/screen.scss */
 .resume.active .content .line_twelve {
   margin-top: -.4%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 792, ../sass/screen.scss */
+/* line 785, ../sass/screen.scss */
 .resume.active .content .line_thirteen {
   margin-top: -.8%;
   padding-top: calc((24px * 1) + ((24 * 3.53) - (24 * 1)) * ((100vh - 568px) / (2520 - 568)));
   line-height: calc((18px * 1) + ((18 * 3.53) - (18 * 1)) * ((100vh - 568px) / (2520 - 568)));
 }
-/* line 799, ../sass/screen.scss */
+/* line 792, ../sass/screen.scss */
 .resume.active .fullresume {
   position: fixed;
   bottom: 18%;
@@ -864,19 +857,18 @@ body ::-webkit-scrollbar {
   text-align: center;
   cursor: pointer;
   opacity: 1;
-  will-change: transform opacity;
   transform: translateY(0%);
   transition-property: transform opacity;
   transition-duration: 600ms;
   transition-timing-function: ease-in-out;
 }
-/* line 824, ../sass/screen.scss */
+/* line 816, ../sass/screen.scss */
 .resume.active .fullresume:hover {
   background-color: #1A1C21;
   color: #ECEDF1;
   transition-duration: 300ms;
 }
-/* line 831, ../sass/screen.scss */
+/* line 823, ../sass/screen.scss */
 .resume.active .resume_top_fade {
   height: 20%;
   width: 100%;
@@ -884,12 +876,11 @@ body ::-webkit-scrollbar {
   top: 0px;
   opacity: 1;
   background: linear-gradient(180deg, #ECEDF1 46.15%, #ecedf100 100%);
-  will-change: opacity;
   transition-property: opacity;
   transition-duration: 1ms;
   transition-timing-function: ease-in-out;
 }
-/* line 844, ../sass/screen.scss */
+/* line 835, ../sass/screen.scss */
 .resume.active .resume_bottom_fade {
   height: 34%;
   width: 100%;
@@ -897,13 +888,12 @@ body ::-webkit-scrollbar {
   bottom: 0px;
   opacity: 1;
   background: linear-gradient(360deg, #ECEDF1 82%, #ecedf100 100%);
-  will-change: opacity;
   transition-property: opacity;
   transition-duration: 1ms;
   transition-timing-function: ease-in-out;
 }
 
-/* line 858, ../sass/screen.scss */
+/* line 848, ../sass/screen.scss */
 .casestudies.inactive {
   z-index: 2;
   height: 100%;
@@ -912,13 +902,12 @@ body ::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(100%);
   transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 872, ../sass/screen.scss */
+/* line 861, ../sass/screen.scss */
 .casestudies.inactive .cases {
   height: auto;
   width: auto;
@@ -927,36 +916,33 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   column-gap: calc((32px * 1) + ((32 * 3.53) - (32 * 1)) * ((100vw - 320px) / (4480 - 320)));
 }
-/* line 880, ../sass/screen.scss */
+/* line 869, ../sass/screen.scss */
 .casestudies.inactive .cases .case_1 {
   transform: translateY(500%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 889, ../sass/screen.scss */
+/* line 877, ../sass/screen.scss */
 .casestudies.inactive .cases .case_2 {
   transform: translateY(300%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 898, ../sass/screen.scss */
+/* line 885, ../sass/screen.scss */
 .casestudies.inactive .cases .case_3 {
   transform: translateY(100%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 906, ../sass/screen.scss */
+/* line 892, ../sass/screen.scss */
 .casestudies.inactive .cases .case_3 .case_number {
   letter-spacing: -.03em !important;
 }
 
-/* line 913, ../sass/screen.scss */
+/* line 899, ../sass/screen.scss */
 .casestudies.active {
   z-index: 2;
   height: 100%;
@@ -965,13 +951,12 @@ body ::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(0%);
   transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 927, ../sass/screen.scss */
+/* line 912, ../sass/screen.scss */
 .casestudies.active .cases {
   height: auto;
   width: auto;
@@ -980,31 +965,28 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   column-gap: calc((32px * 1) + ((32 * 3.53) - (32 * 1)) * ((100vw - 320px) / (4480 - 320)));
 }
-/* line 935, ../sass/screen.scss */
+/* line 920, ../sass/screen.scss */
 .casestudies.active .cases .case_1 {
   transform: translateY(0%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 944, ../sass/screen.scss */
+/* line 928, ../sass/screen.scss */
 .casestudies.active .cases .case_2 {
   transform: translateY(0%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 953, ../sass/screen.scss */
+/* line 936, ../sass/screen.scss */
 .casestudies.active .cases .case_3 {
   transform: translateY(0%);
-  will-change: transform;
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 961, ../sass/screen.scss */
+/* line 943, ../sass/screen.scss */
 .casestudies.active .cases .case_3 .case_number {
   letter-spacing: -.03em !important;
 }
