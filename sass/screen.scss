@@ -145,7 +145,7 @@ body {
   opacity: 0;
   filter: blur(6px);
   transition-property: opacity filter;
-  transition-duration: 900ms;
+  transition-duration: 800ms;
   transition-timing-function: ease-in-out;
 
   .intuition {
@@ -208,7 +208,7 @@ body {
   opacity: 1;
   filter: blur(0px);
   transition-property: opacity filter;
-  transition-duration: 900ms;
+  transition-duration: 800ms;
   transition-timing-function: ease-in-out;
 
   .intuition {
@@ -504,10 +504,9 @@ body {
 }
 
 .resume.inactive  {
-  z-index: 1;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -526,7 +525,7 @@ body {
     margin-left: 28vw;
     transform: translateX(100%);
     transition-property: transform;
-    transition-duration: 700ms;
+    transition-duration: 400ms;
     transition-delay: 200ms;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
@@ -660,20 +659,14 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    opacity: 0;
     background: linear-gradient(360deg, $bg-color 82%, $bg-transparent 100%);
-    transition-property: opacity;
-    transition-duration: 1ms;
-    transition-delay: 900ms;
-    transition-timing-function: ease-in-out;
   }
 }
 
 .resume.active {
-  z-index: 1;
   height: 100%;
   width: 100%;
-  position: relative;
+  position: absolute;
   overflow: scroll;
   overflow-x: hidden;
   display: flex;
@@ -693,7 +686,7 @@ body {
     margin-left: 28vw;
     transform: translateX(0%);
     transition-property: transform;
-    transition-duration: 700ms;
+    transition-duration: 400ms;
     transition-delay: 200ms;
     transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
@@ -828,11 +821,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    opacity: 1;
     background: linear-gradient(360deg, $bg-color 82%, $bg-transparent 100%);
-    transition-property: opacity;
-    transition-duration: 1ms;
-    transition-timing-function: ease-in-out;
   }
 }
 
@@ -844,8 +833,8 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateY(100%);
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
 
   .cases {
     height: auto;
@@ -857,14 +846,26 @@ body {
 
     .case_1 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(2000%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
     }
 
     .case_2 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(1000%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
     }
 
     .case_3 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(100%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
 
       .case_number {
         letter-spacing: -.03em !important;
@@ -881,8 +882,8 @@ body {
   justify-content: center;
   align-items: center;
   transform: translateY(0%);
-  transition-duration: 300ms;
-  transition-timing-function: ease-in-out;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
   .cases {
     height: auto;
@@ -894,14 +895,26 @@ body {
 
     .case_1 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(0%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
 
     .case_2 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(0%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
 
     .case_3 {
       @extend %casecontent;
+      will-change: transform;
+      transform: translateY(0%);
+      transition-duration: 400ms;
+      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
       .case_number {
         letter-spacing: -.03em !important;
