@@ -853,8 +853,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: transform;
   transform: translateY(100%);
-  transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
 
@@ -868,6 +868,7 @@ body {
 
     .case_1 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(500%);
       transition-duration: 700ms;
       transition-delay: 100ms;
@@ -876,6 +877,7 @@ body {
 
     .case_2 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(300%);
       transition-duration: 700ms;
       transition-delay: 100ms;
@@ -884,6 +886,7 @@ body {
 
     .case_3 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(100%);
       transition-duration: 700ms;
       transition-delay: 100ms;
@@ -904,8 +907,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: transform;
   transform: translateY(0%);
-  transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
@@ -919,6 +922,7 @@ body {
 
     .case_1 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(0%);
       transition-duration: 700ms;
       transition-delay: 100ms;
@@ -927,6 +931,7 @@ body {
 
     .case_2 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(0%);
       transition-duration: 700ms;
       transition-delay: 100ms;
@@ -935,6 +940,7 @@ body {
 
     .case_3 {
       @extend %casecontent;
+      will-change: transform;
       transform: translateY(0%);
       transition-duration: 700ms;
       transition-delay: 100ms;

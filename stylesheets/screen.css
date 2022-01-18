@@ -902,8 +902,8 @@ body ::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: transform;
   transform: translateY(100%);
-  transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
@@ -918,31 +918,34 @@ body ::-webkit-scrollbar {
 }
 /* line 869, ../sass/screen.scss */
 .casestudies.inactive .cases .case_1 {
+  will-change: transform;
   transform: translateY(500%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 877, ../sass/screen.scss */
+/* line 878, ../sass/screen.scss */
 .casestudies.inactive .cases .case_2 {
+  will-change: transform;
   transform: translateY(300%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 885, ../sass/screen.scss */
+/* line 887, ../sass/screen.scss */
 .casestudies.inactive .cases .case_3 {
+  will-change: transform;
   transform: translateY(100%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-/* line 892, ../sass/screen.scss */
+/* line 895, ../sass/screen.scss */
 .casestudies.inactive .cases .case_3 .case_number {
   letter-spacing: -.03em !important;
 }
 
-/* line 899, ../sass/screen.scss */
+/* line 902, ../sass/screen.scss */
 .casestudies.active {
   z-index: 2;
   height: 100%;
@@ -951,12 +954,12 @@ body ::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: center;
+  will-change: transform;
   transform: translateY(0%);
-  transition-property: transform;
   transition-duration: 700ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 912, ../sass/screen.scss */
+/* line 915, ../sass/screen.scss */
 .casestudies.active .cases {
   height: auto;
   width: auto;
@@ -965,28 +968,31 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   column-gap: calc((32px * 1) + ((32 * 3.53) - (32 * 1)) * ((100vw - 320px) / (4480 - 320)));
 }
-/* line 920, ../sass/screen.scss */
+/* line 923, ../sass/screen.scss */
 .casestudies.active .cases .case_1 {
+  will-change: transform;
   transform: translateY(0%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 928, ../sass/screen.scss */
+/* line 932, ../sass/screen.scss */
 .casestudies.active .cases .case_2 {
+  will-change: transform;
   transform: translateY(0%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 936, ../sass/screen.scss */
+/* line 941, ../sass/screen.scss */
 .casestudies.active .cases .case_3 {
+  will-change: transform;
   transform: translateY(0%);
   transition-duration: 700ms;
   transition-delay: 100ms;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
-/* line 943, ../sass/screen.scss */
+/* line 949, ../sass/screen.scss */
 .casestudies.active .cases .case_3 .case_number {
   letter-spacing: -.03em !important;
 }
