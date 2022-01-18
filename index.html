@@ -10,6 +10,25 @@
 
 <body>
 
+  <div class="myemail">&nbsp;RutherfordPizarro@Gmail.com&nbsp;</div>
+  <div class="mynumber">415.533.1375</div>
+  <div class="jobtitle">&nbsp;UI/UX Designer&nbsp;</div>
+  <div class="myname">&nbsp;Rutherford J. Pizarro&nbsp;</div>
+
+  <div class="logo_nav h">
+    <img src="assets/rp_logo.svg" alt="" class="logo">
+    <div class="nav">
+      <div class="cs_link">Case Studies</div>
+      <div class="r_link">Resume</div>
+    </div>
+  </div>
+
+  <div class="herowords active">
+    <div class="intuition">Intuition</div>
+    <div class="compassion">Compassion</div>
+    <div class="curiosity">Curiosity</div>
+  </div>
+
   <div class="casestudies inactive">
     <div class="cases">
       
@@ -113,29 +132,44 @@ Wordpress, HTML, CSS(SASS) & JS</pre>
     <a href="/assets/Rutherford_Pizarro_Resume.pdf" download class="fullresume">Full Resume</a>
   </div>
 
-  <div class="myemail">&nbsp;RutherfordPizarro@Gmail.com&nbsp;</div>
-  <div class="mynumber">415.533.1375</div>
-  <div class="jobtitle">&nbsp;UI/UX Designer&nbsp;</div>
-  <div class="myname">&nbsp;Rutherford J. Pizarro&nbsp;</div>
-
-  <div class="logo_nav h">
-    <img src="assets/rp_logo.svg" alt="" class="logo">
-    <div class="nav">
-      <div class="cs_link">Case Studies</div>
-      <div class="r_link">Resume</div>
-    </div>
-  </div>
-
-  <div class="herowords active">
-    <div class="intuition">Intuition</div>
-    <div class="compassion">Compassion</div>
-    <div class="curiosity">Curiosity</div>
-  </div>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <script>
     $(document).ready(function () {
+
+      // Case Studies - Active
+
+            $('.cs_link').click(function () {
+        if ($('.logo_nav').hasClass("r")) {
+          $('.logo_nav').addClass('cs').removeClass("r");
+        }
+      });
+
+      $('.cs_link').click(function () {
+        if ($('.logo_nav').hasClass("h")) {
+          $('.logo_nav').addClass('cs').removeClass("h");
+        }
+      });
+
+      $('.cs_link').click(function () {
+        if ($('.herowords').hasClass("active")) {
+          $('.herowords').addClass('inactive').removeClass("active");
+        }
+      });
+
+      $('.cs_link').click(function () {
+        if ($('.resume').hasClass("active")) {
+          $('.resume').addClass('inactive').removeClass("active");
+        }
+      });
+
+      $('.cs_link').click(function () {
+        if ($('.casestudies').hasClass("inactive")) {
+          $('.casestudies').addClass('active').removeClass("inactive");
+        }
+      });
+
+      // Case Studies - Active
 
       // Home - Active
 
@@ -170,40 +204,6 @@ Wordpress, HTML, CSS(SASS) & JS</pre>
       });
 
       // Home - Active
-
-      // Case Studies - Active
-
-      $('.cs_link').click(function () {
-        if ($('.casestudies').hasClass("inactive")) {
-          $('.casestudies').addClass('active').removeClass("inactive");
-        }
-      });
-
-      $('.cs_link').click(function () {
-        if ($('.resume').hasClass("active")) {
-          $('.resume').addClass('inactive').removeClass("active");
-        }
-      });
-
-      $('.cs_link').click(function () {
-        if ($('.herowords').hasClass("active")) {
-          $('.herowords').addClass('inactive').removeClass("active");
-        }
-      });
-
-      $('.cs_link').click(function () {
-        if ($('.logo_nav').hasClass("h")) {
-          $('.logo_nav').addClass('cs').removeClass("h");
-        }
-      });
-
-      $('.cs_link').click(function () {
-        if ($('.logo_nav').hasClass("r")) {
-          $('.logo_nav').addClass('cs').removeClass("r");
-        }
-      });
-
-      // Case Studies - Active
 
       // Resume - Active
 

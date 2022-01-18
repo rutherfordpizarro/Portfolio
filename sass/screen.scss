@@ -285,7 +285,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 16px;
+    column-gap: 24px;
     margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 
     .cs_link {
@@ -341,7 +341,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 16px;
+    column-gap: 24px;
     margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 
     .cs_link {
@@ -398,7 +398,7 @@ body {
     width: auto;
     display: flex;
     flex-direction: row;
-    column-gap: 16px;
+    column-gap: 24px;
     margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 
     .cs_link {
@@ -652,12 +652,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0px;
-    opacity: 1;
     background: linear-gradient(180deg, $bg-color 46.15%, $bg-transparent 100%);
-    transition-property: opacity;
-    transition-duration: 1ms;
-    transition-delay: 900ms;
-    transition-timing-function: ease-in-out;
   }
   
   .resume_bottom_fade {
@@ -665,7 +660,7 @@ body {
     width: 100%;
     position: fixed;
     bottom: 0px;
-    opacity: 1;
+    opacity: 0;
     background: linear-gradient(360deg, $bg-color 82%, $bg-transparent 100%);
     transition-property: opacity;
     transition-duration: 1ms;
@@ -825,11 +820,7 @@ body {
     width: 100%;
     position: fixed;
     top: 0px;
-    opacity: 1;
     background: linear-gradient(180deg, $bg-color 46.15%, $bg-transparent 100%);
-    transition-property: opacity;
-    transition-duration: 1ms;
-    transition-timing-function: ease-in-out;
   }
   
   .resume_bottom_fade {
@@ -846,17 +837,15 @@ body {
 }
 
 .casestudies.inactive {
-  z-index: 2;
   height: 100%;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(100%);
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 
   .cases {
     height: auto;
@@ -868,29 +857,14 @@ body {
 
     .case_1 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(500%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
     }
 
     .case_2 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(300%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
     }
 
     .case_3 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(100%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);
 
       .case_number {
         letter-spacing: -.03em !important;
@@ -900,17 +874,15 @@ body {
 }
 
 .casestudies.active {
-  z-index: 2;
   height: 100%;
   width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  will-change: transform;
   transform: translateY(0%);
-  transition-duration: 700ms;
-  transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
 
   .cases {
     height: auto;
@@ -922,29 +894,14 @@ body {
 
     .case_1 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(0%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
 
     .case_2 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(0%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     }
 
     .case_3 {
       @extend %casecontent;
-      will-change: transform;
-      transform: translateY(0%);
-      transition-duration: 700ms;
-      transition-delay: 100ms;
-      transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
       .case_number {
         letter-spacing: -.03em !important;
