@@ -735,7 +735,7 @@ body ::-webkit-scrollbar {
   height: auto;
   width: auto;
   margin-top: 20vh;
-  margin-bottom: 20vh;
+  margin-bottom: 32vh;
   margin-left: 28vw;
   transform: translateX(0%);
   transition-property: transform;
