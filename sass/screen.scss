@@ -31,7 +31,7 @@ $text_color: $rp_grey;
 }
 
 %content {
-  height: 100%;
+  height: 35%;
   width: auto;
   position: relative;
 
@@ -97,9 +97,10 @@ $text_color: $rp_grey;
 html,
 body {
   overscroll-behavior: none;
+  overflow:scroll;
   background-color: $rp_black;
   width: 100%;
-  height: 142%;
+  height: 100%;
 
   ::-webkit-scrollbar {
     display: none;
@@ -107,7 +108,7 @@ body {
 }
 
 .logo_nav {
-  z-index: 3;
+  z-index: 5;
   height: auto;
   width: 100%;
   display: flex;
@@ -180,196 +181,216 @@ body {
   }
 }
 
-.herotext {
-  height: auto;
+.intro {
   width: 100%;
+  height: 100%;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  top: 30vh;
+  top: 0;
+  z-index: 2;
+  overscroll-behavior: none;
+  background-color: $rp_black;
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0%);
+  transition-property: opacity filter transform;
+  transition-duration: 480ms;
+  transition-timing-function: ease-in-out;
 
-  .solutions {
-    height: auto;
-    width: auto;
-    font-family: 'Chivo', sans-serif;
-    font-weight: 900;
-    letter-spacing: -0.01em;
-    font-size: 140px;
-    line-height: .7;
-    -webkit-text-stroke: 1px $rp_red;
-    color: rgba(0, 0, 0, 0);
+  ::-webkit-scrollbar {
+    display: none;
   }
-
-  .t_c {
+  
+  .herotext {
     height: auto;
-    width: auto;
+    width: 100%;
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    column-gap: 6%;
-    margin-top: 1.5%;
-
-    .that {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 30vh;
+  
+    .solutions {
       height: auto;
       width: auto;
-      font-family: 'Alegreya', serif;
-      font-weight: 400;
-      letter-spacing: -0.03em;
-      font-size: 46px;
+      font-family: 'Chivo', sans-serif;
+      font-weight: 900;
+      letter-spacing: -0.01em;
+      font-size: 140px;
       line-height: .7;
-      color: $rp_grey;
+      -webkit-text-stroke: 1px $rp_red;
+      color: rgba(0, 0, 0, 0);
     }
-
-    .captivate {
+  
+    .t_c {
       height: auto;
       width: auto;
-      font-family: 'Alegreya', serif;
-      font-style: italic;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      font-size: 46px;
-      line-height: .7;
-      color: $rp_grey;
+      display: flex;
+      flex-direction: row;
+      column-gap: 6%;
+      margin-top: 1.5%;
+  
+      .that {
+        height: auto;
+        width: auto;
+        font-family: 'Alegreya', serif;
+        font-weight: 400;
+        letter-spacing: -0.03em;
+        font-size: 46px;
+        line-height: .7;
+        color: $rp_grey;
+      }
+  
+      .captivate {
+        height: auto;
+        width: auto;
+        font-family: 'Alegreya', serif;
+        font-style: italic;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        font-size: 46px;
+        line-height: .7;
+        color: $rp_grey;
+      }
+    }
+  
+    .a_d {
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-direction: row;
+      margin-top: 1.5%;
+  
+      .ampersand {
+        height: auto;
+        width: auto;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: .7;
+        margin-right: 10%;
+        color: $rp_grey;
+      }
+  
+      .delight {
+        height: auto;
+        width: auto;
+        font-family: 'Alegreya', serif;
+        font-style: italic;
+        font-weight: 800;
+        letter-spacing: 0.02em;
+        font-size: 46px;
+        line-height: .7;
+        color: $rp_grey;
+      }
+  
+      .period {
+        height: auto;
+        width: auto;
+        font-family: 'Alegreya SC', serif;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: .7;
+        color: $rp_grey;
+      }
+    }
+  
+    .title_name {
+      height: auto;
+      width: auto;
+      text-align: center;
+      @extend %chivo_light;
+      color: $rp_blue;
+      margin-top: 2%;
+  
+      .name {
+        margin-top: 6%;
+      }
     }
   }
-
-  .a_d {
+  
+  .turn_wheels {
     height: auto;
-    width: auto;
+    width: 100%;
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    margin-top: 1.5%;
-
-    .ampersand {
-      height: auto;
+    justify-content: center;
+    top: 86vh;
+  
+    .wheel_one {
+      height: 236px;
       width: auto;
-      font-family: 'Alegreya SC', serif;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: .7;
-      margin-right: 10%;
-      color: $rp_grey;
+      animation: clockwise 30s infinite linear;
+  
+      @keyframes clockwise {
+        from {
+          transform: rotate(0deg);
+        }
+  
+        to {
+          transform: rotate(359deg);
+        }
+      }
     }
-
-    .delight {
-      height: auto;
+  
+    .wheel_two {
+      height: 175px;
       width: auto;
-      font-family: 'Alegreya', serif;
-      font-style: italic;
-      font-weight: 800;
-      letter-spacing: 0.02em;
-      font-size: 46px;
-      line-height: .7;
-      color: $rp_grey;
+      position: absolute;
+      align-self: center;
+      animation: counterclockwise 30s infinite linear;
+  
+      @keyframes counterclockwise {
+        from {
+          transform: rotate(359deg);
+        }
+  
+        to {
+          transform: rotate(0deg);
+        }
+      }
     }
-
-    .period {
+  
+    #arrow {
       height: auto;
-      width: auto;
-      font-family: 'Alegreya SC', serif;
-      font-weight: 400;
-      font-size: 46px;
-      line-height: .7;
-      color: $rp_grey;
-    }
-  }
-
-  .title_name {
-    height: auto;
-    width: auto;
-    text-align: center;
-    @extend %chivo_light;
-    color: $rp_blue;
-    margin-top: 2%;
-
-    .name {
-      margin-top: 6%;
-    }
-  }
-}
-
-.turn_wheels {
-  height: auto;
-  width: 100%;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  top: 86vh;
-
-  .wheel_one {
-    height: 236px;
-    width: auto;
-    animation: clockwise 30s infinite linear;
-
-    @keyframes clockwise {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(359deg);
-      }
-    }
-  }
-
-  .wheel_two {
-    height: 175px;
-    width: auto;
-    position: absolute;
-    align-self: center;
-    animation: counterclockwise 30s infinite linear;
-
-    @keyframes counterclockwise {
-      from {
-        transform: rotate(359deg);
-      }
-
-      to {
-        transform: rotate(0deg);
-      }
-    }
-  }
-
-  #arrow {
-    height: auto;
-    width: 16px;
-    padding-bottom: 5%;
-    position: absolute;
-    align-self: center;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
-    animation-name: bounce;
-    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-
-    @keyframes bounce {
-      0% {
-        transform: scale(1, 1) translateY(0);
-      }
-
-      12% {
-        transform: scale(1.06, .8) translateY(0);
-      }
-
-      32% {
-        transform: scale(.8, 1.02) translateY(-12px);
-      }
-
-      48% {
-        transform: scale(1, .6) translateY(0);
-      }
-
-      64% {
-        transform: scale(1, 1.06) translateY(-6px);
-      }
-
-      80% {
-        transform: scale(1, .8) translateY(0);
-      }
-
-      100% {
-        transform: scale(1, 1) translateY(0);
+      width: 16px;
+      padding-bottom: 5%;
+      position: absolute;
+      align-self: center;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+      animation-name: bounce;
+      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+  
+      @keyframes bounce {
+        0% {
+          transform: scale(1, 1) translateY(0);
+        }
+  
+        12% {
+          transform: scale(1.06, .8) translateY(0);
+        }
+  
+        32% {
+          transform: scale(.8, 1.02) translateY(-12px);
+        }
+  
+        48% {
+          transform: scale(1, .6) translateY(0);
+        }
+  
+        64% {
+          transform: scale(1, 1.06) translateY(-6px);
+        }
+  
+        80% {
+          transform: scale(1, .8) translateY(0);
+        }
+  
+        100% {
+          transform: scale(1, 1) translateY(0);
+        }
       }
     }
   }
@@ -377,15 +398,74 @@ body {
 
 .case_studies {
   width: 100%;
-  height: 35%;
-  position: absolute;
+  height: 100%;
+  z-index: 4;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   column-gap: 16px;
   justify-content: center;
-  top: 130vh;
+  align-items: center;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+
+  .scroll_home {
+    overflow:scroll;
+    overscroll-behavior: none;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    background-color: $rp_red;
+
+    .top{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      opacity: .5;
+      background-color: $rp_red;
+    }
+
+    .bottom{
+      height: 100%;
+      width: 100%;
+      position: relative;
+      opacity: .5;
+      background-color: $rp_blue;
+    }
+  }
 
   .app_shot {
     @extend %content;
   }
+}
+
+.in {
+  transform: translateY(0%);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+.out {
+  opacity: 0;
+  filter: blur(32px);
+  transform: translateY(0%);
+  transition-property: opacity filter transform;
+  transition-duration: 480ms;
+  transition-timing-function: ease-in-out;
+}
+
+.scroll_object {
+  height: 200%;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  z-index: 3;
+  background-color: $rp_red;
 }

@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 16, ../sass/screen.scss */
-.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip, .herotext .title_name {
+.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip, .intro .herotext .title_name {
   text-decoration: none;
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
@@ -88,7 +88,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 33, ../sass/screen.scss */
 .case_studies .app_shot {
-  height: 100%;
+  height: 35%;
   width: auto;
   position: relative;
 }
@@ -155,19 +155,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 html,
 body {
   overscroll-behavior: none;
+  overflow: scroll;
   background-color: #000000;
   width: 100%;
-  height: 142%;
+  height: 100%;
 }
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .logo_nav {
-  z-index: 3;
+  z-index: 5;
   height: auto;
   width: 100%;
   display: flex;
@@ -178,14 +179,14 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 122, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .logo_nav .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
   margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
   cursor: pointer;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .logo_nav .nav {
   height: auto;
   width: auto;
@@ -194,7 +195,7 @@ body ::-webkit-scrollbar {
   column-gap: 24px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .logo_nav .nav .c_link #tooltip {
   height: auto;
   width: auto;
@@ -207,11 +208,11 @@ body ::-webkit-scrollbar {
   color: #000000;
   background-color: #8A93A5;
 }
-/* line 154, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .logo_nav .nav .c_link:hover #tooltip {
   visibility: visible;
 }
-/* line 162, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 .logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
@@ -224,24 +225,44 @@ body ::-webkit-scrollbar {
   color: #000000;
   background-color: #8A93A5;
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .logo_nav .nav .r_link:hover #tooltip {
   display: block;
 }
 
-/* line 183, ../sass/screen.scss */
-.herotext {
+/* line 184, ../sass/screen.scss */
+.intro {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  overscroll-behavior: none;
+  background-color: #000000;
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateY(0%);
+  transition-property: opacity filter transform;
+  transition-duration: 480ms;
+  transition-timing-function: ease-in-out;
+}
+/* line 199, ../sass/screen.scss */
+.intro ::-webkit-scrollbar {
+  display: none;
+}
+/* line 203, ../sass/screen.scss */
+.intro .herotext {
   height: auto;
   width: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   top: 30vh;
 }
-/* line 193, ../sass/screen.scss */
-.herotext .solutions {
+/* line 213, ../sass/screen.scss */
+.intro .herotext .solutions {
   height: auto;
   width: auto;
   font-family: 'Chivo', sans-serif;
@@ -252,8 +273,8 @@ body ::-webkit-scrollbar {
   -webkit-text-stroke: 1px #FF3F0F;
   color: transparent;
 }
-/* line 205, ../sass/screen.scss */
-.herotext .t_c {
+/* line 225, ../sass/screen.scss */
+.intro .herotext .t_c {
   height: auto;
   width: auto;
   display: flex;
@@ -261,8 +282,8 @@ body ::-webkit-scrollbar {
   column-gap: 6%;
   margin-top: 1.5%;
 }
-/* line 213, ../sass/screen.scss */
-.herotext .t_c .that {
+/* line 233, ../sass/screen.scss */
+.intro .herotext .t_c .that {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -272,8 +293,8 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 224, ../sass/screen.scss */
-.herotext .t_c .captivate {
+/* line 244, ../sass/screen.scss */
+.intro .herotext .t_c .captivate {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -284,16 +305,16 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 237, ../sass/screen.scss */
-.herotext .a_d {
+/* line 257, ../sass/screen.scss */
+.intro .herotext .a_d {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: row;
   margin-top: 1.5%;
 }
-/* line 244, ../sass/screen.scss */
-.herotext .a_d .ampersand {
+/* line 264, ../sass/screen.scss */
+.intro .herotext .a_d .ampersand {
   height: auto;
   width: auto;
   font-family: 'Alegreya SC', serif;
@@ -303,8 +324,8 @@ body ::-webkit-scrollbar {
   margin-right: 10%;
   color: #8A93A5;
 }
-/* line 255, ../sass/screen.scss */
-.herotext .a_d .delight {
+/* line 275, ../sass/screen.scss */
+.intro .herotext .a_d .delight {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -315,8 +336,8 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 267, ../sass/screen.scss */
-.herotext .a_d .period {
+/* line 287, ../sass/screen.scss */
+.intro .herotext .a_d .period {
   height: auto;
   width: auto;
   font-family: 'Alegreya SC', serif;
@@ -325,30 +346,29 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 278, ../sass/screen.scss */
-.herotext .title_name {
+/* line 298, ../sass/screen.scss */
+.intro .herotext .title_name {
   height: auto;
   width: auto;
   text-align: center;
   color: #2F67FF;
   margin-top: 2%;
 }
-/* line 286, ../sass/screen.scss */
-.herotext .title_name .name {
+/* line 306, ../sass/screen.scss */
+.intro .herotext .title_name .name {
   margin-top: 6%;
 }
-
-/* line 292, ../sass/screen.scss */
-.turn_wheels {
+/* line 312, ../sass/screen.scss */
+.intro .turn_wheels {
   height: auto;
   width: 100%;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   top: 86vh;
 }
-/* line 300, ../sass/screen.scss */
-.turn_wheels .wheel_one {
+/* line 320, ../sass/screen.scss */
+.intro .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
   animation: clockwise 30s infinite linear;
@@ -361,8 +381,8 @@ body ::-webkit-scrollbar {
     transform: rotate(359deg);
   }
 }
-/* line 316, ../sass/screen.scss */
-.turn_wheels .wheel_two {
+/* line 336, ../sass/screen.scss */
+.intro .turn_wheels .wheel_two {
   height: 175px;
   width: auto;
   position: absolute;
@@ -377,8 +397,8 @@ body ::-webkit-scrollbar {
     transform: rotate(0deg);
   }
 }
-/* line 334, ../sass/screen.scss */
-.turn_wheels #arrow {
+/* line 354, ../sass/screen.scss */
+.intro .turn_wheels #arrow {
   height: auto;
   width: 16px;
   padding-bottom: 5%;
@@ -413,14 +433,76 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 378, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .case_studies {
   width: 100%;
-  height: 35%;
-  position: absolute;
+  height: 100%;
+  z-index: 4;
+  position: fixed;
+  top: 0;
   display: flex;
   flex-direction: row;
   column-gap: 16px;
   justify-content: center;
-  top: 130vh;
+  align-items: center;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+/* line 415, ../sass/screen.scss */
+.case_studies .scroll_home {
+  overflow: scroll;
+  overscroll-behavior: none;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  background-color: #FF3F0F;
+}
+/* line 426, ../sass/screen.scss */
+.case_studies .scroll_home .top {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: .5;
+  background-color: #FF3F0F;
+}
+/* line 434, ../sass/screen.scss */
+.case_studies .scroll_home .bottom {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  opacity: .5;
+  background-color: #2F67FF;
+}
+
+/* line 448, ../sass/screen.scss */
+.in {
+  transform: translateY(0%);
+  transition-property: transform;
+  transition-duration: 400ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 455, ../sass/screen.scss */
+.out {
+  opacity: 0;
+  filter: blur(32px);
+  transform: translateY(0%);
+  transition-property: opacity filter transform;
+  transition-duration: 480ms;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 464, ../sass/screen.scss */
+.scroll_object {
+  height: 200%;
+  width: 100%;
+  position: relative;
+  opacity: 0;
+  z-index: 3;
+  background-color: #FF3F0F;
 }
