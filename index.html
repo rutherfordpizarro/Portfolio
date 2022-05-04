@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="https://use.typekit.net/hzf0fcx.css">
 </head>
 
-<body>
+<body class="scroll">
+
+  <div class="scroll_object"></div>
 
   <div class="logo_nav">
     <img src="assets/rp_logo.svg" alt="" class="logo">
@@ -16,41 +18,43 @@
       <div id="clipboard" class="c_link" tabindex="1" data-clipboard-text="rutherfordpizarro@gmail.com">Contact
           <div id="tooltip">Copy Email to Clipboard</div>
       </div>
-      <a href="/assets/Rutherford_Pizarro_Resume.pdf" download class="r_link">Resume
-        <div id="tooltip">Download Resume</div>
+      <a href="/assets/Rutherford_Pizarro_Resume.pdf" class="r_link">Resume
+        <div id="tooltip">Open Resume</div>
       </a>
     </div>
   </div>
 
-  <div class="herotext">
-
-    <div class="solutions">Solutions</div>
-    <div class="t_c">
-      <div class="that">that </div>
-      <div class="captivate">captivate</div></div>
-    <div class="a_d">
-      <div class="ampersand">& </div>
-      <div class="delight">delight</div>
-      <div class="period">.</div>
+  <div class="intro">
+    <div class="herotext">
+      <div class="solutions">Solutions</div>
+      <div class="t_c">
+        <div class="that">that </div>
+        <div class="captivate">captivate</div></div>
+      <div class="a_d">
+        <div class="ampersand">& </div>
+        <div class="delight">delight</div>
+        <div class="period">.</div>
     </div>
-
-    <div class="title_name">
-      <div>UI/UX Designer</div>
-      <div class="name">Rutherford J. Pizarro</div>
+  
+      <div class="title_name">
+        <div>UI/UX Designer</div>
+        <div class="name">Rutherford J. Pizarro</div>
+      </div>
+  
     </div>
-
-  </div>
-
-  <div class="myname">Rutherford J. Pizarro UI/UX Designer</div>
-
-  <div class="turn_wheels">
-    <img src="assets/cs_circle.svg" alt="" class="wheel_one">
-    <img src="assets/cs_circle.svg" alt="" class="wheel_two">
-    <img src="assets/scroll_arrow.svg" alt="" id="arrow">
+    <div class="myname">Rutherford J. Pizarro UI/UX Designer</div>
+    <div class="turn_wheels">
+      <img src="assets/cs_circle.svg" alt="" class="wheel_one">
+      <img src="assets/cs_circle.svg" alt="" class="wheel_two">
+      <img src="assets/scroll_arrow.svg" alt="" id="arrow">
+    </div>
   </div>
 
   <div class="case_studies">
-
+    <div class="scroll_home">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
     <div class="app_shot">
       <img src="assets/aris.png" alt="" class="image">
       <div class="overlay">
@@ -65,7 +69,6 @@
         </div>
       </div>
     </div>
-
     <div class="app_shot">
       <img src="assets/astera.png" alt="" class="image">
       <div class="overlay">
@@ -73,14 +76,13 @@
           <div class="thick">Role</div>
           <div class="thin">UX <span class="amp">&</span> UI</div>
           <div class="thick">Platform</div>
-          <div class="thin">Smart TV</div>
+          <div class="thin">iOS</div>
           <div class="thick">Software</div>
           <div class="thin">Figma</div>
-          <div class="title">ARIS</div>
+          <div class="title">ASTERA</div>
         </div>
       </div>
     </div>
-
     <div class="app_shot">
       <img src="assets/clubnow.png" alt="" class="image">
       <div class="overlay">
@@ -88,13 +90,14 @@
           <div class="thick">Role</div>
           <div class="thin">UX <span class="amp">&</span> UI</div>
           <div class="thick">Platform</div>
-          <div class="thin">Smart TV</div>
+          <div class="thin">iOS</div>
           <div class="thick">Software</div>
           <div class="thin">Figma</div>
-          <div class="title">ARIS</div>
+          <div class="title">CLUB NOW</div>
         </div>
       </div>
     </div>
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -104,7 +107,8 @@
 
 $( document ).ready(function() {
   var clipboard = new ClipboardJS('#clipboard');
-
+  var x = 0;
+  
   clipboard.on('success', function(e) {
     $(e.trigger).text("Email Copied!");
     e.clearSelection();
@@ -112,6 +116,19 @@ $( document ).ready(function() {
       $(e.trigger).text("Contact");
     }, 1350);
   });
+
+  $(".scroll").scroll(function(){
+    $(".case_studies").addClass('in');
+    $(".intro").addClass('out');
+    $(".scroll").scrollTop( 1 );
+  });
+
+  $(".scroll_home").scroll(function(){
+    $(".case_studies").removeClass('in');
+    $(".intro").removeClass('out');
+    $(".scroll_home").scrollTop( 1 );
+  });
+
 });
 
 </script>
