@@ -6,10 +6,10 @@
 @import "compass/reset";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
 
-$rp_grey: #8A93A5;
+$rp_grey: #8F98AA;
 $rp_black: #000000;
-$rp_blue: #2F67FF;
-$rp_red: #FF3F0F;
+$rp_blue: #5E96FF;
+$rp_red: #FF6333;
 $rp_green: #0FFF19;
 
 $text_color: $rp_grey;
@@ -220,7 +220,7 @@ body {
       font-size: 140px;
       line-height: .7;
       -webkit-text-stroke: 1px $rp_red;
-      color: rgba(0, 0, 0, 0);
+      color: $rp_black;
     }
   
     .t_c {

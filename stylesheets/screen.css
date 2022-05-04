@@ -76,7 +76,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
   letter-spacing: 0.04em;
   line-height: .7;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 
 /* line 27, ../sass/screen.scss */
@@ -117,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 60, ../sass/screen.scss */
 .case_studies .app_shot .overlay .content .thick {
-  color: #8A93A5;
+  color: #8F98AA;
   font-family: 'Chivo';
   font-weight: 900;
   font-size: 12px;
@@ -127,7 +127,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 70, ../sass/screen.scss */
 .case_studies .app_shot .overlay .content .thin {
-  color: #8A93A5;
+  color: #8F98AA;
   font-family: 'Alegreya', serif;
   font-style: italic;
   font-weight: 400;
@@ -142,7 +142,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 85, ../sass/screen.scss */
 .case_studies .app_shot .overlay .content .title {
-  color: #8A93A5;
+  color: #8F98AA;
   font-family: 'Alegreya', serif;
   font-style: italic;
   font-weight: 900;
@@ -206,7 +206,7 @@ body ::-webkit-scrollbar {
   margin-top: .7%;
   text-align: center;
   color: #000000;
-  background-color: #8A93A5;
+  background-color: #8F98AA;
 }
 /* line 156, ../sass/screen.scss */
 .logo_nav .nav .c_link:hover #tooltip {
@@ -223,7 +223,7 @@ body ::-webkit-scrollbar {
   margin-top: .7%;
   text-align: center;
   color: #000000;
-  background-color: #8A93A5;
+  background-color: #8F98AA;
 }
 /* line 178, ../sass/screen.scss */
 .logo_nav .nav .r_link:hover #tooltip {
@@ -270,8 +270,8 @@ body ::-webkit-scrollbar {
   letter-spacing: -0.01em;
   font-size: 140px;
   line-height: .7;
-  -webkit-text-stroke: 1px #FF3F0F;
-  color: transparent;
+  -webkit-text-stroke: 1px #FF6333;
+  color: #000000;
 }
 /* line 226, ../sass/screen.scss */
 .intro .herotext .t_c {
@@ -291,7 +291,7 @@ body ::-webkit-scrollbar {
   letter-spacing: -0.03em;
   font-size: 46px;
   line-height: .7;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 /* line 245, ../sass/screen.scss */
 .intro .herotext .t_c .captivate {
@@ -303,7 +303,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.02em;
   font-size: 46px;
   line-height: .7;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 /* line 258, ../sass/screen.scss */
 .intro .herotext .a_d {
@@ -322,7 +322,7 @@ body ::-webkit-scrollbar {
   font-size: 46px;
   line-height: .7;
   margin-right: 10%;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 /* line 276, ../sass/screen.scss */
 .intro .herotext .a_d .delight {
@@ -334,7 +334,7 @@ body ::-webkit-scrollbar {
   letter-spacing: 0.02em;
   font-size: 46px;
   line-height: .7;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 /* line 288, ../sass/screen.scss */
 .intro .herotext .a_d .period {
@@ -344,14 +344,14 @@ body ::-webkit-scrollbar {
   font-weight: 400;
   font-size: 46px;
   line-height: .7;
-  color: #8A93A5;
+  color: #8F98AA;
 }
 /* line 299, ../sass/screen.scss */
 .intro .herotext .title_name {
   height: auto;
   width: auto;
   text-align: center;
-  color: #2F67FF;
+  color: #5E96FF;
   margin-top: 2%;
 }
 /* line 307, ../sass/screen.scss */
@@ -460,7 +460,7 @@ body ::-webkit-scrollbar {
   position: absolute;
   top: 0;
   opacity: 0;
-  background-color: #FF3F0F;
+  background-color: #FF6333;
 }
 /* line 427, ../sass/screen.scss */
 .case_studies .scroll_home .top {
@@ -468,7 +468,7 @@ body ::-webkit-scrollbar {
   width: 100%;
   position: relative;
   opacity: .5;
-  background-color: #FF3F0F;
+  background-color: #FF6333;
 }
 /* line 435, ../sass/screen.scss */
 .case_studies .scroll_home .bottom {
@@ -476,7 +476,7 @@ body ::-webkit-scrollbar {
   width: 100%;
   position: relative;
   opacity: .5;
-  background-color: #2F67FF;
+  background-color: #5E96FF;
 }
 
 /* line 449, ../sass/screen.scss */
@@ -504,7 +504,7 @@ body ::-webkit-scrollbar {
   position: relative;
   opacity: 0;
   z-index: 3;
-  background-color: #FF3F0F;
+  background-color: #FF6333;
 }
 
 /* line 474, ../sass/screen.scss */
