@@ -294,14 +294,14 @@ body ::-webkit-scrollbar {
 .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
-  -webkit-animation: clockwise 30s infinite linear;
+  animation: clockwise 30s infinite linear;
 }
-@-webkit-keyframes clockwise {
+@keyframes clockwise {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
 }
 /* line 264, ../sass/screen.scss */
@@ -310,14 +310,14 @@ body ::-webkit-scrollbar {
   width: auto;
   position: absolute;
   align-self: center;
-  -webkit-animation: counterclockwise 30s infinite linear;
+  animation: counterclockwise 30s infinite linear;
 }
-@-webkit-keyframes counterclockwise {
+@keyframes counterclockwise {
   from {
-    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
   }
   to {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 /* line 282, ../sass/screen.scss */
