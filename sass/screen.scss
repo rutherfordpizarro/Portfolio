@@ -183,7 +183,7 @@ body {
 .herotext {
   height: auto;
   width: 100%;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -193,7 +193,6 @@ body {
   .solutions {
     height: auto;
     width: auto;
-    position: relative;
     font-family: 'Chivo', sans-serif;
     font-weight: 900;
     letter-spacing: -0.01em;
@@ -206,7 +205,6 @@ body {
   .t_c {
     height: auto;
     width: auto;
-    position: relative;
     display: flex;
     flex-direction: row;
     column-gap: 6%;
@@ -215,7 +213,6 @@ body {
     .that {
       height: auto;
       width: auto;
-      position: relative;
       font-family: 'Alegreya', serif;
       font-weight: 400;
       letter-spacing: -0.03em;
@@ -227,7 +224,6 @@ body {
     .captivate {
       height: auto;
       width: auto;
-      position: relative;
       font-family: 'Alegreya', serif;
       font-style: italic;
       font-weight: 800;
@@ -241,7 +237,6 @@ body {
   .a_d {
     height: auto;
     width: auto;
-    position: relative;
     display: flex;
     flex-direction: row;
     margin-top: 1.5%;
@@ -249,7 +244,6 @@ body {
     .ampersand {
       height: auto;
       width: auto;
-      position: relative;
       font-family: 'Alegreya SC', serif;
       font-weight: 400;
       font-size: 46px;
@@ -261,7 +255,6 @@ body {
     .delight {
       height: auto;
       width: auto;
-      position: relative;
       font-family: 'Alegreya', serif;
       font-style: italic;
       font-weight: 800;
@@ -274,7 +267,6 @@ body {
     .period {
       height: auto;
       width: auto;
-      position: relative;
       font-family: 'Alegreya SC', serif;
       font-weight: 400;
       font-size: 46px;
@@ -300,10 +292,10 @@ body {
 .turn_wheels {
   height: auto;
   width: 100%;
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
-  top: 52vh;
+  top: 86vh;
 
   .wheel_one {
     height: 236px;
