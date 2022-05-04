@@ -10,6 +10,7 @@ $rp_grey: #8A93A5;
 $rp_black: #000000;
 $rp_blue: #2F67FF;
 $rp_red: #FF3F0F;
+$rp_green: #0FFF19;
 
 $text_color: $rp_grey;
 
@@ -468,4 +469,37 @@ body {
   opacity: 0;
   z-index: 3;
   background-color: $rp_red;
+}
+
+.pagination {
+  height: 57px;
+  width: 3px;
+  position: fixed;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+  right: 1%;
+  top: 45%;
+
+  .p_one {
+    height: 15px;
+    width: 100%;
+    opacity: 1;
+    background-color: $rp_green;
+  }
+
+  .p_two {
+    height: 15px;
+    width: 100%;
+    opacity: .5;
+    background-color: $rp_green;
+  }
+  
+  .p_three {
+    height: 15px;
+    width: 100%;
+    opacity: .5;
+    background-color: $rp_green;
+  }
 }
