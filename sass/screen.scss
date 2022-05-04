@@ -11,8 +11,6 @@ $rp_black: #000000;
 $rp_blue: #2F67FF;
 $rp_red: #FF3F0F;
 
-
-
 $text_color: $rp_grey;
 
 %chivo_light {
@@ -32,7 +30,69 @@ $text_color: $rp_grey;
   @extend %chivo_light;
 }
 
+%content {
+  height: 100%;
+  width: auto;
+  position: relative;
 
+  .image {
+    height: 100%;
+    width: auto;
+    position: relative;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
+
+    .content {
+      width: auto;
+      height: auto;
+      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+
+      .thick {
+        color: $rp_grey;
+        font-family: 'Chivo';
+        font-weight: 900;
+        font-size: 12px;
+        letter-spacing: 0.04em;
+        line-height: .7;
+        margin-bottom: 8px;
+      }
+
+      .thin {
+        color: $rp_grey;
+        font-family: 'Alegreya', serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+        line-height: .7;
+        margin-bottom: 16px;
+
+        .amp {
+          font-family: 'Alegreya SC', serif;
+        }
+      }
+
+      .title {
+        color: $rp_grey;
+        font-family: 'Alegreya', serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 18.5px;
+        letter-spacing: 0.04em;
+        line-height: .65;
+      }
+    }
+  }
+}
 
 html,
 body {
@@ -325,127 +385,15 @@ body {
 
 .case_studies {
   width: 100%;
-  height: 18%;
-  position: relative;
+  height: 35%;
+  position: absolute;
   display: flex;
   flex-direction: row;
   column-gap: 16px;
   justify-content: center;
-  top: 65vh;
+  top: 130vh;
 
-  .container_one {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .overlay {
-      width: auto;
-      height: 100%;
-      display: flex;
-      background: linear-gradient(262.52deg, rgba(0, 0, 0, 0) -0.54%, #000000 100%);
-      margin-top: -56.07%;
-
-      .content {
-        @extend %content;
-      }
-    }
-
-    @extend %app_shot;
-  }
-
-  .container_two {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .overlay {
-      width: auto;
-      height: 100%;
-      display: flex;
-      background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
-      margin-top: -217.1%;
-
-      .content {
-        @extend %content;
-      }
-    }
-
-    @extend %app_shot;
-  }
-
-  .container_three {
-    width: auto;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    .overlay {
-      width: auto;
-      height: 100%;
-      display: flex;
-      background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
-      margin-top: -214%;
-
-      .content {
-        @extend %content;
-      }
-    }
-
-    @extend %app_shot;
-  }
-}
-
-%content {
-  width: auto;
-  height: auto;
-  align-self: flex-end;
-  display: flex;
-  flex-direction: column;
-
-  .thick {
-    color: $rp_grey;
-    font-family: 'Chivo';
-    font-weight: 900;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    line-height: .7;
-    margin-bottom: 8px;
-  }
-
-  .thin {
-    color: $rp_grey;
-    font-family: 'Alegreya', serif;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.1em;
-    line-height: .7;
-    margin-bottom: 16px;
-
-    .amp {
-      font-family: 'Alegreya SC', serif;
-    }
-  }
-
-  .title {
-    color: $rp_grey;
-    font-family: 'Alegreya', serif;
-    font-style: italic;
-    font-weight: 900;
-    font-size: 18.5px;
-    letter-spacing: 0.04em;
-    line-height: .65;
-  }
-}
-
-%app_shot {
-  width: auto;
-  height: 100%;
-
-  .image {
-    width: auto;
-    height: 100%;
+  .app_shot {
+    @extend %content;
   }
 }
