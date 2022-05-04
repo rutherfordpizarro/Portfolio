@@ -16,11 +16,10 @@
     <img src="assets/rp_logo.svg" alt="" class="logo">
     <div class="nav">
       <div id="clipboard" class="c_link" tabindex="1" data-clipboard-text="rutherfordpizarro@gmail.com">Contact
-          <pre class="tooltip">Copy Email to Clipboard</pre>
-          <pre class="success">Email Copied!</pre>
+          <div id="tooltip">Copy Email to Clipboard</div>
       </div>
       <a href="/assets/Rutherford_Pizarro_Resume.pdf" download class="r_link">Resume
-        <pre class="tooltip">Download Resume</pre>
+        <div id="tooltip">Download Resume</div>
       </a>
     </div>
   </div>
@@ -99,11 +98,26 @@
 
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
 <script>
-new ClipboardJS('#clipboard')
+
+$( document ).ready(function() {
+  var clipboard = new ClipboardJS('#clipboard');
+
+  clipboard.on('success', function(e) {
+    $(e.trigger).text("Email Copied!");
+    e.clearSelection();
+    setTimeout(function() {
+      $(e.trigger).text("Contact");
+    }, 1350);
+  });
+});
+
+
+
 </script>
 
 </body>

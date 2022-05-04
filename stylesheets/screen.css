@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 18, ../sass/screen.scss */
-.logo_nav .nav .c_link, .logo_nav .nav .c_link .tooltip, .logo_nav .nav .c_link .success, .logo_nav .nav .r_link, .logo_nav .nav .r_link .tooltip, .herotext .title_name, .scc {
+.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip, .herotext .title_name {
   text-decoration: none;
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
@@ -80,7 +80,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 28, ../sass/screen.scss */
-.logo_nav .nav .c_link, .logo_nav .nav .c_link .tooltip, .logo_nav .nav .c_link .success, .logo_nav .nav .r_link, .logo_nav .nav .r_link .tooltip {
+.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
   cursor: pointer;
@@ -130,10 +130,10 @@ body ::-webkit-scrollbar {
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
 /* line 80, ../sass/screen.scss */
-.logo_nav .nav .c_link .tooltip {
+.logo_nav .nav .c_link #tooltip {
   height: auto;
   width: auto;
-  display: none;
+  visibility: hidden;
   padding: .6% .7%;
   position: absolute;
   right: 8.2%;
@@ -143,32 +143,11 @@ body ::-webkit-scrollbar {
   background-color: #8A93A5;
 }
 /* line 94, ../sass/screen.scss */
-.logo_nav .nav .c_link .success {
-  height: auto;
-  width: auto;
-  display: none;
-  padding: .6% .7%;
-  position: absolute;
-  right: 8.2%;
-  margin-top: .7%;
-  text-align: center;
-  color: #000000;
-  background-color: #8A93A5;
+.logo_nav .nav .c_link:hover #tooltip {
+  visibility: visible;
 }
-/* line 108, ../sass/screen.scss */
-.logo_nav .nav .c_link:hover .tooltip {
-  display: block;
-}
-/* line 112, ../sass/screen.scss */
-.logo_nav .nav .c_link:focus .tooltip {
-  display: none;
-}
-/* line 116, ../sass/screen.scss */
-.logo_nav .nav .c_link:focus .success {
-  display: block;
-}
-/* line 123, ../sass/screen.scss */
-.logo_nav .nav .r_link .tooltip {
+/* line 102, ../sass/screen.scss */
+.logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
   display: none;
@@ -180,12 +159,12 @@ body ::-webkit-scrollbar {
   color: #000000;
   background-color: #8A93A5;
 }
-/* line 137, ../sass/screen.scss */
-.logo_nav .nav .r_link:hover .tooltip {
+/* line 116, ../sass/screen.scss */
+.logo_nav .nav .r_link:hover #tooltip {
   display: block;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 123, ../sass/screen.scss */
 .herotext {
   height: auto;
   width: 100%;
@@ -196,7 +175,7 @@ body ::-webkit-scrollbar {
   align-items: center;
   top: 30vh;
 }
-/* line 154, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 .herotext .solutions {
   height: auto;
   width: auto;
@@ -209,7 +188,7 @@ body ::-webkit-scrollbar {
   -webkit-text-stroke: 1px #FF3F0F;
   color: transparent;
 }
-/* line 166, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .herotext .t_c {
   height: auto;
   width: auto;
@@ -219,7 +198,7 @@ body ::-webkit-scrollbar {
   column-gap: 6%;
   margin-top: 1.5%;
 }
-/* line 175, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 .herotext .t_c .that {
   height: auto;
   width: auto;
@@ -231,7 +210,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 187, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .herotext .t_c .captivate {
   height: auto;
   width: auto;
@@ -244,7 +223,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 201, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .herotext .a_d {
   height: auto;
   width: auto;
@@ -253,7 +232,7 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   margin-top: 1.5%;
 }
-/* line 209, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 .herotext .a_d .ampersand {
   height: auto;
   width: auto;
@@ -265,7 +244,7 @@ body ::-webkit-scrollbar {
   margin-right: 10%;
   color: #8A93A5;
 }
-/* line 221, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .herotext .a_d .delight {
   height: auto;
   width: auto;
@@ -278,7 +257,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 234, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .herotext .a_d .period {
   height: auto;
   width: auto;
@@ -289,7 +268,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #8A93A5;
 }
-/* line 246, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .herotext .title_name {
   height: auto;
   width: auto;
@@ -297,12 +276,12 @@ body ::-webkit-scrollbar {
   color: #2F67FF;
   margin-top: 2%;
 }
-/* line 254, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .herotext .title_name .name {
   margin-top: 6%;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .turn_wheels {
   height: auto;
   width: 100%;
@@ -311,11 +290,11 @@ body ::-webkit-scrollbar {
   justify-content: center;
   top: 52vh;
 }
-/* line 268, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
-  -webkit-animation: clockwise  30s infinite linear;
+  -webkit-animation: clockwise 30s infinite linear;
 }
 @-webkit-keyframes clockwise {
   from {
@@ -325,7 +304,7 @@ body ::-webkit-scrollbar {
     -webkit-transform: rotate(359deg);
   }
 }
-/* line 283, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .turn_wheels .wheel_two {
   height: 175px;
   width: auto;
@@ -341,7 +320,7 @@ body ::-webkit-scrollbar {
     -webkit-transform: rotate(0deg);
   }
 }
-/* line 300, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .turn_wheels #arrow {
   height: auto;
   width: 16px;
@@ -377,7 +356,7 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 324, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 .case_studies {
   width: 100%;
   height: 18%;
@@ -388,14 +367,14 @@ body ::-webkit-scrollbar {
   justify-content: center;
   top: 65vh;
 }
-/* line 334, ../sass/screen.scss */
+/* line 336, ../sass/screen.scss */
 .case_studies .container_one {
   width: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-/* line 340, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .case_studies .container_one .overlay {
   width: auto;
   height: 100%;
@@ -403,14 +382,14 @@ body ::-webkit-scrollbar {
   background: linear-gradient(262.52deg, transparent -0.54%, #000000 100%);
   margin-top: -56.07%;
 }
-/* line 355, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .case_studies .container_two {
   width: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-/* line 361, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .case_studies .container_two .overlay {
   width: auto;
   height: 100%;
@@ -418,14 +397,14 @@ body ::-webkit-scrollbar {
   background: linear-gradient(249.43deg, transparent 3.3%, #000000 72.87%);
   margin-top: -217.1%;
 }
-/* line 376, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .case_studies .container_three {
   width: auto;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
-/* line 382, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .case_studies .container_three .overlay {
   width: auto;
   height: 100%;
@@ -434,7 +413,7 @@ body ::-webkit-scrollbar {
   margin-top: -214%;
 }
 
-/* line 402, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .case_studies .container_one .overlay .content, .case_studies .container_two .overlay .content, .case_studies .container_three .overlay .content {
   width: auto;
   height: auto;
@@ -442,7 +421,7 @@ body ::-webkit-scrollbar {
   display: flex;
   flex-direction: column;
 }
-/* line 409, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .case_studies .container_one .overlay .content .thick, .case_studies .container_two .overlay .content .thick, .case_studies .container_three .overlay .content .thick {
   color: #8A93A5;
   font-family: 'Chivo';
@@ -452,7 +431,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   margin-bottom: 8px;
 }
-/* line 419, ../sass/screen.scss */
+/* line 417, ../sass/screen.scss */
 .case_studies .container_one .overlay .content .thin, .case_studies .container_two .overlay .content .thin, .case_studies .container_three .overlay .content .thin {
   color: #8A93A5;
   font-family: 'Alegreya', serif;
@@ -463,11 +442,11 @@ body ::-webkit-scrollbar {
   line-height: .7;
   margin-bottom: 16px;
 }
-/* line 429, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .case_studies .container_one .overlay .content .thin .amp, .case_studies .container_two .overlay .content .thin .amp, .case_studies .container_three .overlay .content .thin .amp {
   font-family: 'Alegreya SC', serif;
 }
-/* line 434, ../sass/screen.scss */
+/* line 432, ../sass/screen.scss */
 .case_studies .container_one .overlay .content .title, .case_studies .container_two .overlay .content .title, .case_studies .container_three .overlay .content .title {
   color: #8A93A5;
   font-family: 'Alegreya', serif;
@@ -478,12 +457,12 @@ body ::-webkit-scrollbar {
   line-height: .65;
 }
 
-/* line 444, ../sass/screen.scss */
+/* line 443, ../sass/screen.scss */
 .case_studies .container_one, .case_studies .container_two, .case_studies .container_three {
   width: auto;
   height: 100%;
 }
-/* line 448, ../sass/screen.scss */
+/* line 447, ../sass/screen.scss */
 .case_studies .container_one .image, .case_studies .container_two .image, .case_studies .container_three .image {
   width: auto;
   height: 100%;

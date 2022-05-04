@@ -3,50 +3,50 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
- @import "compass/reset";
- @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
- 
- $rp_grey: #8A93A5;
- $rp_black: #000000;
- $rp_blue: #2F67FF;
- $rp_red: #FF3F0F;
- 
+@import "compass/reset";
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
+
+$rp_grey: #8A93A5;
+$rp_black: #000000;
+$rp_blue: #2F67FF;
+$rp_red: #FF3F0F;
 
 
- $text_color: $rp_grey;
- 
- %chivo_light {
-   text-decoration: none;
-   font-family: 'Chivo', sans-serif;
-   font-weight: 300;
-   font-size: 14px;
-   letter-spacing: 0.04em;
-   line-height: .7;
-   color: $text_color;
- }
 
- %nav_link {
+$text_color: $rp_grey;
+
+%chivo_light {
+  text-decoration: none;
+  font-family: 'Chivo', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  line-height: .7;
+  color: $text_color;
+}
+
+%nav_link {
   height: auto;
   width: auto;
   cursor: pointer;
   @extend %chivo_light;
 }
- 
 
- 
- html,
- body {
+
+
+html,
+body {
   overscroll-behavior: none;
-   background-color: $rp_black;
-   width: 100%;
-   height: 142%;
- 
-   ::-webkit-scrollbar {
-     display: none;
-   }
- }
- 
- .logo_nav {
+  background-color: $rp_black;
+  width: 100%;
+  height: 142%;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.logo_nav {
   z-index: 3;
   height: auto;
   width: 100%;
@@ -75,73 +75,52 @@
     margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 
     .c_link {
-     @extend %nav_link;
-
-     .tooltip {
-      height: auto;
-      width: auto;
-      display: none;
-      padding: .6% .7%;
-      position: absolute;
-      right: 8.2%;
-      margin-top: .7%;
       @extend %nav_link;
-      text-align: center;
-      color: $rp_black;
-      background-color: $rp_grey;
+
+      #tooltip {
+        height: auto;
+        width: auto;
+        visibility: hidden;
+        padding: .6% .7%;
+        position: absolute;
+        right: 8.2%;
+        margin-top: .7%;
+        @extend %nav_link;
+        text-align: center;
+        color: $rp_black;
+        background-color: $rp_grey;
+      }
+
+      &:hover #tooltip {
+        visibility: visible;
+      }
     }
 
-    .success {
-      height: auto;
-      width: auto;
-      display: none;
-      padding: .6% .7%;
-      position: absolute;
-      right: 8.2%;
-      margin-top: .7%;
-      @extend %nav_link;
-      text-align: center;
-      color: $rp_black;
-      background-color: $rp_grey;
-    }
-
-    &:hover .tooltip {
-     display: block;
-   }
-
-    &:focus .tooltip {
-    display: none;
-  }
-
-    &:focus .success{
-    display:block;
-    }
-  }
     .r_link {
-     @extend %nav_link;
+      @extend %nav_link;
 
-     .tooltip {
-       height: auto;
-       width: auto;
-       display: none;
-       padding: .6% .7%;
-       position: absolute;
-       right: 2.6%;
-       margin-top: .7%;
-       @extend %nav_link;
-       text-align: center;
-       color: $rp_black;
-       background-color: $rp_grey;
-     }
+      #tooltip {
+        height: auto;
+        width: auto;
+        display: none;
+        padding: .6% .7%;
+        position: absolute;
+        right: 2.6%;
+        margin-top: .7%;
+        @extend %nav_link;
+        text-align: center;
+        color: $rp_black;
+        background-color: $rp_grey;
+      }
 
-     &:hover .tooltip {
-      display: block;
-    }
+      &:hover #tooltip {
+        display: block;
+      }
     }
   }
 }
 
- .herotext {
+.herotext {
   height: auto;
   width: 100%;
   position: relative;
@@ -163,85 +142,86 @@
     -webkit-text-stroke: 1px $rp_red;
     color: rgba(0, 0, 0, 0);
   }
-.t_c {
-  height: auto;
-  width: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  column-gap: 6%;
-  margin-top: 1.5%;
 
-  .that {
+  .t_c {
     height: auto;
     width: auto;
     position: relative;
-    font-family: 'Alegreya', serif;
-    font-weight: 400;
-    letter-spacing: -0.03em;
-    font-size: 46px;
-    line-height: .7;
-    color: $rp_grey;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6%;
+    margin-top: 1.5%;
+
+    .that {
+      height: auto;
+      width: auto;
+      position: relative;
+      font-family: 'Alegreya', serif;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      font-size: 46px;
+      line-height: .7;
+      color: $rp_grey;
+    }
+
+    .captivate {
+      height: auto;
+      width: auto;
+      position: relative;
+      font-family: 'Alegreya', serif;
+      font-style: italic;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      font-size: 46px;
+      line-height: .7;
+      color: $rp_grey;
+    }
   }
 
-  .captivate {
+  .a_d {
     height: auto;
     width: auto;
     position: relative;
-    font-family: 'Alegreya', serif;
-    font-style: italic;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    font-size: 46px;
-    line-height: .7;
-    color: $rp_grey;
-  }
-}
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5%;
 
-.a_d {
-  height: auto;
-  width: auto;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.5%;
+    .ampersand {
+      height: auto;
+      width: auto;
+      position: relative;
+      font-family: 'Alegreya SC', serif;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: .7;
+      margin-right: 10%;
+      color: $rp_grey;
+    }
 
-  .ampersand {
-    height: auto;
-    width: auto;
-    position: relative;
-    font-family: 'Alegreya SC', serif;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: .7;
-    margin-right: 10%;
-    color: $rp_grey;
-  }
+    .delight {
+      height: auto;
+      width: auto;
+      position: relative;
+      font-family: 'Alegreya', serif;
+      font-style: italic;
+      font-weight: 800;
+      letter-spacing: 0.02em;
+      font-size: 46px;
+      line-height: .7;
+      color: $rp_grey;
+    }
 
-  .delight {
-    height: auto;
-    width: auto;
-    position: relative;
-    font-family: 'Alegreya', serif;
-    font-style: italic;
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    font-size: 46px;
-    line-height: .7;
-    color: $rp_grey;
+    .period {
+      height: auto;
+      width: auto;
+      position: relative;
+      font-family: 'Alegreya SC', serif;
+      font-weight: 400;
+      font-size: 46px;
+      line-height: .7;
+      color: $rp_grey;
+    }
   }
-
-  .period {
-    height: auto;
-    width: auto;
-    position: relative;
-    font-family: 'Alegreya SC', serif;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: .7;
-    color: $rp_grey;
-  }
-}
 
   .title_name {
     height: auto;
@@ -268,16 +248,17 @@
   .wheel_one {
     height: 236px;
     width: auto;
-    -webkit-animation: clockwise  30s infinite linear;
+    -webkit-animation: clockwise 30s infinite linear;
 
-    @-webkit-keyframes clockwise  {
+    @-webkit-keyframes clockwise {
       from {
-          -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
       }
+
       to {
-          -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
       }
-  }
+    }
   }
 
   .wheel_two {
@@ -287,14 +268,15 @@
     align-self: center;
     -webkit-animation: counterclockwise 30s infinite linear;
 
-    @-webkit-keyframes counterclockwise  {
+    @-webkit-keyframes counterclockwise {
       from {
-          -webkit-transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
       }
+
       to {
-          -webkit-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
       }
-  }
+    }
   }
 
   #arrow {
@@ -310,14 +292,34 @@
     animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
 
     @keyframes bounce {
-      0%   { transform: scale(1,1)      translateY(0); }
-      12%  { transform: scale(1.06,.8)   translateY(0); }
-      32%  { transform: scale(.8,1.02)   translateY(-12px); }
-      48%  { transform: scale(1,.6)   translateY(0); }
-      64%  { transform: scale(1,1.06)      translateY(-6px); }
-      80%  { transform: scale(1,.8)      translateY(0); }
-      100% { transform: scale(1,1)      translateY(0); }
-  }
+      0% {
+        transform: scale(1, 1) translateY(0);
+      }
+
+      12% {
+        transform: scale(1.06, .8) translateY(0);
+      }
+
+      32% {
+        transform: scale(.8, 1.02) translateY(-12px);
+      }
+
+      48% {
+        transform: scale(1, .6) translateY(0);
+      }
+
+      64% {
+        transform: scale(1, 1.06) translateY(-6px);
+      }
+
+      80% {
+        transform: scale(1, .8) translateY(0);
+      }
+
+      100% {
+        transform: scale(1, 1) translateY(0);
+      }
+    }
   }
 }
 
@@ -344,12 +346,12 @@
       background: linear-gradient(262.52deg, rgba(0, 0, 0, 0) -0.54%, #000000 100%);
       margin-top: -56.07%;
 
-      .content{
+      .content {
         @extend %content;
       }
     }
 
-    @extend %app_shot;  
+    @extend %app_shot;
   }
 
   .container_two {
@@ -365,7 +367,7 @@
       background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
       margin-top: -217.1%;
 
-      .content{
+      .content {
         @extend %content;
       }
     }
@@ -386,17 +388,13 @@
       background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
       margin-top: -214%;
 
-      .content{
+      .content {
         @extend %content;
       }
     }
-    
+
     @extend %app_shot;
   }
-}
-
-.scc {
-  @extend %chivo_light;
 }
 
 %content {
@@ -406,7 +404,7 @@
   display: flex;
   flex-direction: column;
 
-  .thick{
+  .thick {
     color: $rp_grey;
     font-family: 'Chivo';
     font-weight: 900;
@@ -419,7 +417,7 @@
   .thin {
     color: $rp_grey;
     font-family: 'Alegreya', serif;
-    font-style: italic;   
+    font-style: italic;
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 0.1em;
@@ -434,13 +432,14 @@
   .title {
     color: $rp_grey;
     font-family: 'Alegreya', serif;
-    font-style: italic;   
+    font-style: italic;
     font-weight: 900;
     font-size: 18.5px;
     letter-spacing: 0.04em;
     line-height: .65;
   }
 }
+
 %app_shot {
   width: auto;
   height: 100%;
@@ -449,4 +448,4 @@
     width: auto;
     height: 100%;
   }
-} 
+}
