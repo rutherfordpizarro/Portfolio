@@ -6,10 +6,10 @@
 @import "compass/reset";
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
 
-$rp_grey: #8F98AA;
-$rp_black: #000000;
-$rp_blue: #5E96FF;
-$rp_red: #FF6333;
+$rp_grey: #C4CDDF;
+$rp_black: #212843;
+$rp_blue: #69AAFF;
+$rp_red: #FF644F;
 $rp_green: #0FFF19;
 
 $text_color: $rp_grey;
@@ -31,65 +31,98 @@ $text_color: $rp_grey;
   @extend %chivo_light;
 }
 
-%content {
-  height: 35%;
-  width: auto;
-  position: relative;
+%app_shot {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
 
   .image {
-    height: 100%;
-    width: auto;
+    height: 171.5px;
+    width: fit-content;
     position: relative;
   }
 
-  .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
+  .info {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
     top: 0;
     display: flex;
-    background: linear-gradient(249.43deg, rgba(0, 0, 0, 0) 3.3%, #000000 72.87%);
+    flex-direction: column;
 
-    .content {
+    .app_name {
+      width: fit-content;
+      height: fit-content;
+      font-family: 'Alegreya';
+      font-style: italic;
+      font-weight: 900;
+      font-size: 28px;
+      line-height: 38px;
+      letter-spacing: 0.04em;
+      font-variant: small-caps;
+      color: $rp_grey;
+      margin-bottom: 24px;
+    }
+
+    .app_blurb {
+      width: fit-content;
+      height: fit-content;
+      font-family: 'Chivo';
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 160%;
+      letter-spacing: 0.05em;
+      color: $rp_grey;
+      margin-bottom: 40px;
+    }
+
+    .app_details {
       width: auto;
       height: auto;
-      align-self: flex-end;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      column-gap: 20px;
 
-      .thick {
-        color: $rp_grey;
-        font-family: 'Chivo';
-        font-weight: 900;
-        font-size: 12px;
-        letter-spacing: 0.04em;
-        line-height: .7;
-        margin-bottom: 8px;
-      }
+      .sections {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
 
-      .thin {
-        color: $rp_grey;
-        font-family: 'Alegreya', serif;
-        font-style: italic;
-        font-weight: 400;
-        font-size: 12px;
-        letter-spacing: 0.1em;
-        line-height: .7;
-        margin-bottom: 16px;
+        .container {
+          width: auto;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          row-gap: 6px;
 
-        .amp {
-          font-family: 'Alegreya SC', serif;
+          .top {
+            width: fit-content;
+            height: fit-content;
+            font-family: 'Chivo';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 12px;
+            line-height: .8;
+            letter-spacing: 0.08em;
+            color: $rp_grey;
+          }
+
+          .bottom {
+            width: fit-content;
+            height: fit-content;
+            font-family: 'Alegreya';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: .8;
+            letter-spacing: 0.1em;
+            color: $rp_grey;
+          }
         }
-      }
-
-      .title {
-        color: $rp_grey;
-        font-family: 'Alegreya', serif;
-        font-style: italic;
-        font-weight: 900;
-        font-size: 18.5px;
-        letter-spacing: 0.04em;
-        line-height: .65;
       }
     }
   }
@@ -98,7 +131,7 @@ $text_color: $rp_grey;
 html,
 body {
   overscroll-behavior: none;
-  overflow:scroll;
+  overflow: scroll;
   background-color: $rp_black;
   width: 100%;
   height: 100%;
@@ -200,7 +233,7 @@ body {
   ::-webkit-scrollbar {
     display: none;
   }
-  
+
   .herotext {
     height: auto;
     width: 100%;
@@ -210,7 +243,7 @@ body {
     flex-direction: column;
     align-items: center;
     top: 30vh;
-  
+
     .solutions {
       height: auto;
       width: auto;
@@ -222,7 +255,7 @@ body {
       -webkit-text-stroke: 1px $rp_red;
       color: $rp_black;
     }
-  
+
     .t_c {
       height: auto;
       width: auto;
@@ -230,7 +263,7 @@ body {
       flex-direction: row;
       column-gap: 6%;
       margin-top: 1.5%;
-  
+
       .that {
         height: auto;
         width: auto;
@@ -241,7 +274,7 @@ body {
         line-height: .7;
         color: $rp_grey;
       }
-  
+
       .captivate {
         height: auto;
         width: auto;
@@ -254,14 +287,14 @@ body {
         color: $rp_grey;
       }
     }
-  
+
     .a_d {
       height: auto;
       width: auto;
       display: flex;
       flex-direction: row;
       margin-top: 1.5%;
-  
+
       .ampersand {
         height: auto;
         width: auto;
@@ -272,7 +305,7 @@ body {
         margin-right: 10%;
         color: $rp_grey;
       }
-  
+
       .delight {
         height: auto;
         width: auto;
@@ -284,7 +317,7 @@ body {
         line-height: .7;
         color: $rp_grey;
       }
-  
+
       .period {
         height: auto;
         width: auto;
@@ -295,7 +328,7 @@ body {
         color: $rp_grey;
       }
     }
-  
+
     .title_name {
       height: auto;
       width: auto;
@@ -303,13 +336,13 @@ body {
       @extend %chivo_light;
       color: $rp_blue;
       margin-top: 2%;
-  
+
       .name {
         margin-top: 6%;
       }
     }
   }
-  
+
   .turn_wheels {
     height: auto;
     width: 100%;
@@ -317,41 +350,41 @@ body {
     display: flex;
     justify-content: center;
     top: 86vh;
-  
+
     .wheel_one {
       height: 236px;
       width: auto;
       animation: clockwise 30s infinite linear;
-  
+
       @keyframes clockwise {
         from {
           transform: rotate(0deg);
         }
-  
+
         to {
           transform: rotate(359deg);
         }
       }
     }
-  
+
     .wheel_two {
       height: 175px;
       width: auto;
       position: absolute;
       align-self: center;
       animation: counterclockwise 30s infinite linear;
-  
+
       @keyframes counterclockwise {
         from {
           transform: rotate(359deg);
         }
-  
+
         to {
           transform: rotate(0deg);
         }
       }
     }
-  
+
     #arrow {
       height: auto;
       width: 16px;
@@ -363,32 +396,32 @@ body {
       transform-origin: bottom;
       animation-name: bounce;
       animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-  
+
       @keyframes bounce {
         0% {
           transform: scale(1, 1) translateY(0);
         }
-  
+
         12% {
           transform: scale(1.06, .8) translateY(0);
         }
-  
+
         32% {
           transform: scale(.8, 1.02) translateY(-12px);
         }
-  
+
         48% {
           transform: scale(1, .6) translateY(0);
         }
-  
+
         64% {
           transform: scale(1, 1.06) translateY(-6px);
         }
-  
+
         80% {
           transform: scale(1, .8) translateY(0);
         }
-  
+
         100% {
           transform: scale(1, 1) translateY(0);
         }
@@ -414,35 +447,37 @@ body {
   transition-timing-function: ease-in-out;
 
   .scroll_home {
-    overflow:scroll;
+    overflow: scroll;
     overscroll-behavior: none;
     height: 100%;
     width: 100%;
-    z-index: 4;
+    z-index: 2;
     position: absolute;
     top: 0;
-    opacity: 0;
-    background-color: $rp_red;
 
-    .top{
+    .top {
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: row;
+      column-gap: 20px;
+      justify-content: center;
+      align-items: center;
+
+      .app_shot {
+        @extend %app_shot;
+      }
+    }
+
+    .bottom {
       height: 100%;
       width: 100%;
       position: relative;
-      opacity: .5;
-      background-color: $rp_red;
     }
-
-    .bottom{
-      height: 100%;
-      width: 100%;
-      position: relative;
-      opacity: .5;
-      background-color: $rp_blue;
-    }
-  }
-
-  .app_shot {
-    @extend %content;
   }
 }
 
@@ -495,7 +530,7 @@ body {
     opacity: .5;
     background-color: $rp_green;
   }
-  
+
   .p_three {
     height: 15px;
     width: 100%;

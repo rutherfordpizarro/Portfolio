@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/hzf0fcx.css">
 </head>
 
-<body class="scroll">
+<body class="scroll_cs">
 
   <div class="pagination">
     <div class="p_one"></div>
@@ -48,7 +48,6 @@
       </div>
   
     </div>
-    <div class="myname">Rutherford J. Pizarro UI/UX Designer</div>
     <div class="turn_wheels">
       <img src="assets/cs_circle.svg" alt="" class="wheel_one">
       <img src="assets/sd_circle.svg" alt="" class="wheel_two">
@@ -58,53 +57,113 @@
 
   <div class="case_studies">
     <div class="scroll_home">
-      <div class="top"></div>
-      <div class="bottom"></div>
-    </div>
-    <div class="app_shot">
-      <img src="assets/aris.png" alt="" class="image">
-      <div class="overlay">
-        <div class="content">
-          <div class="thick">Role</div>
-          <div class="thin">UX <span class="amp">&</span> UI</div>
-          <div class="thick">Platform</div>
-          <div class="thin">Smart TV</div>
-          <div class="thick">Software</div>
-          <div class="thin">Figma</div>
-          <div class="title">ARIS</div>
+      <div class="top">
+        <div class="app_shot">
+          <img src="assets/aris.png" alt="" class="image">
+          <div class="info">
+              <div class="app_name">Aris</div>
+              <pre class="app_blurb">Unifies video streaming services
+under one platform/interface. The
+end result is to allow users to be at
+ease using an interface that has been
+tailored to their needs—one that feels
+familiar while remaining affordable.</pre>
+                <div class="app_details">
+                  <div class="sections">
+                    <div class="container">
+                      <div class="top">Platform</div>
+                      <div class="bottom">Smart TV</div>
+                    </div>
+                    <div class="container">
+                      <div class="top">Role</div>
+                      <div class="bottom">UX & UI</div>
+                  </div>
+                </div>
+                  <div class="sections">
+                    <div class="container">
+                      <div class="top">Software</div>
+                      <div class="bottom">Figma</div>
+                    </div>
+                    <div class="container">
+                      <div class="top">Type</div>
+                      <div class="bottom">School Project</div>
+                    </div>
+                  </div>
+                </div>
+          </div>
         </div>
-      </div>
+        <div class="app_shot">
+          <img src="assets/astera.png" alt="" class="image">
+          <div class="info">
+              <div class="app_name">Astera</div>
+              <pre class="app_blurb">Helps users understand that
+their efforts against climate
+change can be self-rewarding
+while connecting them with non-
+profit, charitable organizations
+that are worth supporting.</pre>
+              <div class="app_details">
+  <div class="sections">
+    <div class="container">
+      <div class="top">Platform</div>
+      <div class="bottom">iOS</div>
     </div>
-    <div class="app_shot">
-      <img src="assets/astera.png" alt="" class="image">
-      <div class="overlay">
-        <div class="content">
-          <div class="thick">Role</div>
-          <div class="thin">UX <span class="amp">&</span> UI</div>
-          <div class="thick">Platform</div>
-          <div class="thin">iOS</div>
-          <div class="thick">Software</div>
-          <div class="thin">Figma</div>
-          <div class="title">ASTERA</div>
-        </div>
-      </div>
+    <div class="container">
+      <div class="top">Role</div>
+      <div class="bottom">UX & UI</div>
+  </div>
+</div>
+  <div class="sections">
+    <div class="container">
+      <div class="top">Software</div>
+      <div class="bottom">Figma</div>
     </div>
-    <div class="app_shot">
-      <img src="assets/clubnow.png" alt="" class="image">
-      <div class="overlay">
-        <div class="content">
-          <div class="thick">Role</div>
-          <div class="thin">UX <span class="amp">&</span> UI</div>
-          <div class="thick">Platform</div>
-          <div class="thin">iOS</div>
-          <div class="thick">Software</div>
-          <div class="thin">Figma</div>
-          <div class="title">CLUB NOW</div>
-        </div>
-      </div>
+    <div class="container">
+      <div class="top">Type</div>
+      <div class="bottom">School Project</div>
     </div>
   </div>
-
+              </div>
+          </div>
+        </div>
+        <div class="app_shot">
+          <img src="assets/clubnow.png" alt="" class="image">
+          <div class="info">
+              <div class="app_name">Club Now</div>
+              <pre class="app_blurb">Helps local soccer enthusiasts 
+find live pick-up soccer games near 
+them using an established ecosystem
+that allows fairness to players of all 
+skill levels (but lets them remain
+independent of event planners).</pre>
+              <div class="app_details">
+  <div class="sections">
+    <div class="container">
+      <div class="top">Platform</div>
+      <div class="bottom">iOS</div>
+    </div>
+    <div class="container">
+      <div class="top">Role</div>
+      <div class="bottom">UX & UI</div>
+  </div>
+</div>
+  <div class="sections">
+    <div class="container">
+      <div class="top">Software</div>
+      <div class="bottom">Figma</div>
+    </div>
+    <div class="container">
+      <div class="top">Type</div>
+      <div class="bottom">School Project</div>
+    </div>
+  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom"></div>
+    </div>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
@@ -123,10 +182,10 @@ $( document ).ready(function() {
     }, 1350);
   });
 
-  $(".scroll").scroll(function(){
+  $(".scroll_cs").scroll(function(){
     $(".case_studies").addClass('in');
     $(".intro").addClass('out');
-    $(".scroll").scrollTop( 1 );
+    $(".scroll_cs").scrollTop( 1 );
     $(".scroll_home").scrollTop( 1 );
   });
 
@@ -134,7 +193,7 @@ $( document ).ready(function() {
     $(".case_studies").removeClass('in');
     $(".intro").removeClass('out');
     $(".scroll_home").scrollTop( 1 );
-    $(".scroll").scrollTop( 1 );
+    $(".scroll_cs").scrollTop( 1 );
   });
 
 });
