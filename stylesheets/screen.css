@@ -88,19 +88,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 34, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot {
+  position: relative;
   height: fit-content;
   width: fit-content;
   display: flex;
   flex-direction: row;
   column-gap: 12px;
 }
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .image {
   height: 171.5px;
   width: fit-content;
   position: relative;
 }
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info {
   width: fit-content;
   height: fit-content;
@@ -109,7 +110,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: flex;
   flex-direction: column;
 }
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_name {
   width: fit-content;
   height: fit-content;
@@ -123,7 +124,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #C4CDDF;
   margin-bottom: 24px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_blurb {
   width: fit-content;
   height: fit-content;
@@ -135,7 +136,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #C4CDDF;
   margin-bottom: 40px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_details {
   width: auto;
   height: auto;
@@ -143,7 +144,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: row;
   column-gap: 20px;
 }
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_details .sections {
   width: auto;
   height: auto;
@@ -151,7 +152,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: column;
   row-gap: 12px;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_details .sections .container {
   width: auto;
   height: auto;
@@ -159,7 +160,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: column;
   row-gap: 6px;
 }
-/* line 102, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_details .sections .container .top {
   width: fit-content;
   height: fit-content;
@@ -171,7 +172,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.08em;
   color: #C4CDDF;
 }
-/* line 114, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 .case_studies .scroll_home .top .app_shot .info .app_details .sections .container .bottom {
   width: fit-content;
   height: fit-content;
@@ -183,8 +184,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.1em;
   color: #C4CDDF;
 }
-
 /* line 131, ../sass/screen.scss */
+.case_studies .scroll_home .top .app_shot .cs_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-120%);
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  column-gap: 6px;
+  color: #C4CDDF;
+}
+/* line 143, ../sass/screen.scss */
+.case_studies .scroll_home .top .app_shot .cs_title .case {
+  height: fit-content;
+  width: fit-content;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: .8;
+  letter-spacing: -0.01em;
+}
+/* line 152, ../sass/screen.scss */
+.case_studies .scroll_home .top .app_shot .cs_title .studies {
+  height: fit-content;
+  width: fit-content;
+  font-family: 'Alegreya';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: .8;
+  letter-spacing: 0.03em;
+}
+
+/* line 165, ../sass/screen.scss */
 html,
 body {
   overscroll-behavior: none;
@@ -193,13 +228,13 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 139, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 144, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .logo_nav {
   z-index: 5;
   height: auto;
@@ -212,14 +247,14 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 157, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .logo_nav .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
   margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
   cursor: pointer;
 }
-/* line 164, ../sass/screen.scss */
+/* line 198, ../sass/screen.scss */
 .logo_nav .nav {
   height: auto;
   width: auto;
@@ -228,7 +263,7 @@ body ::-webkit-scrollbar {
   column-gap: 24px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 175, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 .logo_nav .nav .c_link #tooltip {
   height: auto;
   width: auto;
@@ -241,11 +276,11 @@ body ::-webkit-scrollbar {
   color: #212843;
   background-color: #C4CDDF;
 }
-/* line 189, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .logo_nav .nav .c_link:hover #tooltip {
   visibility: visible;
 }
-/* line 197, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
@@ -258,12 +293,12 @@ body ::-webkit-scrollbar {
   color: #212843;
   background-color: #C4CDDF;
 }
-/* line 211, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 .logo_nav .nav .r_link:hover #tooltip {
   display: block;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .intro {
   width: 100%;
   height: 100%;
@@ -279,11 +314,11 @@ body ::-webkit-scrollbar {
   transition-duration: 480ms;
   transition-timing-function: ease-in-out;
 }
-/* line 233, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 .intro ::-webkit-scrollbar {
   display: none;
 }
-/* line 237, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .intro .herotext {
   height: auto;
   width: 100%;
@@ -294,7 +329,7 @@ body ::-webkit-scrollbar {
   align-items: center;
   top: 30vh;
 }
-/* line 247, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .intro .herotext .solutions {
   height: auto;
   width: auto;
@@ -306,7 +341,7 @@ body ::-webkit-scrollbar {
   -webkit-text-stroke: 1px #FF644F;
   color: #212843;
 }
-/* line 259, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .intro .herotext .t_c {
   height: auto;
   width: auto;
@@ -315,7 +350,7 @@ body ::-webkit-scrollbar {
   column-gap: 6%;
   margin-top: 1.5%;
 }
-/* line 267, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .intro .herotext .t_c .that {
   height: auto;
   width: auto;
@@ -326,7 +361,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 278, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .intro .herotext .t_c .captivate {
   height: auto;
   width: auto;
@@ -338,7 +373,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 291, ../sass/screen.scss */
+/* line 325, ../sass/screen.scss */
 .intro .herotext .a_d {
   height: auto;
   width: auto;
@@ -346,7 +381,7 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   margin-top: 1.5%;
 }
-/* line 298, ../sass/screen.scss */
+/* line 332, ../sass/screen.scss */
 .intro .herotext .a_d .ampersand {
   height: auto;
   width: auto;
@@ -357,7 +392,7 @@ body ::-webkit-scrollbar {
   margin-right: 10%;
   color: #C4CDDF;
 }
-/* line 309, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .intro .herotext .a_d .delight {
   height: auto;
   width: auto;
@@ -369,7 +404,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 321, ../sass/screen.scss */
+/* line 355, ../sass/screen.scss */
 .intro .herotext .a_d .period {
   height: auto;
   width: auto;
@@ -379,7 +414,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 332, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .intro .herotext .title_name {
   height: auto;
   width: auto;
@@ -387,11 +422,11 @@ body ::-webkit-scrollbar {
   color: #69AAFF;
   margin-top: 2%;
 }
-/* line 340, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .intro .herotext .title_name .name {
   margin-top: 6%;
 }
-/* line 346, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .intro .turn_wheels {
   height: auto;
   width: 100%;
@@ -400,7 +435,7 @@ body ::-webkit-scrollbar {
   justify-content: center;
   top: 86vh;
 }
-/* line 354, ../sass/screen.scss */
+/* line 388, ../sass/screen.scss */
 .intro .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
@@ -414,7 +449,7 @@ body ::-webkit-scrollbar {
     transform: rotate(359deg);
   }
 }
-/* line 370, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .intro .turn_wheels .wheel_two {
   height: 175px;
   width: auto;
@@ -430,7 +465,7 @@ body ::-webkit-scrollbar {
     transform: rotate(0deg);
   }
 }
-/* line 388, ../sass/screen.scss */
+/* line 422, ../sass/screen.scss */
 .intro .turn_wheels #arrow {
   height: auto;
   width: 16px;
@@ -466,7 +501,7 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 433, ../sass/screen.scss */
+/* line 467, ../sass/screen.scss */
 .case_studies {
   width: 100%;
   height: 100%;
@@ -483,7 +518,7 @@ body ::-webkit-scrollbar {
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
 }
-/* line 449, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .case_studies .scroll_home {
   overflow: scroll;
   overscroll-behavior: none;
@@ -493,7 +528,7 @@ body ::-webkit-scrollbar {
   position: absolute;
   top: 0;
 }
-/* line 458, ../sass/screen.scss */
+/* line 492, ../sass/screen.scss */
 .case_studies .scroll_home .top {
   opacity: 1;
   width: 100%;
@@ -507,14 +542,14 @@ body ::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
-/* line 476, ../sass/screen.scss */
+/* line 510, ../sass/screen.scss */
 .case_studies .scroll_home .bottom {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* line 484, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .in {
   transform: translateY(0%);
   transition-property: transform;
@@ -522,7 +557,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 525, ../sass/screen.scss */
 .out {
   opacity: 0;
   filter: blur(32px);
@@ -532,7 +567,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 500, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .scroll_object {
   height: 200%;
   width: 100%;
@@ -542,7 +577,7 @@ body ::-webkit-scrollbar {
   background-color: #FF644F;
 }
 
-/* line 509, ../sass/screen.scss */
+/* line 543, ../sass/screen.scss */
 .pagination {
   height: 57px;
   width: 3px;
@@ -554,21 +589,21 @@ body ::-webkit-scrollbar {
   right: 1%;
   top: 45%;
 }
-/* line 520, ../sass/screen.scss */
+/* line 554, ../sass/screen.scss */
 .pagination .p_one {
   height: 15px;
   width: 100%;
   opacity: 1;
   background-color: #0FFF19;
 }
-/* line 527, ../sass/screen.scss */
+/* line 561, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: 100%;
   opacity: .5;
   background-color: #0FFF19;
 }
-/* line 534, ../sass/screen.scss */
+/* line 568, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: 100%;

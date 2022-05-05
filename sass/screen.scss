@@ -32,6 +32,7 @@ $text_color: $rp_grey;
 }
 
 %app_shot {
+  position: relative;
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -124,6 +125,39 @@ $text_color: $rp_grey;
           }
         }
       }
+    }
+  }
+
+  .cs_title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-120%);
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6px;
+    color: $rp_grey;
+
+    .case {
+      height: fit-content;
+      width: fit-content;
+      font-family: 'Chivo';
+      font-weight: 900;
+      font-size: 32px;
+      line-height: .8;
+      letter-spacing: -0.01em;
+    }
+    .studies {
+      height: fit-content;
+      width: fit-content;
+      font-family: 'Alegreya';
+      font-style: italic;
+      font-weight: 400;
+      font-size: 34px;
+      line-height: .8;
+      letter-spacing: 0.03em;
     }
   }
 }
