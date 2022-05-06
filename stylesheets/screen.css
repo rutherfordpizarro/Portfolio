@@ -433,9 +433,10 @@ body ::-webkit-scrollbar {
   position: fixed;
   display: flex;
   justify-content: center;
-  top: 86vh;
+  bottom: 0;
+  transform: translateY(120px);
 }
-/* line 388, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .intro .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
@@ -449,7 +450,7 @@ body ::-webkit-scrollbar {
     transform: rotate(359deg);
   }
 }
-/* line 404, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .intro .turn_wheels .wheel_two {
   height: 175px;
   width: auto;
@@ -465,7 +466,7 @@ body ::-webkit-scrollbar {
     transform: rotate(0deg);
   }
 }
-/* line 422, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .intro .turn_wheels #arrow {
   height: auto;
   width: 16px;
@@ -501,7 +502,7 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 467, ../sass/screen.scss */
+/* line 468, ../sass/screen.scss */
 .case_studies {
   width: 100%;
   height: 100%;
@@ -518,7 +519,7 @@ body ::-webkit-scrollbar {
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
 }
-/* line 483, ../sass/screen.scss */
+/* line 484, ../sass/screen.scss */
 .case_studies .scroll_home {
   overflow: scroll;
   overscroll-behavior: none;
@@ -528,7 +529,7 @@ body ::-webkit-scrollbar {
   position: absolute;
   top: 0;
 }
-/* line 492, ../sass/screen.scss */
+/* line 493, ../sass/screen.scss */
 .case_studies .scroll_home .top {
   opacity: 1;
   width: 100%;
@@ -542,14 +543,14 @@ body ::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
 }
-/* line 510, ../sass/screen.scss */
+/* line 511, ../sass/screen.scss */
 .case_studies .scroll_home .bottom {
   height: 100%;
   width: 100%;
   position: relative;
 }
 
-/* line 518, ../sass/screen.scss */
+/* line 519, ../sass/screen.scss */
 .in {
   transform: translateY(0%);
   transition-property: transform;
@@ -557,7 +558,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 525, ../sass/screen.scss */
+/* line 526, ../sass/screen.scss */
 .out {
   opacity: 0;
   filter: blur(32px);
@@ -567,7 +568,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 534, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .scroll_object {
   height: 200%;
   width: 100%;
@@ -577,7 +578,7 @@ body ::-webkit-scrollbar {
   background-color: #FF644F;
 }
 
-/* line 543, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .pagination {
   height: 57px;
   width: 3px;
@@ -589,21 +590,21 @@ body ::-webkit-scrollbar {
   right: 1%;
   top: 45%;
 }
-/* line 554, ../sass/screen.scss */
+/* line 555, ../sass/screen.scss */
 .pagination .p_one {
   height: 15px;
   width: 100%;
   opacity: 1;
   background-color: #0FFF19;
 }
-/* line 561, ../sass/screen.scss */
+/* line 562, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: 100%;
   opacity: .5;
   background-color: #0FFF19;
 }
-/* line 568, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: 100%;

@@ -383,7 +383,8 @@ body {
     position: fixed;
     display: flex;
     justify-content: center;
-    top: 86vh;
+    bottom: 0;
+    transform: translateY(120px);
 
     .wheel_one {
       height: 236px;
