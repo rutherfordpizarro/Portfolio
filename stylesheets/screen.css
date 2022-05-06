@@ -348,7 +348,7 @@ body ::-webkit-scrollbar {
   display: flex;
   flex-direction: row;
   column-gap: 6%;
-  margin-top: 1.5%;
+  margin-top: 2.5vh;
 }
 /* line 301, ../sass/screen.scss */
 .intro .herotext .t_c .that {
@@ -379,7 +379,7 @@ body ::-webkit-scrollbar {
   width: auto;
   display: flex;
   flex-direction: row;
-  margin-top: 1.5%;
+  margin-top: 2.5vh;
 }
 /* line 332, ../sass/screen.scss */
 .intro .herotext .a_d .ampersand {
