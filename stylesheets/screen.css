@@ -69,7 +69,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 17, ../sass/screen.scss */
-.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip, .intro .herotext .title_name {
+.logo_nav .nav .c_link, .logo_nav .nav .c_link #tooltip, .logo_nav .nav .r_link, .logo_nav .nav .r_link #tooltip, .herotext .title_name {
   text-decoration: none;
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
@@ -87,7 +87,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 34, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot {
+.case_studies .app_shot {
   position: relative;
   height: fit-content;
   width: fit-content;
@@ -96,13 +96,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   column-gap: 12px;
 }
 /* line 42, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .image {
+.case_studies .app_shot .image {
   height: 279px;
   width: auto;
   position: relative;
 }
 /* line 48, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info {
+.case_studies .app_shot .info {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -111,7 +111,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex-direction: column;
 }
 /* line 56, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_name {
+.case_studies .app_shot .info .app_name {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -126,7 +126,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 24px;
 }
 /* line 71, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_blurb {
+.case_studies .app_shot .info .app_blurb {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -139,7 +139,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-bottom: 40px;
 }
 /* line 84, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_details {
+.case_studies .app_shot .info .app_details {
   width: auto;
   height: auto;
   position: relative;
@@ -148,7 +148,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   column-gap: 20px;
 }
 /* line 92, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_details .sections {
+.case_studies .app_shot .info .app_details .sections {
   width: auto;
   height: auto;
   position: relative;
@@ -157,7 +157,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   row-gap: 12px;
 }
 /* line 100, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_details .sections .container {
+.case_studies .app_shot .info .app_details .sections .container {
   width: auto;
   height: auto;
   position: relative;
@@ -166,7 +166,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   row-gap: 6px;
 }
 /* line 108, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_details .sections .container .top {
+.case_studies .app_shot .info .app_details .sections .container .top {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -179,7 +179,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #C4CDDF;
 }
 /* line 121, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .info .app_details .sections .container .bottom {
+.case_studies .app_shot .info .app_details .sections .container .bottom {
   width: fit-content;
   height: fit-content;
   position: relative;
@@ -192,7 +192,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #C4CDDF;
 }
 /* line 138, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .cs_title {
+.case_studies .app_shot .cs_title {
   position: absolute;
   top: 0;
   left: 0;
@@ -205,7 +205,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   color: #C4CDDF;
 }
 /* line 150, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .cs_title .case {
+.case_studies .app_shot .cs_title .case {
   height: fit-content;
   width: fit-content;
   font-family: 'Chivo';
@@ -215,7 +215,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: -0.01em;
 }
 /* line 159, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot .cs_title .studies {
+.case_studies .app_shot .cs_title .studies {
   height: fit-content;
   width: fit-content;
   font-family: 'Alegreya';
@@ -229,18 +229,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 172, ../sass/screen.scss */
 html,
 body {
-  overflow: scroll;
+  overflow-y: scroll;
+  scroll-behavior: none;
   background-color: #212834;
   width: 100%;
-  height: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
 }
-/* line 179, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 html ::-webkit-scrollbar,
 body ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 184, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 .logo_nav {
   z-index: 5;
   height: auto;
@@ -253,14 +256,14 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 197, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .logo_nav .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
   margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
   cursor: pointer;
 }
-/* line 204, ../sass/screen.scss */
+/* line 207, ../sass/screen.scss */
 .logo_nav .nav {
   height: auto;
   width: auto;
@@ -269,7 +272,7 @@ body ::-webkit-scrollbar {
   column-gap: 24px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 215, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .logo_nav .nav .c_link #tooltip {
   height: auto;
   width: auto;
@@ -282,11 +285,11 @@ body ::-webkit-scrollbar {
   color: #212834;
   background-color: #C4CDDF;
 }
-/* line 229, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .logo_nav .nav .c_link:hover #tooltip {
   visibility: visible;
 }
-/* line 237, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
@@ -299,43 +302,24 @@ body ::-webkit-scrollbar {
   color: #212834;
   background-color: #C4CDDF;
 }
-/* line 251, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .logo_nav .nav .r_link:hover #tooltip {
   display: block;
 }
 
-/* line 258, ../sass/screen.scss */
-.intro {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  z-index: 2;
-  background-color: #212834;
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateY(0%);
-  transition-property: opacity filter transform;
-  transition-duration: 480ms;
-  transition-timing-function: ease-in-out;
-}
-/* line 272, ../sass/screen.scss */
-.intro ::-webkit-scrollbar {
-  display: none;
-}
-/* line 276, ../sass/screen.scss */
-.intro .herotext {
+/* line 261, ../sass/screen.scss */
+.herotext {
   height: auto;
   width: 100%;
-  position: fixed;
+  margin-top: 30vh;
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  top: 30vh;
 }
-/* line 286, ../sass/screen.scss */
-.intro .herotext .solutions {
+/* line 271, ../sass/screen.scss */
+.herotext .solutions {
   height: auto;
   width: auto;
   font-family: 'Chivo', sans-serif;
@@ -346,8 +330,8 @@ body ::-webkit-scrollbar {
   -webkit-text-stroke: 1px #FF644F;
   color: #212834;
 }
-/* line 298, ../sass/screen.scss */
-.intro .herotext .t_c {
+/* line 283, ../sass/screen.scss */
+.herotext .t_c {
   height: auto;
   width: auto;
   display: flex;
@@ -355,8 +339,8 @@ body ::-webkit-scrollbar {
   column-gap: 6%;
   margin-top: 2.5vh;
 }
-/* line 306, ../sass/screen.scss */
-.intro .herotext .t_c .that {
+/* line 291, ../sass/screen.scss */
+.herotext .t_c .that {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -366,8 +350,8 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 317, ../sass/screen.scss */
-.intro .herotext .t_c .captivate {
+/* line 302, ../sass/screen.scss */
+.herotext .t_c .captivate {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -378,16 +362,16 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 330, ../sass/screen.scss */
-.intro .herotext .a_d {
+/* line 315, ../sass/screen.scss */
+.herotext .a_d {
   height: auto;
   width: auto;
   display: flex;
   flex-direction: row;
   margin-top: 2.5vh;
 }
-/* line 337, ../sass/screen.scss */
-.intro .herotext .a_d .ampersand {
+/* line 322, ../sass/screen.scss */
+.herotext .a_d .ampersand {
   height: auto;
   width: auto;
   font-family: 'Alegreya SC', serif;
@@ -397,8 +381,8 @@ body ::-webkit-scrollbar {
   margin-right: 10%;
   color: #C4CDDF;
 }
-/* line 348, ../sass/screen.scss */
-.intro .herotext .a_d .delight {
+/* line 333, ../sass/screen.scss */
+.herotext .a_d .delight {
   height: auto;
   width: auto;
   font-family: 'Alegreya', serif;
@@ -409,8 +393,8 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 360, ../sass/screen.scss */
-.intro .herotext .a_d .period {
+/* line 345, ../sass/screen.scss */
+.herotext .a_d .period {
   height: auto;
   width: auto;
   font-family: 'Alegreya SC', serif;
@@ -419,30 +403,30 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 371, ../sass/screen.scss */
-.intro .herotext .title_name {
+/* line 356, ../sass/screen.scss */
+.herotext .title_name {
   height: auto;
   width: auto;
   text-align: center;
   color: #69AAFF;
   margin-top: 2%;
 }
-/* line 379, ../sass/screen.scss */
-.intro .herotext .title_name .name {
+/* line 364, ../sass/screen.scss */
+.herotext .title_name .name {
   margin-top: 6%;
 }
-/* line 385, ../sass/screen.scss */
-.intro .turn_wheels {
+
+/* line 370, ../sass/screen.scss */
+.turn_wheels {
   height: auto;
   width: 100%;
-  position: fixed;
+  margin-top: 23vh;
+  position: relative;
   display: flex;
   justify-content: center;
-  bottom: 0;
-  transform: translateY(120px);
 }
-/* line 394, ../sass/screen.scss */
-.intro .turn_wheels .wheel_one {
+/* line 378, ../sass/screen.scss */
+.turn_wheels .wheel_one {
   height: 236px;
   width: auto;
   animation: clockwise 30s infinite linear;
@@ -455,8 +439,8 @@ body ::-webkit-scrollbar {
     transform: rotate(359deg);
   }
 }
-/* line 410, ../sass/screen.scss */
-.intro .turn_wheels .wheel_two {
+/* line 394, ../sass/screen.scss */
+.turn_wheels .wheel_two {
   height: 175px;
   width: auto;
   position: absolute;
@@ -471,8 +455,8 @@ body ::-webkit-scrollbar {
     transform: rotate(0deg);
   }
 }
-/* line 428, ../sass/screen.scss */
-.intro .turn_wheels #arrow {
+/* line 412, ../sass/screen.scss */
+.turn_wheels #arrow {
   height: auto;
   width: 16px;
   padding-bottom: 5%;
@@ -507,67 +491,30 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 473, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .case_studies {
-  width: 100%;
-  height: 100%;
-  z-index: 4;
-  position: fixed;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  column-gap: 16px;
-  justify-content: center;
-  align-items: center;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
-}
-/* line 489, ../sass/screen.scss */
-.case_studies .scroll_to_home {
-  overflow: scroll;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  position: absolute;
-  top: 0;
-}
-/* line 497, ../sass/screen.scss */
-.case_studies .scroll_to_home .top {
-  overflow: scroll;
   opacity: 1;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 36vh;
+  margin-bottom: 31vh;
   position: relative;
-  top: 0;
   display: flex;
   flex-direction: row;
   column-gap: 20px;
   justify-content: flex-start;
   align-items: center;
 }
-/* line 511, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .spacer_left {
+/* line 469, ../sass/screen.scss */
+.case_studies .spacer_left {
   margin-left: 12vw;
 }
-/* line 515, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .spacer_right {
+/* line 473, ../sass/screen.scss */
+.case_studies .spacer_right {
   margin-right: 20vw;
 }
-/* line 519, ../sass/screen.scss */
-.case_studies .scroll_to_home .top .app_shot {
-  margin-top: 6%;
-}
-/* line 525, ../sass/screen.scss */
-.case_studies .scroll_to_home .bottom {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
 
-/* line 533, ../sass/screen.scss */
+/* line 482, ../sass/screen.scss */
 .in {
   transform: translateY(0%);
   transition-property: transform;
@@ -575,7 +522,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 540, ../sass/screen.scss */
+/* line 489, ../sass/screen.scss */
 .out {
   opacity: 0;
   filter: blur(32px);
@@ -585,7 +532,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 549, ../sass/screen.scss */
+/* line 498, ../sass/screen.scss */
 .scroll_object {
   height: 200%;
   width: 100%;
@@ -595,7 +542,18 @@ body ::-webkit-scrollbar {
   background-color: #FF644F;
 }
 
-/* line 558, ../sass/screen.scss */
+/* line 507, ../sass/screen.scss */
+.right_fade {
+  position: fixed;
+  height: 100%;
+  width: 11%;
+  opacity: .98;
+  right: 0;
+  top: 0;
+  background: #212834;
+}
+
+/* line 517, ../sass/screen.scss */
 .pagination {
   height: 57px;
   width: 3px;
@@ -607,21 +565,21 @@ body ::-webkit-scrollbar {
   right: 1%;
   top: 45%;
 }
-/* line 569, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .pagination .p_one {
   height: 15px;
   width: 100%;
   opacity: 1;
   background-color: #0FFF19;
 }
-/* line 576, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: 100%;
   opacity: .5;
   background-color: #0FFF19;
 }
-/* line 583, ../sass/screen.scss */
+/* line 542, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: 100%;
