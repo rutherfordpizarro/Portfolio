@@ -547,7 +547,7 @@ body ::-webkit-scrollbar {
   position: fixed;
   height: 100%;
   width: 11%;
-  opacity: .98;
+  opacity: .96;
   right: 0;
   top: 0;
   background: #212834;
@@ -570,19 +570,19 @@ body ::-webkit-scrollbar {
   height: 15px;
   width: 100%;
   opacity: 1;
-  background-color: #0FFF19;
+  background-color: #00E5A0;
 }
 /* line 535, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: 100%;
   opacity: .5;
-  background-color: #0FFF19;
+  background-color: #00E5A0;
 }
 /* line 542, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: 100%;
   opacity: .5;
-  background-color: #0FFF19;
+  background-color: #00E5A0;
 }
