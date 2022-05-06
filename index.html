@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://use.typekit.net/hzf0fcx.css">
 </head>
 
-<body class="scroll_cs">
+<body class="scroll_to_cs">
 
   <div class="pagination">
     <div class="p_one"></div>
@@ -56,9 +56,9 @@
   </div>
 
   <div class="case_studies">
-    <div class="scroll_home">
+    <div class="scroll_to_home">
       <div class="top">
-        <div class="app_shot">
+        <div class="app_shot spacer_left">
           <div class="cs_title">
             <div class="case">CASE</div>
             <div class="studies">Studies</div>
@@ -130,7 +130,7 @@ that are worth supporting.</pre>
               </div>
           </div>
         </div>
-        <div class="app_shot">
+        <div class="app_shot spacer_right">
           <img src="assets/clubnow.png" alt="" class="image">
           <div class="info">
               <div class="app_name">Club Now</div>
@@ -186,18 +186,18 @@ $( document ).ready(function() {
     }, 1350);
   });
 
-  $(".scroll_cs").scroll(function(){
+  $(".scroll_to_cs").scroll(function(){
     $(".case_studies").addClass('in');
     $(".intro").addClass('out');
-    $(".scroll_cs").scrollTop( 1 );
-    $(".scroll_home").scrollTop( 1 );
+    $(".scroll_to_cs").scrollTop( 1 );
+    $(".scroll_to_home").scrollTop( 1 );
   });
 
-  $(".scroll_home").scroll(function(){
+  $(".scroll_to_home").scroll(function(){
     $(".case_studies").removeClass('in');
     $(".intro").removeClass('out');
-    $(".scroll_home").scrollTop( 1 );
-    $(".scroll_cs").scrollTop( 1 );
+    $(".scroll_to_home").scrollTop( 1 );
+    $(".scroll_to_cs").scrollTop( 1 );
   });
 
 });

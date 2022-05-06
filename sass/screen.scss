@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
 
 $rp_grey: #C4CDDF;
-$rp_black: #212843;
+$rp_black: #212834;
 $rp_blue: #69AAFF;
 $rp_red: #FF644F;
 $rp_green: #0FFF19;
@@ -40,7 +40,7 @@ $text_color: $rp_grey;
   column-gap: 12px;
 
   .image {
-    height: 171.5px;
+    height: 279px;
     width: auto;
     position: relative;
   }
@@ -56,6 +56,7 @@ $text_color: $rp_grey;
     .app_name {
       width: fit-content;
       height: fit-content;
+      position: relative;
       font-family: 'Alegreya';
       font-style: italic;
       font-weight: 900;
@@ -70,6 +71,7 @@ $text_color: $rp_grey;
     .app_blurb {
       width: fit-content;
       height: fit-content;
+      position: relative;
       font-family: 'Chivo';
       font-weight: 300;
       font-size: 12px;
@@ -82,6 +84,7 @@ $text_color: $rp_grey;
     .app_details {
       width: auto;
       height: auto;
+      position: relative;
       display: flex;
       flex-direction: row;
       column-gap: 20px;
@@ -89,6 +92,7 @@ $text_color: $rp_grey;
       .sections {
         width: auto;
         height: auto;
+        position: relative;
         display: flex;
         flex-direction: column;
         row-gap: 12px;
@@ -96,6 +100,7 @@ $text_color: $rp_grey;
         .container {
           width: auto;
           height: auto;
+          position: relative;
           display: flex;
           flex-direction: column;
           row-gap: 6px;
@@ -103,6 +108,7 @@ $text_color: $rp_grey;
           .top {
             width: fit-content;
             height: fit-content;
+            position: relative;
             font-family: 'Chivo';
             font-style: normal;
             font-weight: 900;
@@ -115,6 +121,7 @@ $text_color: $rp_grey;
           .bottom {
             width: fit-content;
             height: fit-content;
+            position: relative;
             font-family: 'Alegreya';
             font-style: italic;
             font-weight: 400;
@@ -132,7 +139,7 @@ $text_color: $rp_grey;
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-120%);
+    transform: translateY(-260%);
     height: fit-content;
     width: fit-content;
     display: flex;
@@ -164,7 +171,6 @@ $text_color: $rp_grey;
 
 html,
 body {
-  overscroll-behavior: none;
   overflow: scroll;
   background-color: $rp_black;
   width: 100%;
@@ -255,7 +261,6 @@ body {
   position: absolute;
   top: 0;
   z-index: 2;
-  overscroll-behavior: none;
   background-color: $rp_black;
   opacity: 1;
   filter: blur(0px);
@@ -481,9 +486,8 @@ body {
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
 
-  .scroll_home {
+  .scroll_to_home {
     overflow: scroll;
-    overscroll-behavior: none;
     height: 100%;
     width: 100%;
     z-index: 2;
@@ -491,6 +495,7 @@ body {
     top: 0;
 
     .top {
+      overflow: scroll;
       opacity: 1;
       width: 100%;
       height: 100%;
@@ -500,11 +505,20 @@ body {
       display: flex;
       flex-direction: row;
       column-gap: 20px;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+
+      .spacer_left {
+        margin-left: 12vw;
+      }
+
+      .spacer_right {
+        margin-right: 20vw;
+      }
 
       .app_shot {
         @extend %app_shot;
+        margin-top: 6%;
       }
     }
 
