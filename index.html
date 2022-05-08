@@ -11,9 +11,9 @@
 <body>
 
   <div class="pagination">
-    <div class="p_one"></div>
-    <div class="p_two"></div>
-    <div class="p_three"></div>
+    <div class="p_one on"></div>
+    <div class="p_two off"></div>
+    <!--<div class="p_three"></div>-->
   </div>
 
   <div class="scroll_object"></div>
@@ -93,6 +93,7 @@ familiar while remaining affordable.</pre>
                   </div>
                 </div>
               </div>
+              <div class="open_project">Open Project</div>
         </div>
       </div>
       <div class="app_shot">
@@ -127,6 +128,7 @@ that are worth supporting.</pre>
   </div>
 </div>
             </div>
+            <div class="open_project">Open Project</div>
         </div>
       </div>
       <div class="app_shot spacer_right">
@@ -161,6 +163,7 @@ independent of event planners).</pre>
   </div>
 </div>
             </div>
+            <div class="open_project">Open Project</div>
         </div>
       </div>
     </div>
@@ -191,6 +194,12 @@ $( document ).ready(function() {
     $(".intro").addClass('out');
     $(".case_studies").scrollTop( 1 );
     $("body").scrollTop( 1 );
+    if ($('.p_one').hasClass("on")) {
+    $('.p_one').addClass('off').removeClass("on");
+        }
+    if ($('.p_two').hasClass("off")) {
+    $('.p_two').addClass('on').removeClass("off");
+        }
   });
 
   $(".case_studies").scroll(function(){
@@ -198,6 +207,12 @@ $( document ).ready(function() {
     $(".intro").removeClass('out');
     $(".case_studies").scrollTop( 1 );
     $("body").scrollTop( 1 );
+    if ($('.p_one').hasClass("off")) {
+    $('.p_one').addClass('on').removeClass("off");
+        }
+    if ($('.p_two').hasClass("on")) {
+    $('.p_two').addClass('off').removeClass("on");
+        }
   });
 
 

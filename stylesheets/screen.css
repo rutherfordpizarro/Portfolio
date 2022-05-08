@@ -89,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 34, ../sass/screen.scss */
 .case_studies .projects .app_shot {
   position: relative;
-  height: 30%;
+  height: fit-content;
   width: fit-content;
   display: flex;
   flex-direction: row;
@@ -97,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 42, ../sass/screen.scss */
 .case_studies .projects .app_shot .image {
-  height: 279px;
+  height: 354px;
   width: auto;
   position: relative;
 }
@@ -191,10 +191,34 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.1em;
   color: #C4CDDF;
 }
-/* line 138, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
+.case_studies .projects .app_shot .info .open_project {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  padding: 12px 16px;
+  font-family: 'Chivo';
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  line-height: .7;
+  text-align: center;
+  border: 1px solid #00E5A0;
+  color: #C4CDDF;
+  cursor: pointer;
+}
+/* line 156, ../sass/screen.scss */
+.case_studies .projects .app_shot .info .open_project:hover {
+  background-color: #00E5A0;
+  color: #212834;
+}
+/* line 163, ../sass/screen.scss */
 .case_studies .projects .app_shot .cs_title {
   position: fixed;
-  top: 30vh;
+  top: 24vh;
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -202,7 +226,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   column-gap: 6px;
   color: #C4CDDF;
 }
-/* line 148, ../sass/screen.scss */
+/* line 173, ../sass/screen.scss */
 .case_studies .projects .app_shot .cs_title .case {
   height: fit-content;
   width: fit-content;
@@ -212,7 +236,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: .8;
   letter-spacing: -0.01em;
 }
-/* line 157, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .case_studies .projects .app_shot .cs_title .studies {
   height: fit-content;
   width: fit-content;
@@ -224,18 +248,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   letter-spacing: 0.03em;
 }
 
-/* line 170, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 html {
   overflow: hidden;
   height: 100%;
   width: 100%;
 }
-/* line 175, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 html ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 body {
   overflow: scroll;
   scroll-behavior: none;
@@ -244,12 +268,12 @@ body {
   width: 100%;
   height: 100%;
 }
-/* line 188, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 body ::-webkit-scrollbar {
   display: none;
 }
 
-/* line 193, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 .logo_nav {
   z-index: 5;
   height: auto;
@@ -262,14 +286,13 @@ body ::-webkit-scrollbar {
   position: fixed;
   top: 0;
 }
-/* line 206, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .logo_nav .logo {
   height: auto;
   width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
   margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
-  cursor: pointer;
 }
-/* line 213, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .logo_nav .nav {
   height: auto;
   width: auto;
@@ -278,7 +301,7 @@ body ::-webkit-scrollbar {
   column-gap: 24px;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 224, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .logo_nav .nav .c_link #tooltip {
   height: auto;
   width: auto;
@@ -291,11 +314,11 @@ body ::-webkit-scrollbar {
   color: #212834;
   background-color: #C4CDDF;
 }
-/* line 238, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .logo_nav .nav .c_link:hover #tooltip {
   visibility: visible;
 }
-/* line 246, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .logo_nav .nav .r_link #tooltip {
   height: auto;
   width: auto;
@@ -308,12 +331,12 @@ body ::-webkit-scrollbar {
   color: #212834;
   background-color: #C4CDDF;
 }
-/* line 260, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .logo_nav .nav .r_link:hover #tooltip {
   visibility: visible;
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 292, ../sass/screen.scss */
 .intro {
   width: 100%;
   height: 100%;
@@ -327,7 +350,7 @@ body ::-webkit-scrollbar {
   transition-duration: 480ms;
   transition-timing-function: ease-in-out;
 }
-/* line 280, ../sass/screen.scss */
+/* line 305, ../sass/screen.scss */
 .intro .herotext {
   height: auto;
   width: 100%;
@@ -338,7 +361,7 @@ body ::-webkit-scrollbar {
   align-items: center;
   top: 30vh;
 }
-/* line 290, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .intro .herotext .solutions {
   height: auto;
   width: auto;
@@ -350,7 +373,7 @@ body ::-webkit-scrollbar {
   -webkit-text-stroke: 1px #FF644F;
   color: #212834;
 }
-/* line 302, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 .intro .herotext .t_c {
   height: auto;
   width: auto;
@@ -359,7 +382,7 @@ body ::-webkit-scrollbar {
   column-gap: 6%;
   margin-top: 2.5vh;
 }
-/* line 310, ../sass/screen.scss */
+/* line 335, ../sass/screen.scss */
 .intro .herotext .t_c .that {
   height: auto;
   width: auto;
@@ -370,7 +393,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 321, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .intro .herotext .t_c .captivate {
   height: auto;
   width: auto;
@@ -382,7 +405,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 334, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 .intro .herotext .a_d {
   height: auto;
   width: auto;
@@ -390,7 +413,7 @@ body ::-webkit-scrollbar {
   flex-direction: row;
   margin-top: 2.5vh;
 }
-/* line 341, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .intro .herotext .a_d .ampersand {
   height: auto;
   width: auto;
@@ -401,7 +424,7 @@ body ::-webkit-scrollbar {
   margin-right: 10%;
   color: #C4CDDF;
 }
-/* line 352, ../sass/screen.scss */
+/* line 377, ../sass/screen.scss */
 .intro .herotext .a_d .delight {
   height: auto;
   width: auto;
@@ -413,7 +436,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 364, ../sass/screen.scss */
+/* line 389, ../sass/screen.scss */
 .intro .herotext .a_d .period {
   height: auto;
   width: auto;
@@ -423,7 +446,7 @@ body ::-webkit-scrollbar {
   line-height: .7;
   color: #C4CDDF;
 }
-/* line 375, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .intro .herotext .title_name {
   height: auto;
   width: auto;
@@ -431,11 +454,11 @@ body ::-webkit-scrollbar {
   color: #69AAFF;
   margin-top: 2%;
 }
-/* line 383, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .intro .herotext .title_name .name {
   margin-top: 6%;
 }
-/* line 389, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .intro .turn_wheels {
   height: auto;
   width: 100%;
@@ -445,7 +468,7 @@ body ::-webkit-scrollbar {
   bottom: 0;
   transform: translateY(120px);
 }
-/* line 398, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .intro .turn_wheels .wheel_one {
   height: 236px;
   width: auto;
@@ -459,7 +482,7 @@ body ::-webkit-scrollbar {
     transform: rotate(359deg);
   }
 }
-/* line 414, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .intro .turn_wheels .wheel_two {
   height: 175px;
   width: auto;
@@ -475,7 +498,7 @@ body ::-webkit-scrollbar {
     transform: rotate(0deg);
   }
 }
-/* line 432, ../sass/screen.scss */
+/* line 457, ../sass/screen.scss */
 .intro .turn_wheels #arrow {
   height: auto;
   width: 16px;
@@ -511,7 +534,7 @@ body ::-webkit-scrollbar {
     transform: scale(1, 1) translateY(0);
   }
 }
-/* line 477, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .case_studies {
   overflow: scroll;
   scroll-behavior: none;
@@ -524,11 +547,11 @@ body ::-webkit-scrollbar {
   transition-duration: 400ms;
   transition-timing-function: ease-in-out;
 }
-/* line 489, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .case_studies ::-webkit-scrollbar {
   display: none;
 }
-/* line 493, ../sass/screen.scss */
+/* line 518, ../sass/screen.scss */
 .case_studies .projects {
   overflow: scroll;
   scroll-behavior: none;
@@ -539,22 +562,22 @@ body ::-webkit-scrollbar {
   position: fixed;
   display: flex;
   flex-direction: row;
-  top: 30vh;
-  column-gap: 20px;
+  top: 24vh;
+  column-gap: 32px;
 }
-/* line 506, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .case_studies .projects .spacer_left {
   margin-left: 12vw;
 }
-/* line 510, ../sass/screen.scss */
+/* line 535, ../sass/screen.scss */
 .case_studies .projects .spacer_right {
   padding-right: 20vw;
 }
-/* line 514, ../sass/screen.scss */
+/* line 539, ../sass/screen.scss */
 .case_studies .projects .app_shot {
   margin-top: 6%;
 }
-/* line 520, ../sass/screen.scss */
+/* line 545, ../sass/screen.scss */
 .case_studies .empty_container {
   height: 200vh;
   width: 100%;
@@ -562,7 +585,7 @@ body ::-webkit-scrollbar {
   opacity: 1;
 }
 
-/* line 528, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .in {
   transform: translateY(0%);
   transition-property: transform;
@@ -570,7 +593,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 535, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 .out {
   opacity: 0;
   filter: blur(32px);
@@ -580,7 +603,7 @@ body ::-webkit-scrollbar {
   transition-timing-function: ease-in-out;
 }
 
-/* line 544, ../sass/screen.scss */
+/* line 569, ../sass/screen.scss */
 .scroll_object {
   height: 200%;
   width: 100%;
@@ -590,7 +613,7 @@ body ::-webkit-scrollbar {
   background: linear-gradient(180deg, #3ab443 0%, #6765a1 24%, #fd1d1d 50%, #6765a1 75%, #fcb045 100%);
 }
 
-/* line 553, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 .pagination {
   height: 57px;
   width: 3px;
@@ -602,21 +625,27 @@ body ::-webkit-scrollbar {
   right: 1%;
   top: 45%;
 }
-/* line 564, ../sass/screen.scss */
+/* line 589, ../sass/screen.scss */
+.pagination .on {
+  opacity: 1;
+}
+/* line 593, ../sass/screen.scss */
+.pagination .off {
+  opacity: .5;
+}
+/* line 597, ../sass/screen.scss */
 .pagination .p_one {
   height: 15px;
   width: 100%;
-  opacity: 1;
   background-color: #00E5A0;
 }
-/* line 571, ../sass/screen.scss */
+/* line 603, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: 100%;
-  opacity: .5;
   background-color: #00E5A0;
 }
-/* line 578, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: 100%;
@@ -624,7 +653,7 @@ body ::-webkit-scrollbar {
   background-color: #00E5A0;
 }
 
-/* line 586, ../sass/screen.scss */
+/* line 617, ../sass/screen.scss */
 .right_fade {
   position: fixed;
   z-index: 4;
