@@ -3,675 +3,690 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
-
-$rp_grey: #C4CDDF;
-$rp_black: #212834;
-$rp_blue: #69AAFF;
-$rp_red: #FF644F;
-$rp_green: #00E5A0;
-
-$text_color: $rp_grey;
-
-%chivo_light {
-  text-decoration: none;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  letter-spacing: 0.04em;
-  line-height: .7;
-  color: $text_color;
-}
-
-%nav_link {
-  height: auto;
-  width: auto;
-  cursor: pointer;
-  @extend %chivo_light;
-}
-
-%app_shot {
-  position: relative;
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-  column-gap: 12px;
-
-  .image {
-    height: 354px;
-    width: auto;
-    position: relative;
-  }
-
-  .info {
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-
-    .app_name {
-      width: fit-content;
-      height: fit-content;
-      position: relative;
-      font-family: 'Alegreya';
-      font-style: italic;
-      font-weight: 900;
-      font-size: 28px;
-      line-height: 38px;
-      letter-spacing: 0.04em;
-      font-variant: small-caps;
-      color: $rp_grey;
-      margin-bottom: 24px;
-    }
-
-    .app_blurb {
-      width: fit-content;
-      height: fit-content;
-      position: relative;
-      margin-bottom: 40px;
-      font-family: 'Chivo';
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 160%;
-      letter-spacing: 0.05em;
-      color: $rp_grey;
-    }
-
-    .app_details {
-      width: fit-content;
-      height: fit-content;
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      column-gap: 20px;
-
-      .sections {
-        width: fit-content;
-        height: fit-content;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        row-gap: 12px;
-
-        .container {
-          width: fit-content;
-          height: fit-content;
-          position: relative;
-          display: flex;
-          flex-direction: column;
-          row-gap: 6px;
-
-          .top {
-            width: fit-content;
-            height: fit-content;
-            position: relative;
-            font-family: 'Chivo';
-            font-style: normal;
-            font-weight: 900;
-            font-size: 12px;
-            line-height: .8;
-            letter-spacing: 0.08em;
-            color: $rp_grey;
-          }
-
-          .bottom {
-            width: fit-content;
-            height: fit-content;
-            position: relative;
-            font-family: 'Alegreya';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: .8;
-            letter-spacing: 0.1em;
-            color: $rp_grey;
-          }
-        }
-      }
-    }
-
-    .open_project {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      align-self: flex-start;
-      padding: 12px 16px;
-      font-family: 'Chivo';
-      font-weight: 400;
-      font-size: 12px;
-      letter-spacing: 0.04em;
-      line-height: .7;
-      text-align: center;
-      border: 1px solid $rp_green;
-      color: $rp_grey;
-      cursor: pointer;
-      
-
-      &:hover {
-        background-color: $rp_green;
-        color: $rp_black;
-      }
-    }
-  }
-
-  .cs_title {
-    position: fixed;
-    top: 24vh;
-    height: fit-content;
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    column-gap: 6px;
-    color: $rp_grey;
-
-    .case {
-      height: fit-content;
-      width: fit-content;
-      font-family: 'Chivo';
-      font-weight: 900;
-      font-size: 32px;
-      line-height: .8;
-      letter-spacing: -0.01em;
-    }
-
-    .studies {
-      height: fit-content;
-      width: fit-content;
-      font-family: 'Alegreya';
-      font-style: italic;
-      font-weight: 400;
-      font-size: 34px;
-      line-height: .8;
-      letter-spacing: 0.03em;
-    }
-  }
-}
-
-html {
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-body {
-  overflow: scroll;
-  scroll-behavior: none;
-  position: relative;
-  background-color: $rp_black;
-  width: 100%;
-  height: 100%;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.logo_nav {
-  z-index: 5;
-  height: auto;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding-top: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
-  position: fixed;
-  top: 0;
-
-
-  .logo {
-    height: auto;
-    width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
-    margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
-  }
-
-  .nav {
-    height: auto;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    column-gap: 24px;
-    margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
-
-    .c_link {
-      @extend %nav_link;
-
-      #tooltip {
-        height: auto;
-        width: auto;
-        visibility: hidden;
-        padding: .6% .7%;
-        position: absolute;
-        right: 8.2%;
-        margin-top: .7%;
-        @extend %nav_link;
-        text-align: center;
-        color: $rp_black;
-        background-color: $rp_grey;
-      }
-
-      &:hover #tooltip {
-        visibility: visible;
-      }
-    }
-
-    .r_link {
-      @extend %nav_link;
-
-      #tooltip {
-        height: auto;
-        width: auto;
-        visibility: hidden;
-        padding: .6% .7%;
-        position: absolute;
-        right: 2.6%;
-        margin-top: .7%;
-        @extend %nav_link;
-        text-align: center;
-        color: $rp_black;
-        background-color: $rp_grey;
-      }
-
-      &:hover #tooltip {
-        visibility: visible;
-      }
-    }
-  }
-}
-
-.intro {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: 2;
-  background-color: $rp_black;
-  opacity: 1;
-  filter: blur(0px);
-  transform: translateY(0%);
-  transition-property: opacity filter transform;
-  transition-duration: 480ms;
-  transition-timing-function: ease-in-out;
-
-  .herotext {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    top: 30vh;
-
-    .solutions {
-      height: auto;
-      width: auto;
-      font-family: 'Chivo', sans-serif;
-      font-weight: 900;
-      letter-spacing: -0.01em;
-      font-size: 140px;
-      line-height: .7;
-      -webkit-text-stroke: 1px $rp_red;
-      color: $rp_black;
-    }
-
-    .t_c {
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      column-gap: 6%;
-      margin-top: 2.5vh;
-
-      .that {
-        height: auto;
-        width: auto;
-        font-family: 'Alegreya', serif;
-        font-weight: 400;
-        letter-spacing: -0.03em;
-        font-size: 46px;
-        line-height: .7;
-        color: $rp_grey;
-      }
-
-      .captivate {
-        height: auto;
-        width: auto;
-        font-family: 'Alegreya', serif;
-        font-style: italic;
-        font-weight: 800;
-        letter-spacing: 0.02em;
-        font-size: 46px;
-        line-height: .7;
-        color: $rp_grey;
-      }
-    }
-
-    .a_d {
-      height: auto;
-      width: auto;
-      display: flex;
-      flex-direction: row;
-      margin-top: 2.5vh;
-
-      .ampersand {
-        height: auto;
-        width: auto;
-        font-family: 'Alegreya SC', serif;
-        font-weight: 400;
-        font-size: 46px;
-        line-height: .7;
-        margin-right: 10%;
-        color: $rp_grey;
-      }
-
-      .delight {
-        height: auto;
-        width: auto;
-        font-family: 'Alegreya', serif;
-        font-style: italic;
-        font-weight: 800;
-        letter-spacing: 0.02em;
-        font-size: 46px;
-        line-height: .7;
-        color: $rp_grey;
-      }
-
-      .period {
-        height: auto;
-        width: auto;
-        font-family: 'Alegreya SC', serif;
-        font-weight: 400;
-        font-size: 46px;
-        line-height: .7;
-        color: $rp_grey;
-      }
-    }
-
-    .title_name {
-      height: auto;
-      width: auto;
-      text-align: center;
-      @extend %chivo_light;
-      color: $rp_blue;
-      margin-top: 2%;
-
-      .name {
-        margin-top: 6%;
-      }
-    }
-  }
-
-  .turn_wheels {
-    height: auto;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    bottom: 0;
-    transform: translateY(120px);
-
-    .wheel_one {
-      height: 236px;
-      width: auto;
-      animation: clockwise 30s infinite linear;
-
-      @keyframes clockwise {
-        from {
-          transform: rotate(0deg);
-        }
-
-        to {
-          transform: rotate(359deg);
-        }
-      }
-    }
-
-    .wheel_two {
-      height: 175px;
-      width: auto;
-      position: absolute;
-      align-self: center;
-      animation: counterclockwise 30s infinite linear;
-
-      @keyframes counterclockwise {
-        from {
-          transform: rotate(359deg);
-        }
-
-        to {
-          transform: rotate(0deg);
-        }
-      }
-    }
-
-    #arrow {
-      height: auto;
-      width: 16px;
-      padding-bottom: 5%;
-      position: absolute;
-      align-self: center;
-      animation-duration: 2s;
-      animation-iteration-count: infinite;
-      transform-origin: bottom;
-      animation-name: bounce;
-      animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-
-      @keyframes bounce {
-        0% {
-          transform: scale(1, 1) translateY(0);
-        }
-
-        12% {
-          transform: scale(1.06, .8) translateY(0);
-        }
-
-        32% {
-          transform: scale(.8, 1.02) translateY(-12px);
-        }
-
-        48% {
-          transform: scale(1, .6) translateY(0);
-        }
-
-        64% {
-          transform: scale(1, 1.06) translateY(-6px);
-        }
-
-        80% {
-          transform: scale(1, .8) translateY(0);
-        }
-
-        100% {
-          transform: scale(1, 1) translateY(0);
-        }
-      }
-    }
-  }
-}
-
-.case_studies {
-  overflow: scroll;
-  scroll-behavior: none;
-  width: 100%;
-  height: 100%;
-  z-index: 4;
-  position: relative;
-  transform: translateY(100%);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
-
-  ::-webkit-scrollbar {
-    display: none;
-  }
-
-  .projects {
-    overflow: scroll;
-    scroll-behavior: none;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    top: 22vh;
-    column-gap: 32px;
-
-    .spacer_left {
-      margin-left: 12vw;
-    }
-
-    .spacer_right {
-      padding-right: 20vw;
-    }
-
-    .app_shot {
-      @extend %app_shot;
-      margin-top: 6%;
-    }
-  }
-
-  .empty_container {
-    height: 200vh;
-    width: 100%;
-    position: relative;
-    opacity: 1;
-  }
-}
-
-.in {
-  transform: translateY(0%);
-  transition-property: transform;
-  transition-duration: 400ms;
-  transition-timing-function: ease-in-out;
-}
-
-.out {
-  opacity: 0;
-  filter: blur(32px);
-  transform: translateY(0%);
-  transition-property: opacity filter transform;
-  transition-duration: 480ms;
-  transition-timing-function: ease-in-out;
-}
-
-.scroll_object {
-  height: 200%;
-  width: 100%;
-  position: absolute;
-  opacity: 0;
-  z-index: 3;
-  background: linear-gradient(180deg, rgba(58, 180, 67, 1) 0%, rgba(103, 101, 161, 1) 24%, rgba(253, 29, 29, 1) 50%, rgba(103, 101, 161, 1) 75%, rgba(252, 176, 69, 1) 100%);
-}
-
-.pagination {
-  height: 57px;
-  width: 3px;
-  position: fixed;
-  z-index: 7;
-  display: flex;
-  flex-direction: column;
-  row-gap: 6px;
-  right: 1%;
-  top: 45%;
-
-  .on {
-    opacity: 1;
-  }
-
-  .off {
-    opacity: .5;
-  }
-
-  .p_one {
-    height: 15px;
-    width: 100%;
-    background-color: $rp_green;
-  }
-
-  .p_two {
-    height: 15px;
-    width: 100%;
-    background-color: $rp_green;
-  }
-
-  .p_three {
-    height: 15px;
-    width: 100%;
-    opacity: .5;
-    background-color: $rp_green;
-  }
-}
-
-.right_fade {
-  position: fixed;
-  z-index: 4;
-  height: 100%;
-  width: 11%;
-  opacity: .90;
-  right: 0;
-  top: 0;
-  pointer-events: none;
-  background: $rp_black;
-}
-
-.figma_iframes {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  visibility: hidden;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  background-color: black;
-
-  .close_figma {
-    position: absolute;
-    top: 1vh;
-    left: 4vw;
-    margin-top: 40px;
-    z-index: 11;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    align-self: flex-start;
-    padding: 12px 16px;
-    font-family: 'Chivo';
-    font-weight: 400;
-    font-size: 12px;
-    letter-spacing: 0.04em;
-    line-height: .7;
-    text-align: center;
-    border: 1px solid $rp_green;
-    color: $rp_grey;
-    cursor: pointer;
-    
-
-    &:hover {
-      background-color: $rp_green;
-      color: $rp_black;
-    }
-  }
-
-  .aris {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-}
-.fop {
-  visibility: visible;
-}
-
+ @import "compass/reset";
+ @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap');
+ 
+ $rp_grey: #C4CDDF;
+ $rp_black: #212834;
+ $rp_blue: #69AAFF;
+ $rp_red: #FF644F;
+ $rp_green: #00E5A0;
+ 
+ $text_color: $rp_grey;
+ 
+ %chivo_light {
+   text-decoration: none;
+   font-family: 'Chivo', sans-serif;
+   font-weight: 300;
+   font-size: 14px;
+   letter-spacing: 0.04em;
+   line-height: .7;
+   color: $text_color;
+ }
+ 
+ %nav_link {
+   height: auto;
+   width: auto;
+   cursor: pointer;
+   @extend %chivo_light;
+ }
+ 
+ %app_shot {
+   position: relative;
+   height: fit-content;
+   width: fit-content;
+   display: flex;
+   flex-direction: row;
+   column-gap: 12px;
+ 
+   .image {
+     height: 354px;
+     width: auto;
+     position: relative;
+   }
+ 
+   .info {
+     width: fit-content;
+     height: fit-content;
+     position: relative;
+     top: 0;
+     display: flex;
+     flex-direction: column;
+ 
+     .app_name {
+       width: fit-content;
+       height: fit-content;
+       position: relative;
+       font-family: 'Alegreya';
+       font-style: italic;
+       font-weight: 900;
+       font-size: 28px;
+       line-height: 38px;
+       letter-spacing: 0.04em;
+       font-variant: small-caps;
+       color: $rp_grey;
+       margin-bottom: 24px;
+     }
+ 
+     .app_blurb {
+       width: fit-content;
+       height: fit-content;
+       position: relative;
+       margin-bottom: 40px;
+       font-family: 'Chivo';
+       font-weight: 300;
+       font-size: 12px;
+       line-height: 160%;
+       letter-spacing: 0.05em;
+       color: $rp_grey;
+     }
+ 
+     .app_details {
+       width: fit-content;
+       height: fit-content;
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       column-gap: 20px;
+ 
+       .sections {
+         width: fit-content;
+         height: fit-content;
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         row-gap: 12px;
+ 
+         .container {
+           width: fit-content;
+           height: fit-content;
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           row-gap: 6px;
+ 
+           .top {
+             width: fit-content;
+             height: fit-content;
+             position: relative;
+             font-family: 'Chivo';
+             font-style: normal;
+             font-weight: 900;
+             font-size: 12px;
+             line-height: .8;
+             letter-spacing: 0.08em;
+             color: $rp_grey;
+           }
+ 
+           .bottom {
+             width: fit-content;
+             height: fit-content;
+             position: relative;
+             font-family: 'Alegreya';
+             font-style: italic;
+             font-weight: 400;
+             font-size: 12px;
+             line-height: .8;
+             letter-spacing: 0.1em;
+             color: $rp_grey;
+           }
+         }
+       }
+     }
+ 
+     .open_project {
+       margin-top: 40px;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       justify-content: center;
+       align-self: flex-start;
+       padding: 12px 16px;
+       font-family: 'Chivo';
+       font-weight: 400;
+       font-size: 12px;
+       letter-spacing: 0.04em;
+       line-height: .7;
+       text-align: center;
+       border: 1px solid $rp_green;
+       color: $rp_grey;
+       cursor: pointer;
+       
+ 
+       &:hover {
+         background-color: $rp_green;
+         color: $rp_black;
+       }
+     }
+   }
+ }
+ 
+ html {
+   height: 100vh;
+   width: 100vw;
+ }
+ 
+ body {
+   height: 100vh;
+   width: 100vw;
+   background-color: $rp_black;
+ }
+ 
+ .logo_nav {
+   height: auto;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   z-index: 10;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-end;
+   padding-top: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+ 
+ 
+   .logo {
+     height: auto;
+     width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
+     margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+     cursor: pointer;
+   }
+ 
+   .nav {
+     height: auto;
+     width: auto;
+     display: flex;
+     flex-direction: row;
+     column-gap: 24px;
+     margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+ 
+     .c_link {
+       @extend %nav_link;
+ 
+       #tooltip {
+         height: auto;
+         width: auto;
+         visibility: hidden;
+         padding: .6% .7%;
+         position: absolute;
+         right: 8.2%;
+         margin-top: .7%;
+         @extend %nav_link;
+         text-align: center;
+         color: $rp_black;
+         background-color: $rp_grey;
+       }
+ 
+       &:hover #tooltip {
+         visibility: visible;
+       }
+     }
+ 
+     .r_link {
+       @extend %nav_link;
+ 
+       #tooltip {
+         height: auto;
+         width: auto;
+         display: none;
+         padding: .6% .7%;
+         position: absolute;
+         right: 2.6%;
+         margin-top: .7%;
+         @extend %nav_link;
+         text-align: center;
+         color: $rp_black;
+         background-color: $rp_grey;
+       }
+ 
+       &:hover #tooltip {
+         display: block;
+       }
+     }
+   }
+ }
+ 
+ .home {
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   top: 0;
+   left: 0;
+   overflow-y: scroll;
+   will-change: opacity, filter;
+   opacity: 1;
+   filter: blur(0px);
+   transition-property: opacity, filter;
+   transition-duration: 480ms;
+   transition-timing-function: ease-in-out;
+   scrollbar-width: none;
+ 
+ 
+   ::-webkit-scrollbar {
+     display: none;
+   }
+ 
+   .intro {
+     height: 100vh;
+     width: 100vw;
+     position: sticky;
+     top: 0;
+     overflow: hidden;
+ 
+     .herotext {
+       height: fit-content;
+       width: 100vw;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       align-items: center;
+       top: 30vh;
+ 
+       .solutions {
+         height: auto;
+         width: auto;
+         font-family: 'Chivo', sans-serif;
+         font-weight: 900;
+         letter-spacing: -0.01em;
+         font-size: 140px;
+         line-height: .7;
+         -webkit-text-stroke: 1px $rp_red;
+         color: $rp_black;
+       }
+ 
+       .t_c {
+         height: auto;
+         width: auto;
+         display: flex;
+         flex-direction: row;
+         column-gap: 6%;
+         margin-top: 2.5vh;
+ 
+         .that {
+           height: auto;
+           width: auto;
+           font-family: 'Alegreya', serif;
+           font-weight: 400;
+           letter-spacing: -0.03em;
+           font-size: 46px;
+           line-height: .7;
+           color: $rp_grey;
+         }
+ 
+         .captivate {
+           height: auto;
+           width: auto;
+           font-family: 'Alegreya', serif;
+           font-style: italic;
+           font-weight: 800;
+           letter-spacing: 0.02em;
+           font-size: 46px;
+           line-height: .7;
+           color: $rp_grey;
+         }
+       }
+ 
+       .a_d {
+         height: auto;
+         width: auto;
+         display: flex;
+         flex-direction: row;
+         margin-top: 2.5vh;
+ 
+         .ampersand {
+           height: auto;
+           width: auto;
+           font-family: 'Alegreya SC', serif;
+           font-weight: 400;
+           font-size: 46px;
+           line-height: .7;
+           margin-right: 10%;
+           color: $rp_grey;
+         }
+ 
+         .delight {
+           height: auto;
+           width: auto;
+           font-family: 'Alegreya', serif;
+           font-style: italic;
+           font-weight: 800;
+           letter-spacing: 0.02em;
+           font-size: 46px;
+           line-height: .7;
+           color: $rp_grey;
+         }
+ 
+         .period {
+           height: auto;
+           width: auto;
+           font-family: 'Alegreya SC', serif;
+           font-weight: 400;
+           font-size: 46px;
+           line-height: .7;
+           color: $rp_grey;
+         }
+       }
+ 
+       .title_name {
+         height: auto;
+         width: auto;
+         text-align: center;
+         @extend %chivo_light;
+         color: $rp_blue;
+         margin-top: 2%;
+ 
+         .name {
+           margin-top: 6%;
+         }
+       }
+     }
+ 
+     .turn_wheels {
+       height: fit-content;
+       width: 100vw;
+       position: absolute;
+       display: flex;
+       justify-content: center;
+       bottom: 0;
+       transform: translateY(120px);
+ 
+       .wheel_one {
+         height: 236px;
+         width: auto;
+         animation: clockwise 30s infinite linear;
+ 
+         @keyframes clockwise {
+           from {
+             transform: rotate(0deg);
+           }
+ 
+           to {
+             transform: rotate(359deg);
+           }
+         }
+       }
+ 
+       .wheel_two {
+         height: 175px;
+         width: auto;
+         position: absolute;
+         align-self: center;
+         animation: counterclockwise 30s infinite linear;
+ 
+         @keyframes counterclockwise {
+           from {
+             transform: rotate(359deg);
+           }
+ 
+           to {
+             transform: rotate(0deg);
+           }
+         }
+       }
+ 
+       #arrow {
+         height: auto;
+         width: 16px;
+         padding-bottom: 5%;
+         position: absolute;
+         align-self: center;
+         animation-duration: 2s;
+         animation-iteration-count: infinite;
+         transform-origin: bottom;
+         animation-name: bounce;
+         animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+ 
+         @keyframes bounce {
+           0% {
+             transform: scale(1, 1) translateY(0);
+           }
+ 
+           12% {
+             transform: scale(1.06, .8) translateY(0);
+           }
+ 
+           32% {
+             transform: scale(.8, 1.02) translateY(-12px);
+           }
+ 
+           48% {
+             transform: scale(1, .6) translateY(0);
+           }
+ 
+           64% {
+             transform: scale(1, 1.06) translateY(-6px);
+           }
+ 
+           80% {
+             transform: scale(1, .8) translateY(0);
+           }
+ 
+           100% {
+             transform: scale(1, 1) translateY(0);
+           }
+         }
+       }
+     }
+   }
+ 
+   .overflow {
+     height: 1vh;
+     width: 100vw;
+     position: relative;
+     opacity: 0;
+     background: $rp_grey;
+   }
+ }
+ 
+ .casestudies {
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
+   top: 0;
+   left: 0;
+   overflow-y: scroll;
+   will-change: transform;
+   transform: translateY(100vh);
+   transition-property: transform;
+   transition-duration: 400ms;
+   transition-timing-function: ease-in-out;
+   scrollbar-width: none;
+ 
+   ::-webkit-scrollbar {
+     display: none;
+   }
+ 
+   .projects {
+     overflow-x: scroll;
+     height: 100vh;
+     width: 100vw;
+     position: sticky;
+     top: 0;
+     display: flex;
+     flex-direction: row;
+     column-gap: 2vw;
+     scrollbar-width: none;
+ 
+     ::-webkit-scrollbar {
+       display: none;
+     }
+ 
+     .spacer_left {
+       height: 354px;
+       min-width: 13vw;
+       margin-top: 34vh;
+       position: relative;
+     }
+ 
+     .spacer_right {
+       height: 354px;
+       min-width: 20vw;
+       margin-top: 34vh;
+       position: relative;
+     }
+ 
+     .app_shot {
+       @extend %app_shot;
+       margin-top: 34vh;
+     }
+   }
+ 
+   .cs_title {
+     position: fixed;
+     top: 24vh;
+     left: 15vw;
+     height: fit-content;
+     width: fit-content;
+     display: flex;
+     flex-direction: row;
+     column-gap: 6px;
+     color: $rp_grey;
+ 
+     .case {
+       height: fit-content;
+       width: fit-content;
+       font-family: 'Chivo';
+       font-weight: 900;
+       font-size: 32px;
+       line-height: .8;
+       letter-spacing: -0.01em;
+     }
+ 
+     .studies {
+       height: fit-content;
+       width: fit-content;
+       font-family: 'Alegreya';
+       font-style: italic;
+       font-weight: 400;
+       font-size: 34px;
+       line-height: .8;
+       letter-spacing: 0.03em;
+     }
+   }
+ 
+   .overflow {
+     height: 1vh;
+     width: 100vw;
+     position: relative;
+     opacity: .3;
+     background: $rp_grey;
+   }
+ }
+ 
+ .in {
+   will-change: transform;
+   transform: translateY(0vh);
+   transition-property: transform;
+   transition-duration: 400ms;
+   transition-timing-function: ease-in-out;
+ }
+ 
+ .out {
+   will-change: opacity, filter;
+   opacity: 0;
+   filter: blur(32px);
+   transition-property: opacity, filter;
+   transition-duration: 480ms;
+   transition-timing-function: ease-in-out;
+ }
+ 
+ .pagination {
+   height: 57px;
+   width: 3px;
+   position: fixed;
+   z-index: 7;
+   display: flex;
+   flex-direction: column;
+   row-gap: 6px;
+   right: 1vw;
+   top: 45vh;
+ 
+   .on {
+     opacity: 1;
+   }
+ 
+   .off {
+     opacity: .5;
+   }
+ 
+   .p_one {
+     height: 15px;
+     width: auto;
+     background-color: $rp_green;
+   }
+ 
+   .p_two {
+     height: 15px;
+     width: auto;
+     background-color: $rp_green;
+   }
+ 
+   .p_three {
+     height: 15px;
+     width: auto;
+     opacity: .5;
+     background-color: $rp_green;
+   }
+ }
+ 
+ .right_fade {
+   position: fixed;
+   z-index: 4;
+   height: 100vh;
+   width: 11vw;
+   opacity: .90;
+   right: 0;
+   top: 0;
+   pointer-events: none;
+   background: $rp_black;
+ }
+ 
+ .figma_iframes {
+   height: 100vh;
+   width: 100vw;
+   position: absolute;
+   visibility: hidden;
+   z-index: 12;
+   top: 0;
+   left: 0;
+   background-color: black;
+ 
+   .close_figma {
+     position: absolute;
+     top: 1vh;
+     left: 4vw;
+     margin-top: 40px;
+     z-index: 11;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     align-self: flex-start;
+     padding: 12px 16px;
+     font-family: 'Chivo';
+     font-weight: 400;
+     font-size: 12px;
+     letter-spacing: 0.04em;
+     line-height: .7;
+     text-align: center;
+     border: 1px solid $rp_green;
+     color: $rp_grey;
+     cursor: pointer;
+     
+ 
+     &:hover {
+       background-color: $rp_green;
+       color: $rp_black;
+     }
+   }
+ 
+   .aris {
+     height: 100vh;
+     width: 100vw;
+     position: relative;
+   }
+ }
+ .fop {
+   visibility: visible;
+ }

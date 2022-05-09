@@ -1,31 +1,13 @@
-<html>
+<!DOCTYPE html>
 
 <head>
   <title>Rutherford Pizarro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/ico" href="/assets/rp_logo.ico" />
-  <link rel="stylesheet" href="https://use.typekit.net/hzf0fcx.css">
 </head>
 
 <body>
-
-  <div class="figma_iframes">
-    <div class="aris">
-      <iframe width="100%" height="100%"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUEXYcYAWuJvrr8QRNInLPI%2FAris-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D1230%253A4927%26viewport%3D241%252C48%252C0.74%26scaling%3Dscale-down-width%26starting-point-node-id%3D1230%253A4927%26hide-ui=1"
-        allowfullscreen></iframe>
-    </div>
-    <div class="close_figma">Go Back</div>
-  </div>
-
-  <div class="pagination">
-    <div class="p_one on"></div>
-    <div class="p_two off"></div>
-    <!--<div class="p_three"></div>-->
-  </div>
-
-  <div class="scroll_object"></div>
 
   <div class="logo_nav">
     <img src="assets/rp_logo.svg" alt="" class="logo">
@@ -39,39 +21,43 @@
     </div>
   </div>
 
-  <div class="intro">
-    <div class="herotext">
-      <div class="solutions">Solutions</div>
-      <div class="t_c">
-        <div class="that">that </div>
-        <div class="captivate">captivate</div>
-      </div>
-      <div class="a_d">
-        <div class="ampersand">& </div>
-        <div class="delight">delight</div>
-        <div class="period">.</div>
-      </div>
+  <div class="home">
+    <div class="intro">
+      <div class="herotext">
+        <div class="solutions">Solutions</div>
+        <div class="t_c">
+          <div class="that">that </div>
+          <div class="captivate">captivate</div>
+        </div>
+        <div class="a_d">
+          <div class="ampersand">& </div>
+          <div class="delight">delight</div>
+          <div class="period">.</div>
+        </div>
 
-      <div class="title_name">
-        <div>UI/UX Designer</div>
-        <div class="name">Rutherford Pizarro</div>
-      </div>
+        <div class="title_name">
+          <div>UI/UX Designer</div>
+          <div class="name">Rutherford Pizarro</div>
+        </div>
 
+      </div>
+      <div class="turn_wheels">
+        <img src="assets/cs_circle.svg" alt="" class="wheel_one">
+        <img src="assets/sd_circle.svg" alt="" class="wheel_two">
+        <img src="assets/scroll_arrow.svg" alt="" id="arrow">
+      </div>
     </div>
-    <div class="turn_wheels">
-      <img src="assets/cs_circle.svg" alt="" class="wheel_one">
-      <img src="assets/sd_circle.svg" alt="" class="wheel_two">
-      <img src="assets/scroll_arrow.svg" alt="" id="arrow">
-    </div>
+    <div class="overflow"></div>
   </div>
 
-  <div class="case_studies">
+  <div class="casestudies">
+    <div class="cs_title">
+      <div class="case">CASE</div>
+      <div class="studies">Studies</div>
+    </div>
     <div class="projects">
-      <div class="app_shot spacer_left">
-        <div class="cs_title">
-          <div class="case">CASE</div>
-          <div class="studies">Studies</div>
-        </div>
+      <div class="spacer_left"></div>
+      <div class="app_shot">
         <img src="assets/aris.png" alt="" class="image">
         <div class="info">
           <div class="app_name">Aris</div>
@@ -141,7 +127,7 @@ that are worth supporting.</pre>
           <div class="open_project">Open Project</div>
         </div>
       </div>
-      <div class="app_shot spacer_right">
+      <div class="app_shot">
         <img src="assets/clubnow.png" alt="" class="image">
         <div class="info">
           <div class="app_name">Club Now</div>
@@ -176,18 +162,34 @@ independent of event planners).</pre>
           <div class="open_project">Open Project</div>
         </div>
       </div>
+      <div class="spacer_right"></div>
     </div>
-    <div class="empty_container"></div>
+    <div class="overflow"></div>
   </div>
 
   <div class="right_fade"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <div class="pagination">
+    <div class="p_one on"></div>
+    <div class="p_two off"></div>
+    <!--<div class="p_three"></div>-->
+  </div>
+
+  <div class="figma_iframes">
+    <div class="aris">
+      <iframe width="100%" height="100%"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FUEXYcYAWuJvrr8QRNInLPI%2FAris-Case-Study%3Fpage-id%3D0%253A1%26node-id%3D1230%253A4927%26viewport%3D241%252C48%252C0.74%26scaling%3Dscale-down-width%26starting-point-node-id%3D1230%253A4927%26hide-ui=1"
+        allowfullscreen></iframe>
+    </div>
+    <div class="close_figma">Go Back</div>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
 
   <script>
 
-    $(document).ready(function () {
+    $(window).on("load", function () {
       var clipboard = new ClipboardJS('#clipboard');
       var x = 0;
 
@@ -199,11 +201,11 @@ independent of event planners).</pre>
         }, 1350);
       });
 
-      $("body").scroll(function () {
-        $(".case_studies").addClass('in');
-        $(".intro").addClass('out');
-        $(".case_studies").scrollTop(1);
-        $("body").scrollTop(1);
+      $(".home").scroll(function () {
+        $(".casestudies").addClass('in');
+        $(".home").addClass('out');
+        $(".home").scrollTop(1);
+        $(".casestudies").scrollTop(1);
         if ($('.p_one').hasClass("on")) {
           $('.p_one').addClass('off').removeClass("on");
         }
@@ -212,11 +214,11 @@ independent of event planners).</pre>
         }
       });
 
-      $(".case_studies").scroll(function () {
-        $(".case_studies").removeClass('in');
-        $(".intro").removeClass('out');
-        $(".case_studies").scrollTop(1);
-        $("body").scrollTop(1);
+      $(".casestudies").scroll(function () {
+        $(".casestudies").removeClass('in');
+        $(".home").removeClass('out');
+        $(".home").scrollTop(1);
+        $(".casestudies").scrollTop(1);
         if ($('.p_one').hasClass("off")) {
           $('.p_one').addClass('on').removeClass("off");
         }
@@ -233,7 +235,7 @@ independent of event planners).</pre>
         $('.figma_iframes').removeClass('fop');
       });
 
-    });
+    })
 
   </script>
 
