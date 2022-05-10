@@ -686,14 +686,14 @@ body {
 .figma_iframes {
   height: 100vh;
   width: 100vw;
-  position: absolute;
-  visibility: hidden;
-  z-index: 12;
-  top: 0;
-  left: 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   background-color: black;
 }
-/* line 656, ../sass/screen.scss */
+/* line 657, ../sass/screen.scss */
 .figma_iframes .close_figma {
   position: absolute;
   top: 1vh;
@@ -715,20 +715,43 @@ body {
   border: 1px solid #00E5A0;
   color: #C4CDDF;
   cursor: pointer;
+  text-decoration: none;
 }
-/* line 679, ../sass/screen.scss */
+/* line 681, ../sass/screen.scss */
 .figma_iframes .close_figma:hover {
   background-color: #00E5A0;
   color: #212834;
 }
-/* line 685, ../sass/screen.scss */
-.figma_iframes .aris {
-  height: 100vh;
-  width: 100vw;
-  position: relative;
+/* line 687, ../sass/screen.scss */
+.figma_iframes .coming_soon {
+  position: fixed;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  column-gap: 6px;
+  color: #C4CDDF;
+  margin-bottom: 15vh;
 }
-
-/* line 691, ../sass/screen.scss */
-.fop {
-  visibility: visible;
+/* line 698, ../sass/screen.scss */
+.figma_iframes .coming_soon .case {
+  height: fit-content;
+  width: fit-content;
+  font-family: 'Chivo';
+  font-weight: 900;
+  font-size: 32px;
+  line-height: .8;
+  letter-spacing: -0.01em;
+}
+/* line 708, ../sass/screen.scss */
+.figma_iframes .coming_soon .studies {
+  height: fit-content;
+  width: fit-content;
+  font-family: 'Alegreya';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: .8;
+  letter-spacing: 0.03em;
 }
