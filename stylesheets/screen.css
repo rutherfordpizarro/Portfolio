@@ -647,14 +647,30 @@ body {
 
 /* line 611, ../sass/screen.scss */
 .kalos {
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-color: #040600;
   position: relative;
-  overflow: scroll;
 }
-/* line 618, ../sass/screen.scss */
-.kalos .close_figma {
+/* line 619, ../sass/screen.scss */
+.kalos .hero_cut_wrapper {
+  height: fit-content;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+/* line 626, ../sass/screen.scss */
+.kalos .hero_cut_wrapper #hero_cut {
+  width: 94.5vw;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+/* line 633, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .close_figma {
   position: absolute;
   top: 1vh;
   left: 4vw;
@@ -678,39 +694,30 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 643, ../sass/screen.scss */
-.kalos .close_figma:hover {
+/* line 658, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .close_figma:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 650, ../sass/screen.scss */
-.kalos #hero_cut {
-  height: auto;
-  width: 94.5vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: translateY(-20vh);
-}
-/* line 659, ../sass/screen.scss */
-.kalos .kalos_intro {
+/* line 665, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro {
   height: fit-content;
   width: fit-content;
   position: absolute;
-  z-index: 2;
   display: flex;
   flex-direction: column;
-  margin-top: 18vh;
+  margin-top: 24vh;
   margin-left: 10vw;
+  margin-bottom: 390px;
 }
-/* line 669, ../sass/screen.scss */
-.kalos .kalos_intro #type_name {
+/* line 675, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro #type_name {
   height: fit-content;
   width: 80%;
 }
-/* line 674, ../sass/screen.scss */
-.kalos .kalos_intro .type_designer {
+/* line 680, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro .type_designer {
   font-family: 'kalosregular';
   font-style: normal;
   font-weight: 400;
@@ -719,8 +726,8 @@ body {
   margin-top: 12px;
   color: #6700B8;
 }
-/* line 684, ../sass/screen.scss */
-.kalos .kalos_intro .download_kalos {
+/* line 690, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro .download_kalos {
   margin-top: 2vh;
   display: flex;
   flex-direction: row;
@@ -740,14 +747,14 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 705, ../sass/screen.scss */
-.kalos .kalos_intro .download_kalos:hover {
+/* line 711, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro .download_kalos:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 712, ../sass/screen.scss */
-.kalos .kalos_intro .type_intro_one {
+/* line 718, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .kalos_intro .type_intro_one {
   font-family: 'kalosregular';
   font-style: normal;
   font-weight: 400;
@@ -757,12 +764,10 @@ body {
   color: #040600;
   margin-top: 3vh;
 }
-/* line 724, ../sass/screen.scss */
-.kalos .type_intro_two {
+/* line 730, ../sass/screen.scss */
+.kalos .hero_cut_wrapper .type_intro_two {
   position: absolute;
-  right: 10vw;
-  top: 117vh;
-  z-index: 2;
+  align-self: flex-end;
   font-family: 'kalosregular';
   font-style: normal;
   font-weight: 400;
@@ -770,19 +775,37 @@ body {
   line-height: 152.02%;
   letter-spacing: 1.5px;
   color: #F9F9F9;
+  bottom: 293px;
+  right: 9vw;
 }
-/* line 738, ../sass/screen.scss */
-.kalos .letter_grid {
+/* line 745, ../sass/screen.scss */
+.kalos .content_wrapper {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10vh;
+}
+/* line 754, ../sass/screen.scss */
+.kalos .content_wrapper .vimeo {
+  width: 65%;
+  height: fit-content;
+  padding: 37.25% 0 0 0;
+  margin-top: 10vh;
+  position: relative;
+}
+/* line 762, ../sass/screen.scss */
+.kalos .content_wrapper .letter_grid {
   height: fit-content;
   width: 100vw;
-  position: absolute;
-  top: 210vh;
   display: flex;
   flex-direction: column;
   row-gap: 3vh;
 }
-/* line 747, ../sass/screen.scss */
-.kalos .letter_grid .grid_title {
+/* line 769, ../sass/screen.scss */
+.kalos .content_wrapper .letter_grid .grid_title {
   height: fit-content;
   width: fit-content;
   font-family: 'kalosregular';
@@ -793,8 +816,8 @@ body {
   color: #F9F9F9;
   margin-left: 14.25vw;
 }
-/* line 759, ../sass/screen.scss */
-.kalos .letter_grid .grid {
+/* line 781, ../sass/screen.scss */
+.kalos .content_wrapper .letter_grid .grid {
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -802,16 +825,16 @@ body {
   row-gap: 8px;
   margin-left: 14.25vw;
 }
-/* line 767, ../sass/screen.scss */
-.kalos .letter_grid .grid .row {
+/* line 789, ../sass/screen.scss */
+.kalos .content_wrapper .letter_grid .grid .row {
   height: fit-content;
   width: fit-content;
   display: flex;
   flex-direction: row;
   column-gap: 8px;
 }
-/* line 774, ../sass/screen.scss */
-.kalos .letter_grid .grid .row .block {
+/* line 796, ../sass/screen.scss */
+.kalos .content_wrapper .letter_grid .grid .row .block {
   height: 9vh;
   width: 5vw;
   display: flex;
@@ -824,54 +847,42 @@ body {
   font-size: 40px;
   color: #F9F9F9;
 }
-/* line 792, ../sass/screen.scss */
-.kalos .uppercase {
-  top: 240vh;
-}
-/* line 799, ../sass/screen.scss */
-.kalos .uppercase .grid .row .block {
+/* line 820, ../sass/screen.scss */
+.kalos .content_wrapper .uppercase .grid .row .block {
   border: 1px solid #488A40;
   text-transform: uppercase;
 }
-/* line 807, ../sass/screen.scss */
-.kalos .symbols {
-  top: 305vh;
-}
-/* line 810, ../sass/screen.scss */
-.kalos .symbols .grid {
-  margin-left: 25.25vw;
-}
-/* line 814, ../sass/screen.scss */
-.kalos .symbols .grid_title {
-  margin-left: 25.25vw;
-}
-/* line 819, ../sass/screen.scss */
-.kalos .punctuation {
-  top: 390vh;
-}
-/* line 822, ../sass/screen.scss */
-.kalos .punctuation .grid {
-  margin-left: 25.25vw;
-}
-/* line 826, ../sass/screen.scss */
-.kalos .punctuation .grid_title {
+/* line 830, ../sass/screen.scss */
+.kalos .content_wrapper .symbols .grid {
   margin-left: 25.25vw;
 }
 /* line 834, ../sass/screen.scss */
-.kalos .punctuation .grid .row .block {
+.kalos .content_wrapper .symbols .grid_title {
+  margin-left: 25.25vw;
+}
+/* line 841, ../sass/screen.scss */
+.kalos .content_wrapper .punctuation .grid {
+  margin-left: 25.25vw;
+}
+/* line 845, ../sass/screen.scss */
+.kalos .content_wrapper .punctuation .grid_title {
+  margin-left: 25.25vw;
+}
+/* line 853, ../sass/screen.scss */
+.kalos .content_wrapper .punctuation .grid .row .block {
   border: 1px solid #488A40;
 }
-/* line 842, ../sass/screen.scss */
-.kalos .floats {
+/* line 861, ../sass/screen.scss */
+.kalos .content_wrapper .floats {
   height: fit-content;
   width: 100vw;
-  position: absolute;
-  top: 280vh;
+  position: relative;
   display: flex;
   justify-content: center;
+  margin-top: 4vh;
 }
-/* line 850, ../sass/screen.scss */
-.kalos .floats .float_characters {
+/* line 869, ../sass/screen.scss */
+.kalos .content_wrapper .floats .float_characters {
   height: fit-content;
   width: fit-content;
   font-family: 'kalosregular';
@@ -882,25 +893,25 @@ body {
   padding-top: 2.2vh;
   color: #F9F9F9;
 }
-/* line 864, ../sass/screen.scss */
-.kalos .numbers {
-  top: 365vh;
+/* line 883, ../sass/screen.scss */
+.kalos .content_wrapper .numbers {
+  position: relative;
   letter-spacing: .4em;
+  margin-top: 4vh;
 }
-/* line 868, ../sass/screen.scss */
-.kalos .shots {
+/* line 889, ../sass/screen.scss */
+.kalos .content_wrapper .shots {
   height: fit-content;
   width: 100vw;
-  position: absolute;
-  top: 450vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10vh;
   padding-bottom: 10vh;
 }
-/* line 879, ../sass/screen.scss */
-.kalos .shots #mock_up {
+/* line 899, ../sass/screen.scss */
+.kalos .content_wrapper .shots #mock_up {
   height: fit-content;
   width: 60%;
 }

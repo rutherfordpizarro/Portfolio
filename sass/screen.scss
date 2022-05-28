@@ -609,11 +609,26 @@ body {
 
 
 .kalos {
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
   background-color: #040600;
   position: relative;
-  overflow: scroll;
+
+.hero_cut_wrapper {
+  height: fit-content;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  #hero_cut {
+    width: 94.5vw;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 
   .close_figma {
     position: absolute;
@@ -647,24 +662,15 @@ body {
     }
   }
 
-  #hero_cut {
-    height: auto;
-    width: 94.5vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-20vh);
-  }
-
   .kalos_intro {
     height: fit-content;
     width: fit-content;
     position: absolute;
-    z-index: 2;
     display: flex;
     flex-direction: column;
-    margin-top: 18vh;
+    margin-top: 24vh;
     margin-left: 10vw;
+    margin-bottom: 390px;
 
     #type_name {
       height: fit-content;
@@ -723,9 +729,7 @@ body {
 
   .type_intro_two {
     position: absolute;
-    right: 10vw;
-    top: 117vh;
-    z-index: 2;
+    align-self: flex-end;
     font-family: 'kalosregular';
     font-style: normal;
     font-weight: 400;
@@ -733,13 +737,31 @@ body {
     line-height: 152.02%;
     letter-spacing: 1.5px;
     color: #F9F9F9;
+    bottom: 293px;
+    right: 9vw;
+  }
+}
+
+.content_wrapper {
+  height: fit-content;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10vh;
+
+  .vimeo {
+    width: 65%;
+    height: fit-content;
+    padding: 37.25% 0 0 0;
+    margin-top: 10vh;
+    position: relative;
   }
 
   .letter_grid {
     height: fit-content;
     width: 100vw;
-    position: absolute;
-    top: 210vh;
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -790,7 +812,6 @@ body {
   }
 
   .uppercase {
-    top: 240vh;
 
     .grid {
 
@@ -805,7 +826,6 @@ body {
   }
 
   .symbols {
-    top: 305vh;
 
     .grid {
       margin-left: 25.25vw;
@@ -817,7 +837,6 @@ body {
   }
 
   .punctuation {
-    top: 390vh;
 
     .grid {
       margin-left: 25.25vw;
@@ -842,10 +861,10 @@ body {
   .floats {
     height: fit-content;
     width: 100vw;
-    position: absolute;
-    top: 280vh;
+    position: relative;
     display: flex;
     justify-content: center;
+    margin-top: 4vh;
 
     .float_characters {
       height: fit-content;
@@ -862,23 +881,25 @@ body {
   }
 
   .numbers {
-    top: 365vh;
+    position: relative;
     letter-spacing: .4em;
+    margin-top: 4vh;
   }
-.shots {
-  height: fit-content;
-  width: 100vw;
-  position: absolute;
-  top: 450vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  row-gap: 10vh;
-  padding-bottom: 10vh;
 
-  #mock_up {
+  .shots {
     height: fit-content;
-    width: 60%;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10vh;
+    padding-bottom: 10vh;
+
+    #mock_up {
+      height: fit-content;
+      width: 60%;
+    }
   }
 }
 
