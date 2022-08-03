@@ -213,6 +213,16 @@
    background-color: $rp_grey;
  }
 
+ .rp_logo {
+  width: auto;
+  z-index: 3;
+  height: 6vh;
+  position: fixed;
+  top: 5.5vh;
+  display: flex;
+  align-self: center;
+ }
+
  .case_studies_arrow {
   position: absolute;
   bottom: 2vh;
