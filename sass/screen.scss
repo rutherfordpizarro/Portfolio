@@ -224,13 +224,14 @@
  }
 
  .case_studies_arrow {
+  width: 3.7vh;
   position: absolute;
   bottom: 2vh;
   right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
  }
 
  .top_line {
-  height: 13.5vh;
+  height: 13.6vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -264,11 +265,11 @@
    right: 0;
    display: flex;
    flex-direction: row;
-   margin-top: 9.76vh;
+   margin-top: 10.2vh;
    margin-right: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
  
    .overlap {
-    margin-right: calc(0px + (-16 - 0) * ((100vw - 640px) / (1920 - 640)));
+    margin-right: -24px;
   }
  
    .link_container {
@@ -280,8 +281,9 @@
  
      .link {
        @extend %nav_link;
+       text-transform: uppercase;
        font-weight: 400;
-       font-size: calc(16px + (24.69 - 16) * ((100vw - 640px) / (1920 - 640)));
+       font-size: calc(16px + (18.2 - 16) * ((100vw - 640px) / (1920 - 640)));
      }
  
      .right {
