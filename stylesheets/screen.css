@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Alegreya:ital,wght@0,400;0,800;1,400;1,800;1,900&family=Chivo:wght@300;400;700;900&display=swap");
 /* line 5, ../../../../../Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -74,162 +74,180 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 24, ../sass/screen.scss */
-.nav .link_container .link, .nav .link_container #tooltip, .herotext .title_name {
+/* line 23, ../sass/screen.scss */
+.nav .link_container .link, .nav .link_container #tooltip {
   text-decoration: none;
   font-family: 'Chivo', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   line-height: .7;
-  color: #C4CDDF;
+  color: #0A0A0A;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .nav .link_container .link, .nav .link_container #tooltip {
   height: auto;
   width: auto;
   cursor: pointer;
+  color: #0A0A0A;
 }
 
 /* line 41, ../sass/screen.scss */
-.casestudies .app_shot {
-  position: relative;
+.casestudies .project_block {
   height: fit-content;
   width: fit-content;
-  display: flex;
-  flex-direction: row;
-  column-gap: 12px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  gap: 0px 24px;
 }
-/* line 49, ../sass/screen.scss */
-.casestudies .app_shot .image {
-  height: 350.2px;
-  width: auto;
-  position: relative;
-}
-/* line 55, ../sass/screen.scss */
-.casestudies .app_shot .info {
-  width: fit-content;
+/* line 50, ../sass/screen.scss */
+.casestudies .project_block .name-details {
   height: fit-content;
-  position: relative;
-  top: 0;
+  width: fit-content;
+  grid-area: 2 / 1 / 3 / 2;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
+  gap: 30px;
 }
-/* line 63, ../sass/screen.scss */
-.casestudies .app_shot .info .app_name {
+/* line 59, ../sass/screen.scss */
+.casestudies .project_block .name-details .name {
   width: fit-content;
   height: fit-content;
-  position: relative;
   font-family: 'Alegreya';
   font-style: italic;
   font-weight: 900;
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 32px;
+  line-height: .7;
+  display: flex;
+  align-items: center;
+  text-align: right;
   letter-spacing: 0.04em;
   font-variant: small-caps;
-  color: #C4CDDF;
-  margin-bottom: 24px;
+  color: #0A0A0A;
 }
-/* line 78, ../sass/screen.scss */
-.casestudies .app_shot .info .app_blurb {
-  width: fit-content;
+/* line 76, ../sass/screen.scss */
+.casestudies .project_block .name-details .details {
   height: fit-content;
-  position: relative;
-  margin-bottom: 40px;
-  font-family: 'Chivo';
-  font-weight: 300;
-  font-size: 12px;
-  line-height: 160%;
-  letter-spacing: 0.05em;
-  color: #C4CDDF;
-}
-/* line 91, ../sass/screen.scss */
-.casestudies .app_shot .info .app_details {
   width: fit-content;
-  height: fit-content;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  column-gap: 20px;
-}
-/* line 99, ../sass/screen.scss */
-.casestudies .app_shot .info .app_details .sections {
-  width: fit-content;
-  height: fit-content;
-  position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 12px;
+  align-items: flex-end;
+  gap: 30px;
 }
-/* line 107, ../sass/screen.scss */
-.casestudies .app_shot .info .app_details .sections .container {
+/* line 84, ../sass/screen.scss */
+.casestudies .project_block .name-details .details .container {
   width: fit-content;
   height: fit-content;
-  position: relative;
   display: flex;
   flex-direction: column;
-  row-gap: 6px;
+  align-items: flex-end;
+  gap: 8px;
 }
-/* line 115, ../sass/screen.scss */
-.casestudies .app_shot .info .app_details .sections .container .top {
+/* line 93, ../sass/screen.scss */
+.casestudies .project_block .name-details .details .container .top {
   width: fit-content;
   height: fit-content;
   position: relative;
   font-family: 'Chivo';
   font-style: normal;
   font-weight: 900;
-  font-size: 12px;
-  line-height: .8;
+  font-size: 16px;
+  line-height: .7;
+  display: flex;
+  align-items: center;
+  text-align: right;
   letter-spacing: 0.08em;
-  color: #C4CDDF;
+  color: #0A0A0A;
 }
-/* line 128, ../sass/screen.scss */
-.casestudies .app_shot .info .app_details .sections .container .bottom {
+/* line 110, ../sass/screen.scss */
+.casestudies .project_block .name-details .details .container .bottom {
   width: fit-content;
   height: fit-content;
   position: relative;
   font-family: 'Alegreya';
   font-style: italic;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: .8;
+  display: flex;
+  align-items: center;
+  text-align: right;
   letter-spacing: 0.1em;
-  color: #C4CDDF;
+  color: #0A0A0A;
 }
-/* line 144, ../sass/screen.scss */
-.casestudies .app_shot .info .open_project {
-  margin-top: 40px;
+/* line 130, ../sass/screen.scss */
+.casestudies .project_block .image_link_about {
+  height: fit-content;
+  width: fit-content;
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+/* line 139, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .image_link {
+  height: fit-content;
+  width: fit-content;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-  padding: 12px 16px;
-  font-family: 'Chivo';
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.04em;
-  line-height: .7;
-  text-align: center;
-  border: 1px solid #00E5A0;
-  color: #C4CDDF;
-  cursor: pointer;
-  text-decoration: none;
+  align-items: flex-end;
+  column-gap: 24px;
 }
-/* line 164, ../sass/screen.scss */
-.casestudies .app_shot .info .open_project:hover {
-  background-color: #00E5A0;
-  color: #212834;
+/* line 148, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .image_link .image {
+  height: auto;
+  width: 708px;
+  border-radius: 2px;
+}
+/* line 155, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .image_link .project_link {
+  font-family: 'Chivo';
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.08em;
+  line-height: .7;
+  word-spacing: 0.2em;
+  text-align: center;
+  color: #0A0A0A;
+  cursor: pointer;
+  text-decoration-line: none;
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+  writing-mode: vertical-lr;
+}
+/* line 173, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .image_link .project_link:hover {
+  color: #0A0A0A;
+  text-decoration-line: underline;
+}
+/* line 180, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .about {
+  width: 708px;
+  height: fit-content;
+  font-family: 'Chivo';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6em;
+  letter-spacing: 0.05em;
+  color: #0A0A0A;
+}
+/* line 192, ../sass/screen.scss */
+.casestudies .project_block .image_link_about .about .higlights {
+  font-style: italic;
+  font-weight: 700;
 }
 
-/* line 172, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 html {
   height: fit-content;
   width: 100vw;
 }
 
-/* line 177, ../sass/screen.scss */
+/* line 206, ../sass/screen.scss */
 body {
   height: fit-content;
   width: 100vw;
@@ -237,26 +255,50 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #212834;
+  background-color: #CCE9FA;
 }
 
-/* line 187, ../sass/screen.scss */
-.logo {
-  height: auto;
+/* line 216, ../sass/screen.scss */
+.case_studies_arrow {
+  position: absolute;
+  bottom: 2vh;
+  right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+}
+
+/* line 222, ../sass/screen.scss */
+.top_line {
+  height: 15vh;
+  width: 100vw;
   position: fixed;
+  z-index: 1;
+  top: 0;
+  background: rgba(204, 233, 250, 0.75);
+  border-bottom: 1px solid #0A0A0A;
+  backdrop-filter: blur(14px);
+}
+
+/* line 233, ../sass/screen.scss */
+.my_name {
+  position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
-  width: calc(24px + (48 - 24) * ((100vh - 640px) / (1440 - 640)));
-  margin-top: 6vh;
+  font-family: 'Chivo';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 21.2px;
+  line-height: 15px;
+  margin-top: 9.25vh;
   margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
   cursor: pointer;
 }
 
-/* line 198, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .nav {
   height: fit-content;
   width: auto;
   position: fixed;
+  z-index: 2;
   top: 0;
   right: 0;
   display: flex;
@@ -264,11 +306,11 @@ body {
   margin-top: 9.76vh;
   margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
 }
-/* line 209, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .nav .overlap {
-  margin-right: -1vw;
+  margin-right: -2vw;
 }
-/* line 213, ../sass/screen.scss */
+/* line 264, ../sass/screen.scss */
 .nav .link_container {
   position: relative;
   display: flex;
@@ -276,257 +318,82 @@ body {
   row-gap: 2vh;
   align-items: flex-end;
 }
-/* line 225, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
+.nav .link_container .link {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+/* line 278, ../sass/screen.scss */
 .nav .link_container .right:hover + #tooltip {
   visibility: visible;
 }
-/* line 231, ../sass/screen.scss */
+/* line 284, ../sass/screen.scss */
 .nav .link_container .left:hover + #tooltip {
   visibility: visible;
 }
-/* line 236, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .nav .link_container #tooltip {
   visibility: hidden;
   padding: 1.5vh 1vw;
   position: relative;
   text-align: center;
-  color: #212834;
-  background-color: #C4CDDF;
+  color: #CCE9FA;
+  background-color: #0A0A0A;
 }
 
-/* line 248, ../sass/screen.scss */
-.herotext {
-  height: fit-content;
+/* line 301, ../sass/screen.scss */
+.portfolio-hero {
+  height: 100vh;
   width: 100vw;
-  position: relative;
+  overflow-x: hidden;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   align-items: center;
-  margin-top: 35vh;
+  justify-content: space-between;
 }
-/* line 258, ../sass/screen.scss */
-.herotext .solutions {
-  height: auto;
-  width: auto;
-  font-family: 'Chivo', sans-serif;
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  font-size: 140px;
-  line-height: .7;
-  -webkit-text-stroke: 1px #FF644F;
-  color: #212834;
-}
-/* line 270, ../sass/screen.scss */
-.herotext .t_c {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  column-gap: 6%;
-  margin-top: 2.5vh;
-}
-/* line 278, ../sass/screen.scss */
-.herotext .t_c .that {
-  height: auto;
-  width: auto;
-  font-family: 'Alegreya', serif;
-  font-weight: 400;
-  letter-spacing: -0.03em;
-  font-size: 46px;
-  line-height: .7;
-  color: #C4CDDF;
-}
-/* line 289, ../sass/screen.scss */
-.herotext .t_c .captivate {
-  height: auto;
-  width: auto;
-  font-family: 'Alegreya', serif;
-  font-style: italic;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  font-size: 46px;
-  line-height: .7;
-  color: #C4CDDF;
-}
-/* line 302, ../sass/screen.scss */
-.herotext .a_d {
-  height: auto;
-  width: auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 2.5vh;
-}
-/* line 309, ../sass/screen.scss */
-.herotext .a_d .ampersand {
-  height: auto;
-  width: auto;
-  font-family: 'Alegreya SC', serif;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: .7;
-  margin-right: 10%;
-  color: #C4CDDF;
-}
-/* line 320, ../sass/screen.scss */
-.herotext .a_d .delight {
-  height: auto;
-  width: auto;
-  font-family: 'Alegreya', serif;
-  font-style: italic;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  font-size: 46px;
-  line-height: .7;
-  color: #C4CDDF;
-}
-/* line 332, ../sass/screen.scss */
-.herotext .a_d .period {
-  height: auto;
-  width: auto;
-  font-family: 'Alegreya SC', serif;
-  font-weight: 400;
-  font-size: 46px;
-  line-height: .7;
-  color: #C4CDDF;
-}
-/* line 343, ../sass/screen.scss */
-.herotext .title_name {
-  height: auto;
-  width: auto;
-  text-align: center;
-  color: #69AAFF;
-  margin-top: 2%;
-}
-/* line 351, ../sass/screen.scss */
-.herotext .title_name .name {
-  margin-top: 6%;
-}
-
-/* line 357, ../sass/screen.scss */
-.turn_wheels {
+/* line 310, ../sass/screen.scss */
+.portfolio-hero .hero_intro-text {
   height: fit-content;
-  width: 100vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  margin-top: 18vh;
-}
-/* line 365, ../sass/screen.scss */
-.turn_wheels .wheel_one {
-  height: 236px;
-  width: auto;
-  animation: clockwise 30s infinite linear;
-}
-@keyframes clockwise {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-/* line 381, ../sass/screen.scss */
-.turn_wheels .wheel_two {
-  height: 175px;
-  width: auto;
-  position: absolute;
+  width: 37.5vw;
+  margin-top: 24vh;
+  margin-top: 36vh;
   align-self: center;
-  animation: counterclockwise 30s infinite linear;
 }
-@keyframes counterclockwise {
-  from {
-    transform: rotate(359deg);
-  }
-  to {
-    transform: rotate(0deg);
-  }
-}
-/* line 399, ../sass/screen.scss */
-.turn_wheels #arrow {
-  height: auto;
-  width: 16px;
-  padding-bottom: 5%;
-  position: absolute;
-  align-self: center;
-  animation-duration: 2s;
+/* line 318, ../sass/screen.scss */
+.portfolio-hero .hero_scroll-down {
+  height: 8vh;
+  width: fit-content;
+  margin-bottom: 6vh;
+  align-self: flex-end;
+  transform: translateX(-17px);
+  animation-name: scrolldown;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
   animation-iteration-count: infinite;
-  transform-origin: bottom;
-  animation-name: bounce;
-  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
 }
-@keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0);
+@keyframes scrolldown {
+  from {
+    transform: translateX(-17px);
   }
-  12% {
-    transform: scale(1.06, 0.8) translateY(0);
-  }
-  32% {
-    transform: scale(0.8, 1.02) translateY(-12px);
-  }
-  48% {
-    transform: scale(1, 0.6) translateY(0);
-  }
-  64% {
-    transform: scale(1, 1.06) translateY(-6px);
-  }
-  80% {
-    transform: scale(1, 0.8) translateY(0);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0);
+  to {
+    transform: translateX(2212px);
   }
 }
-/* line 443, ../sass/screen.scss */
+/* line 342, ../sass/screen.scss */
 .casestudies {
   height: fit-content;
   width: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-top: 18vh;
-  margin-bottom: 16vh;
-  margin-left: 6vw;
-}
-/* line 453, ../sass/screen.scss */
-.casestudies .cs_title {
-  position: relative;
-  height: fit-content;
-  width: fit-content;
-  display: flex;
-  flex-direction: row;
-  column-gap: 6px;
-  color: #C4CDDF;
-  margin-bottom: 10vh;
-}
-/* line 463, ../sass/screen.scss */
-.casestudies .cs_title .case {
-  height: fit-content;
-  width: fit-content;
-  font-family: 'Chivo';
-  font-weight: 900;
-  font-size: 32px;
-  line-height: .8;
-  letter-spacing: -0.01em;
-}
-/* line 473, ../sass/screen.scss */
-.casestudies .cs_title .studies {
-  height: fit-content;
-  width: fit-content;
-  font-family: 'Alegreya';
-  font-style: italic;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: .8;
-  letter-spacing: 0.03em;
-}
-/* line 485, ../sass/screen.scss */
-.casestudies .app_shot {
-  margin-bottom: 10vh;
+  align-items: flex-end;
+  row-gap: 60px;
+  margin-top: 24vh;
+  margin-bottom: 15vh;
+  transform: translateX(-67.5px);
 }
 
-/* line 491, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .pagination {
   height: 57px;
   width: 3px;
@@ -538,35 +405,35 @@ body {
   right: 1vw;
   top: 45vh;
 }
-/* line 502, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .pagination .on {
   opacity: 1;
 }
-/* line 506, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .pagination .off {
   opacity: .5;
 }
-/* line 510, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .pagination .p_one {
   height: 15px;
   width: auto;
-  background-color: #00E5A0;
+  background-color: #83FFCB;
 }
-/* line 516, ../sass/screen.scss */
+/* line 385, ../sass/screen.scss */
 .pagination .p_two {
   height: 15px;
   width: auto;
-  background-color: #00E5A0;
+  background-color: #83FFCB;
 }
-/* line 522, ../sass/screen.scss */
+/* line 391, ../sass/screen.scss */
 .pagination .p_three {
   height: 15px;
   width: auto;
   opacity: .5;
-  background-color: #00E5A0;
+  background-color: #83FFCB;
 }
 
-/* line 530, ../sass/screen.scss */
+/* line 399, ../sass/screen.scss */
 .figma_iframes {
   height: 100vh;
   width: 100vw;
@@ -577,7 +444,7 @@ body {
   align-items: center;
   background-color: black;
 }
-/* line 541, ../sass/screen.scss */
+/* line 410, ../sass/screen.scss */
 .figma_iframes .close_figma {
   position: absolute;
   top: 1vh;
@@ -596,17 +463,17 @@ body {
   letter-spacing: 0.04em;
   line-height: .7;
   text-align: center;
-  border: 1px solid #00E5A0;
-  color: #C4CDDF;
+  border: 1px solid #83FFCB;
+  color: #CCE9FA;
   cursor: pointer;
   text-decoration: none;
 }
-/* line 565, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .figma_iframes .close_figma:hover {
-  background-color: #00E5A0;
-  color: #212834;
+  background-color: #83FFCB;
+  color: #0A0A0A;
 }
-/* line 571, ../sass/screen.scss */
+/* line 440, ../sass/screen.scss */
 .figma_iframes .coming_soon {
   position: fixed;
   height: fit-content;
@@ -615,10 +482,10 @@ body {
   align-self: center;
   flex-direction: row;
   column-gap: 6px;
-  color: #C4CDDF;
+  color: #CCE9FA;
   margin-bottom: 15vh;
 }
-/* line 582, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .figma_iframes .coming_soon .case {
   height: fit-content;
   width: fit-content;
@@ -628,7 +495,7 @@ body {
   line-height: .8;
   letter-spacing: -0.01em;
 }
-/* line 592, ../sass/screen.scss */
+/* line 461, ../sass/screen.scss */
 .figma_iframes .coming_soon .studies {
   height: fit-content;
   width: fit-content;
@@ -640,12 +507,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* line 606, ../sass/screen.scss */
+/* line 475, ../sass/screen.scss */
 .show {
   visibility: visible;
 }
 
-/* line 611, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .kalos {
   height: fit-content;
   width: 100vw;
@@ -654,7 +521,7 @@ body {
   background-color: #040600;
   position: relative;
 }
-/* line 619, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 .kalos .hero_cut_wrapper {
   height: fit-content;
   width: 100vw;
@@ -662,14 +529,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* line 626, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 .kalos .hero_cut_wrapper #hero_cut {
   width: 94.5vw;
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 633, ../sass/screen.scss */
+/* line 502, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma {
   position: absolute;
   top: 1vh;
@@ -694,13 +561,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 658, ../sass/screen.scss */
+/* line 527, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 665, ../sass/screen.scss */
+/* line 534, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro {
   height: fit-content;
   width: fit-content;
@@ -711,12 +578,12 @@ body {
   margin-left: 10vw;
   margin-bottom: 390px;
 }
-/* line 675, ../sass/screen.scss */
+/* line 544, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro #type_name {
   height: fit-content;
   width: 80%;
 }
-/* line 680, ../sass/screen.scss */
+/* line 549, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_designer {
   font-family: 'kalosregular';
   font-style: normal;
@@ -726,7 +593,7 @@ body {
   margin-top: 12px;
   color: #6700B8;
 }
-/* line 690, ../sass/screen.scss */
+/* line 559, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos {
   margin-top: 2vh;
   display: flex;
@@ -747,13 +614,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 711, ../sass/screen.scss */
+/* line 580, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 718, ../sass/screen.scss */
+/* line 587, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_intro_one {
   font-family: 'kalosregular';
   font-style: normal;
@@ -764,7 +631,7 @@ body {
   color: #040600;
   margin-top: 3vh;
 }
-/* line 730, ../sass/screen.scss */
+/* line 599, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .type_intro_two {
   position: absolute;
   align-self: flex-end;
@@ -778,7 +645,7 @@ body {
   bottom: 293px;
   right: 9vw;
 }
-/* line 745, ../sass/screen.scss */
+/* line 614, ../sass/screen.scss */
 .kalos .content_wrapper {
   height: fit-content;
   width: fit-content;
@@ -788,7 +655,7 @@ body {
   align-items: center;
   row-gap: 10vh;
 }
-/* line 754, ../sass/screen.scss */
+/* line 623, ../sass/screen.scss */
 .kalos .content_wrapper .vimeo {
   width: 65%;
   height: fit-content;
@@ -796,7 +663,7 @@ body {
   margin-top: 10vh;
   position: relative;
 }
-/* line 762, ../sass/screen.scss */
+/* line 631, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid {
   height: fit-content;
   width: 100vw;
@@ -804,7 +671,7 @@ body {
   flex-direction: column;
   row-gap: 3vh;
 }
-/* line 769, ../sass/screen.scss */
+/* line 638, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid_title {
   height: fit-content;
   width: fit-content;
@@ -816,7 +683,7 @@ body {
   color: #F9F9F9;
   margin-left: 14.25vw;
 }
-/* line 781, ../sass/screen.scss */
+/* line 650, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid {
   display: flex;
   flex-direction: column;
@@ -825,7 +692,7 @@ body {
   row-gap: 8px;
   margin-left: 14.25vw;
 }
-/* line 789, ../sass/screen.scss */
+/* line 658, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row {
   height: fit-content;
   width: fit-content;
@@ -833,7 +700,7 @@ body {
   flex-direction: row;
   column-gap: 8px;
 }
-/* line 796, ../sass/screen.scss */
+/* line 665, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row .block {
   height: 9vh;
   width: 5vw;
@@ -847,32 +714,32 @@ body {
   font-size: 40px;
   color: #F9F9F9;
 }
-/* line 820, ../sass/screen.scss */
+/* line 689, ../sass/screen.scss */
 .kalos .content_wrapper .uppercase .grid .row .block {
   border: 1px solid #488A40;
   text-transform: uppercase;
 }
-/* line 830, ../sass/screen.scss */
+/* line 699, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid {
   margin-left: 25.25vw;
 }
-/* line 834, ../sass/screen.scss */
+/* line 703, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid_title {
   margin-left: 25.25vw;
 }
-/* line 841, ../sass/screen.scss */
+/* line 710, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid {
   margin-left: 25.25vw;
 }
-/* line 845, ../sass/screen.scss */
+/* line 714, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid_title {
   margin-left: 25.25vw;
 }
-/* line 853, ../sass/screen.scss */
+/* line 722, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid .row .block {
   border: 1px solid #488A40;
 }
-/* line 861, ../sass/screen.scss */
+/* line 730, ../sass/screen.scss */
 .kalos .content_wrapper .floats {
   height: fit-content;
   width: 100vw;
@@ -881,7 +748,7 @@ body {
   justify-content: center;
   margin-top: 4vh;
 }
-/* line 869, ../sass/screen.scss */
+/* line 738, ../sass/screen.scss */
 .kalos .content_wrapper .floats .float_characters {
   height: fit-content;
   width: fit-content;
@@ -893,13 +760,13 @@ body {
   padding-top: 2.2vh;
   color: #F9F9F9;
 }
-/* line 883, ../sass/screen.scss */
+/* line 752, ../sass/screen.scss */
 .kalos .content_wrapper .numbers {
   position: relative;
   letter-spacing: .4em;
   margin-top: 4vh;
 }
-/* line 889, ../sass/screen.scss */
+/* line 758, ../sass/screen.scss */
 .kalos .content_wrapper .shots {
   height: fit-content;
   width: 100vw;
@@ -910,7 +777,7 @@ body {
   row-gap: 10vh;
   padding-bottom: 10vh;
 }
-/* line 899, ../sass/screen.scss */
+/* line 768, ../sass/screen.scss */
 .kalos .content_wrapper .shots #mock_up {
   height: fit-content;
   width: 60%;
