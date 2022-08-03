@@ -401,7 +401,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
   row-gap: 60px;
-  margin-top: 24vh;
+  margin-top: 18vh;
   margin-bottom: 15vh;
   transform: translateX(-67.5px);
 }
