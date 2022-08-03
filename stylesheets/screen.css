@@ -262,9 +262,9 @@ body {
 .rp_logo {
   width: auto;
   z-index: 3;
-  height: 6vh;
+  height: 5vh;
   position: fixed;
-  top: 5.5vh;
+  top: 6.3vh;
   display: flex;
   align-self: center;
 }
@@ -278,7 +278,7 @@ body {
 
 /* line 232, ../sass/screen.scss */
 .top_line {
-  height: 15vh;
+  height: 13.5vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -297,10 +297,10 @@ body {
   font-family: 'Chivo';
   font-style: normal;
   font-weight: 900;
-  font-size: 21.2px;
-  line-height: 15px;
-  margin-top: 9.25vh;
-  margin-left: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  font-size: calc(16px + (24.69 - 16) * ((100vw - 640px) / (1920 - 640)));
+  line-height: 17.28px;
+  margin-top: 9.76vh;
+  margin-left: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
   cursor: pointer;
 }
 
@@ -315,11 +315,11 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 9.76vh;
-  margin-right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  margin-right: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
 }
 /* line 270, ../sass/screen.scss */
 .nav .overlap {
-  margin-right: -2vw;
+  margin-right: calc(0px + (-16 - 0) * ((100vw - 640px) / (1920 - 640)));
 }
 /* line 274, ../sass/screen.scss */
 .nav .link_container {
@@ -331,8 +331,8 @@ body {
 }
 /* line 281, ../sass/screen.scss */
 .nav .link_container .link {
-  text-transform: uppercase;
   font-weight: 400;
+  font-size: calc(16px + (24.69 - 16) * ((100vw - 640px) / (1920 - 640)));
 }
 /* line 288, ../sass/screen.scss */
 .nav .link_container .right:hover + #tooltip {
