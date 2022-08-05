@@ -234,6 +234,9 @@
   display: flex;
   align-self: center;
   margin-top: 34vh;
+  @include breakpoint(reverso-baby-bear) {
+    display: none;
+  }
  }
 
  .rp_logo {
