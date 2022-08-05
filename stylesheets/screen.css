@@ -264,7 +264,7 @@ body {
   height: auto;
   display: flex;
   align-self: center;
-  margin-top: 34vh;
+  margin-top: 20vh;
 }
 @media (min-width: 800px) {
   /* line 231, ../sass/screen.scss */
