@@ -296,6 +296,8 @@
     font-family: 'Alegreya';
     font-style: italic;
     font-weight: 400;
+    font-size: calc(16px + (18.2 - 16) * ((100vw - 640px) / (1920 - 640)));
+    letter-spacing: 0.04em;
   }
  }
  
