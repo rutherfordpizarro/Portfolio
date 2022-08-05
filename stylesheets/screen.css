@@ -343,8 +343,14 @@ body {
     display: none;
   }
 }
+/* line 295, ../sass/screen.scss */
+.my_name .pizarro {
+  font-family: 'Alegreya';
+  font-style: italic;
+  font-weight: 400;
+}
 
-/* line 297, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .nav {
   height: fit-content;
   width: auto;
@@ -358,16 +364,16 @@ body {
   margin-right: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
 }
 @media (max-width: 800px) {
-  /* line 297, ../sass/screen.scss */
+  /* line 302, ../sass/screen.scss */
   .nav {
     display: none;
   }
 }
-/* line 313, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .nav .overlap {
   margin-right: -24px;
 }
-/* line 317, ../sass/screen.scss */
+/* line 322, ../sass/screen.scss */
 .nav .link_container {
   position: relative;
   display: flex;
@@ -375,21 +381,21 @@ body {
   row-gap: 2vh;
   align-items: flex-end;
 }
-/* line 324, ../sass/screen.scss */
+/* line 329, ../sass/screen.scss */
 .nav .link_container .link {
   text-transform: uppercase;
   font-weight: 400;
   font-size: calc(16px + (18.2 - 16) * ((100vw - 640px) / (1920 - 640)));
 }
-/* line 332, ../sass/screen.scss */
+/* line 337, ../sass/screen.scss */
 .nav .link_container .right:hover + #tooltip {
   visibility: visible;
 }
-/* line 338, ../sass/screen.scss */
+/* line 343, ../sass/screen.scss */
 .nav .link_container .left:hover + #tooltip {
   visibility: visible;
 }
-/* line 343, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .nav .link_container #tooltip {
   visibility: hidden;
   padding: 1.5vh 1vw;
@@ -399,7 +405,7 @@ body {
   background-color: #0A0A0A;
 }
 
-/* line 355, ../sass/screen.scss */
+/* line 360, ../sass/screen.scss */
 .portfolio-hero {
   height: 100vh;
   width: 100vw;
@@ -410,20 +416,20 @@ body {
   justify-content: space-between;
 }
 @media (max-width: 800px) {
-  /* line 355, ../sass/screen.scss */
+  /* line 360, ../sass/screen.scss */
   .portfolio-hero {
     display: none;
   }
 }
-/* line 368, ../sass/screen.scss */
+/* line 373, ../sass/screen.scss */
 .portfolio-hero .hero_intro-text {
   height: fit-content;
-  width: 37.5vw;
+  width: 34vw;
   margin-top: 24vh;
   margin-top: 36vh;
   align-self: center;
 }
-/* line 376, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .portfolio-hero .hero_scroll-down {
   height: 8vh;
   width: fit-content;
@@ -444,7 +450,7 @@ body {
     transform: translateX(2212px);
   }
 }
-/* line 400, ../sass/screen.scss */
+/* line 405, ../sass/screen.scss */
 .casestudies {
   height: fit-content;
   width: fit-content;
@@ -457,13 +463,13 @@ body {
   transform: translateX(-67.5px);
 }
 @media (max-width: 800px) {
-  /* line 400, ../sass/screen.scss */
+  /* line 405, ../sass/screen.scss */
   .casestudies {
     display: none;
   }
 }
 
-/* line 420, ../sass/screen.scss */
+/* line 425, ../sass/screen.scss */
 .figma_iframes {
   height: 100vh;
   width: 100vw;
@@ -474,7 +480,7 @@ body {
   align-items: center;
   background-color: black;
 }
-/* line 431, ../sass/screen.scss */
+/* line 436, ../sass/screen.scss */
 .figma_iframes .close_figma {
   position: absolute;
   top: 1vh;
@@ -498,12 +504,12 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 455, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .figma_iframes .close_figma:hover {
   background-color: #83FFCB;
   color: #0A0A0A;
 }
-/* line 461, ../sass/screen.scss */
+/* line 466, ../sass/screen.scss */
 .figma_iframes .coming_soon {
   position: fixed;
   height: fit-content;
@@ -515,7 +521,7 @@ body {
   color: #CCE9FA;
   margin-bottom: 15vh;
 }
-/* line 472, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 .figma_iframes .coming_soon .case {
   height: fit-content;
   width: fit-content;
@@ -525,7 +531,7 @@ body {
   line-height: .8;
   letter-spacing: -0.01em;
 }
-/* line 482, ../sass/screen.scss */
+/* line 487, ../sass/screen.scss */
 .figma_iframes .coming_soon .studies {
   height: fit-content;
   width: fit-content;
@@ -537,12 +543,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* line 496, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .show {
   visibility: visible;
 }
 
-/* line 501, ../sass/screen.scss */
+/* line 506, ../sass/screen.scss */
 .kalos {
   height: fit-content;
   width: 100vw;
@@ -551,7 +557,7 @@ body {
   background-color: #040600;
   position: relative;
 }
-/* line 509, ../sass/screen.scss */
+/* line 514, ../sass/screen.scss */
 .kalos .hero_cut_wrapper {
   height: fit-content;
   width: 100vw;
@@ -559,14 +565,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* line 516, ../sass/screen.scss */
+/* line 521, ../sass/screen.scss */
 .kalos .hero_cut_wrapper #hero_cut {
   width: 94.5vw;
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 523, ../sass/screen.scss */
+/* line 528, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma {
   position: absolute;
   top: 1vh;
@@ -591,13 +597,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 548, ../sass/screen.scss */
+/* line 553, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 555, ../sass/screen.scss */
+/* line 560, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro {
   height: fit-content;
   width: fit-content;
@@ -608,12 +614,12 @@ body {
   margin-left: 10vw;
   margin-bottom: 390px;
 }
-/* line 565, ../sass/screen.scss */
+/* line 570, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro #type_name {
   height: fit-content;
   width: 80%;
 }
-/* line 570, ../sass/screen.scss */
+/* line 575, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_designer {
   font-family: 'kalosregular';
   font-style: normal;
@@ -623,7 +629,7 @@ body {
   margin-top: 12px;
   color: #6700B8;
 }
-/* line 580, ../sass/screen.scss */
+/* line 585, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos {
   margin-top: 2vh;
   display: flex;
@@ -644,13 +650,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 601, ../sass/screen.scss */
+/* line 606, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 608, ../sass/screen.scss */
+/* line 613, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_intro_one {
   font-family: 'kalosregular';
   font-style: normal;
@@ -661,7 +667,7 @@ body {
   color: #040600;
   margin-top: 3vh;
 }
-/* line 620, ../sass/screen.scss */
+/* line 625, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .type_intro_two {
   position: absolute;
   align-self: flex-end;
@@ -675,7 +681,7 @@ body {
   bottom: 293px;
   right: 9vw;
 }
-/* line 635, ../sass/screen.scss */
+/* line 640, ../sass/screen.scss */
 .kalos .content_wrapper {
   height: fit-content;
   width: fit-content;
@@ -685,7 +691,7 @@ body {
   align-items: center;
   row-gap: 10vh;
 }
-/* line 644, ../sass/screen.scss */
+/* line 649, ../sass/screen.scss */
 .kalos .content_wrapper .vimeo {
   width: 65%;
   height: fit-content;
@@ -693,7 +699,7 @@ body {
   margin-top: 10vh;
   position: relative;
 }
-/* line 652, ../sass/screen.scss */
+/* line 657, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid {
   height: fit-content;
   width: 100vw;
@@ -701,7 +707,7 @@ body {
   flex-direction: column;
   row-gap: 3vh;
 }
-/* line 659, ../sass/screen.scss */
+/* line 664, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid_title {
   height: fit-content;
   width: fit-content;
@@ -713,7 +719,7 @@ body {
   color: #F9F9F9;
   margin-left: 14.25vw;
 }
-/* line 671, ../sass/screen.scss */
+/* line 676, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid {
   display: flex;
   flex-direction: column;
@@ -722,7 +728,7 @@ body {
   row-gap: 8px;
   margin-left: 14.25vw;
 }
-/* line 679, ../sass/screen.scss */
+/* line 684, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row {
   height: fit-content;
   width: fit-content;
@@ -730,7 +736,7 @@ body {
   flex-direction: row;
   column-gap: 8px;
 }
-/* line 686, ../sass/screen.scss */
+/* line 691, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row .block {
   height: 9vh;
   width: 5vw;
@@ -744,32 +750,32 @@ body {
   font-size: 40px;
   color: #F9F9F9;
 }
-/* line 710, ../sass/screen.scss */
+/* line 715, ../sass/screen.scss */
 .kalos .content_wrapper .uppercase .grid .row .block {
   border: 1px solid #488A40;
   text-transform: uppercase;
 }
-/* line 720, ../sass/screen.scss */
+/* line 725, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid {
   margin-left: 25.25vw;
 }
-/* line 724, ../sass/screen.scss */
+/* line 729, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid_title {
   margin-left: 25.25vw;
 }
-/* line 731, ../sass/screen.scss */
+/* line 736, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid {
   margin-left: 25.25vw;
 }
-/* line 735, ../sass/screen.scss */
+/* line 740, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid_title {
   margin-left: 25.25vw;
 }
-/* line 743, ../sass/screen.scss */
+/* line 748, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid .row .block {
   border: 1px solid #488A40;
 }
-/* line 751, ../sass/screen.scss */
+/* line 756, ../sass/screen.scss */
 .kalos .content_wrapper .floats {
   height: fit-content;
   width: 100vw;
@@ -778,7 +784,7 @@ body {
   justify-content: center;
   margin-top: 4vh;
 }
-/* line 759, ../sass/screen.scss */
+/* line 764, ../sass/screen.scss */
 .kalos .content_wrapper .floats .float_characters {
   height: fit-content;
   width: fit-content;
@@ -790,13 +796,13 @@ body {
   padding-top: 2.2vh;
   color: #F9F9F9;
 }
-/* line 773, ../sass/screen.scss */
+/* line 778, ../sass/screen.scss */
 .kalos .content_wrapper .numbers {
   position: relative;
   letter-spacing: .4em;
   margin-top: 4vh;
 }
-/* line 779, ../sass/screen.scss */
+/* line 784, ../sass/screen.scss */
 .kalos .content_wrapper .shots {
   height: fit-content;
   width: 100vw;
@@ -807,7 +813,7 @@ body {
   row-gap: 10vh;
   padding-bottom: 10vh;
 }
-/* line 789, ../sass/screen.scss */
+/* line 794, ../sass/screen.scss */
 .kalos .content_wrapper .shots #mock_up {
   height: fit-content;
   width: 60%;

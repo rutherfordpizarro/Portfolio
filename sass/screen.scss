@@ -292,6 +292,11 @@
    @include breakpoint(baby-bear) {
     display: none;
   }
+  .pizarro {
+    font-family: 'Alegreya';
+    font-style: italic;
+    font-weight: 400;
+  }
  }
  
  .nav {
@@ -367,7 +372,7 @@
 
   .hero_intro-text {
     height: fit-content;
-    width: 37.5vw;
+    width: 34vw;
     margin-top: 24vh;
     margin-top: 36vh;
     align-self: center;
