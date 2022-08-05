@@ -12,6 +12,21 @@
    font-weight: normal;
    font-style: normal;
  }
+
+ @mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == baby-bear {
+    @media (max-width: 800px) { @content; }
+  }
+  @if $point == reverso-baby-bear {
+    @media (min-width: 800px) { @content; }
+  }
+  @if $point == reverso-mama-bear {
+    @media (min-width: 1250px) { @content; }
+  }
+}
  
  $rp_grey: #CCE9FA;
  $rp_black: #0A0A0A;
@@ -213,6 +228,14 @@
    background-color: $rp_grey;
  }
 
+ .mobile {
+  width: 60vw;
+  height: auto;
+  display: flex;
+  align-self: center;
+  margin-top: 34vh;
+ }
+
  .rp_logo {
   width: auto;
   z-index: 3;
@@ -221,6 +244,9 @@
   top: 6.3vh;
   display: flex;
   align-self: center;
+  @include breakpoint(baby-bear) {
+    display: none;
+  }
  }
 
  .case_studies_arrow {
@@ -228,6 +254,9 @@
   position: absolute;
   bottom: 2vh;
   right: calc(24px + (80 - 24) * ((100vh - 640px) / (1440 - 640)));
+  @include breakpoint(baby-bear) {
+    display: none;
+  }
  }
 
  .top_line {
@@ -239,6 +268,9 @@
   background: rgba(204, 233, 250, 0.75);
   border-bottom: 1px solid $rp_black;
   backdrop-filter: blur(14px);
+  @include breakpoint(baby-bear) {
+    display: none;
+  }
  }
  
  .my_name {
@@ -254,6 +286,9 @@
    margin-top: 9.76vh;
    margin-left: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
    cursor: pointer;
+   @include breakpoint(baby-bear) {
+    display: none;
+  }
  }
  
  .nav {
@@ -267,6 +302,10 @@
    flex-direction: row;
    margin-top: 10.2vh;
    margin-right: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
+
+   @include breakpoint(baby-bear) {
+    display: none;
+  }
  
    .overlap {
     margin-right: -24px;
@@ -319,6 +358,10 @@
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint(baby-bear) {
+    display: none;
+  }
+
   .hero_intro-text {
     height: fit-content;
     width: 37.5vw;
@@ -361,50 +404,13 @@
    margin-top: 18vh;
    margin-bottom: 15vh;
    transform: translateX(-67.5px);
-   // margin-bottom: 16vh;
-   // margin-left: 6vw;
+
+   @include breakpoint(baby-bear) {
+    display: none;
+  }
  
    .project_block {
      @extend %project_block;
-   }
- }
- 
- .pagination {
-   height: 57px;
-   width: 3px;
-   position: fixed;
-   z-index: 7;
-   display: flex;
-   flex-direction: column;
-   row-gap: 6px;
-   right: 1vw;
-   top: 45vh;
- 
-   .on {
-     opacity: 1;
-   }
- 
-   .off {
-     opacity: .5;
-   }
- 
-   .p_one {
-     height: 15px;
-     width: auto;
-     background-color: $rp_green;
-   }
- 
-   .p_two {
-     height: 15px;
-     width: auto;
-     background-color: $rp_green;
-   }
- 
-   .p_three {
-     height: 15px;
-     width: auto;
-     opacity: .5;
-     background-color: $rp_green;
    }
  }
  
