@@ -284,7 +284,7 @@
    font-family: 'Chivo';
    font-style: normal;
    font-weight: 900;
-   font-size: calc(16px + (24.69 - 16) * ((100vw - 640px) / (1920 - 640)));
+   font-size: calc(16px + (21.69 - 16) * ((100vw - 640px) / (1920 - 640)));
    line-height: 17.28px;
    margin-top: 6.76vh;
    margin-left: calc(24px + (56 - 24) * ((100vw - 640px) / (1920 - 640)));
@@ -296,7 +296,7 @@
     font-family: 'Alegreya';
     font-style: italic;
     font-weight: 400;
-    font-size: calc(16px + (18.2 - 16) * ((100vw - 640px) / (1920 - 640)));
+    font-size: calc(16px + (24 - 16) * ((100vw - 640px) / (1920 - 640)));
     letter-spacing: 0.04em;
   }
  }
@@ -332,7 +332,7 @@
        @extend %nav_link;
        text-transform: uppercase;
        font-weight: 400;
-       font-size: calc(16px + (18.2 - 16) * ((100vw - 640px) / (1920 - 640)));
+       font-size: 16px;
      }
  
      .right {
