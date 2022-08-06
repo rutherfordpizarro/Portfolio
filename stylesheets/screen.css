@@ -373,7 +373,7 @@ body {
 }
 /* line 320, ../sass/screen.scss */
 .nav .overlap {
-  margin-right: -24px;
+  margin-right: -28px;
 }
 /* line 324, ../sass/screen.scss */
 .nav .link_container {
@@ -388,16 +388,17 @@ body {
   text-transform: uppercase;
   font-weight: 400;
   font-size: 16px;
+  letter-spacing: 0.08em;
 }
-/* line 339, ../sass/screen.scss */
+/* line 340, ../sass/screen.scss */
 .nav .link_container .right:hover + #tooltip {
   visibility: visible;
 }
-/* line 345, ../sass/screen.scss */
+/* line 346, ../sass/screen.scss */
 .nav .link_container .left:hover + #tooltip {
   visibility: visible;
 }
-/* line 350, ../sass/screen.scss */
+/* line 351, ../sass/screen.scss */
 .nav .link_container #tooltip {
   visibility: hidden;
   padding: 1.5vh 1vw;
@@ -407,7 +408,7 @@ body {
   background-color: #0A0A0A;
 }
 
-/* line 362, ../sass/screen.scss */
+/* line 363, ../sass/screen.scss */
 .portfolio-hero {
   height: 100vh;
   width: 100vw;
@@ -418,12 +419,12 @@ body {
   justify-content: space-between;
 }
 @media (max-width: 800px) {
-  /* line 362, ../sass/screen.scss */
+  /* line 363, ../sass/screen.scss */
   .portfolio-hero {
     display: none;
   }
 }
-/* line 375, ../sass/screen.scss */
+/* line 376, ../sass/screen.scss */
 .portfolio-hero .hero_intro-text {
   height: fit-content;
   width: 34vw;
@@ -431,7 +432,7 @@ body {
   margin-top: 36vh;
   align-self: center;
 }
-/* line 383, ../sass/screen.scss */
+/* line 384, ../sass/screen.scss */
 .portfolio-hero .hero_scroll-down {
   height: 8vh;
   width: fit-content;
@@ -452,7 +453,7 @@ body {
     transform: translateX(2212px);
   }
 }
-/* line 407, ../sass/screen.scss */
+/* line 408, ../sass/screen.scss */
 .casestudies {
   height: fit-content;
   width: fit-content;
@@ -465,13 +466,13 @@ body {
   transform: translateX(-67.5px);
 }
 @media (max-width: 800px) {
-  /* line 407, ../sass/screen.scss */
+  /* line 408, ../sass/screen.scss */
   .casestudies {
     display: none;
   }
 }
 
-/* line 427, ../sass/screen.scss */
+/* line 428, ../sass/screen.scss */
 .figma_iframes {
   height: 100vh;
   width: 100vw;
@@ -482,7 +483,7 @@ body {
   align-items: center;
   background-color: black;
 }
-/* line 438, ../sass/screen.scss */
+/* line 439, ../sass/screen.scss */
 .figma_iframes .close_figma {
   position: absolute;
   top: 1vh;
@@ -506,12 +507,12 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 462, ../sass/screen.scss */
+/* line 463, ../sass/screen.scss */
 .figma_iframes .close_figma:hover {
   background-color: #83FFCB;
   color: #0A0A0A;
 }
-/* line 468, ../sass/screen.scss */
+/* line 469, ../sass/screen.scss */
 .figma_iframes .coming_soon {
   position: fixed;
   height: fit-content;
@@ -523,7 +524,7 @@ body {
   color: #CCE9FA;
   margin-bottom: 15vh;
 }
-/* line 479, ../sass/screen.scss */
+/* line 480, ../sass/screen.scss */
 .figma_iframes .coming_soon .case {
   height: fit-content;
   width: fit-content;
@@ -533,7 +534,7 @@ body {
   line-height: .8;
   letter-spacing: -0.01em;
 }
-/* line 489, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .figma_iframes .coming_soon .studies {
   height: fit-content;
   width: fit-content;
@@ -545,12 +546,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* line 503, ../sass/screen.scss */
+/* line 504, ../sass/screen.scss */
 .show {
   visibility: visible;
 }
 
-/* line 508, ../sass/screen.scss */
+/* line 509, ../sass/screen.scss */
 .kalos {
   height: fit-content;
   width: 100vw;
@@ -559,7 +560,7 @@ body {
   background-color: #040600;
   position: relative;
 }
-/* line 516, ../sass/screen.scss */
+/* line 517, ../sass/screen.scss */
 .kalos .hero_cut_wrapper {
   height: fit-content;
   width: 100vw;
@@ -567,14 +568,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* line 523, ../sass/screen.scss */
+/* line 524, ../sass/screen.scss */
 .kalos .hero_cut_wrapper #hero_cut {
   width: 94.5vw;
   position: relative;
   top: 0;
   left: 0;
 }
-/* line 530, ../sass/screen.scss */
+/* line 531, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma {
   position: absolute;
   top: 1vh;
@@ -599,13 +600,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 555, ../sass/screen.scss */
+/* line 556, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .close_figma:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 562, ../sass/screen.scss */
+/* line 563, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro {
   height: fit-content;
   width: fit-content;
@@ -616,12 +617,12 @@ body {
   margin-left: 10vw;
   margin-bottom: 390px;
 }
-/* line 572, ../sass/screen.scss */
+/* line 573, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro #type_name {
   height: fit-content;
   width: 80%;
 }
-/* line 577, ../sass/screen.scss */
+/* line 578, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_designer {
   font-family: 'kalosregular';
   font-style: normal;
@@ -631,7 +632,7 @@ body {
   margin-top: 12px;
   color: #6700B8;
 }
-/* line 587, ../sass/screen.scss */
+/* line 588, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos {
   margin-top: 2vh;
   display: flex;
@@ -652,13 +653,13 @@ body {
   cursor: pointer;
   text-decoration: none;
 }
-/* line 608, ../sass/screen.scss */
+/* line 609, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .download_kalos:hover {
   background-color: #040600;
   font-weight: 300;
   color: #F9F9F9;
 }
-/* line 615, ../sass/screen.scss */
+/* line 616, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .kalos_intro .type_intro_one {
   font-family: 'kalosregular';
   font-style: normal;
@@ -669,7 +670,7 @@ body {
   color: #040600;
   margin-top: 3vh;
 }
-/* line 627, ../sass/screen.scss */
+/* line 628, ../sass/screen.scss */
 .kalos .hero_cut_wrapper .type_intro_two {
   position: absolute;
   align-self: flex-end;
@@ -683,7 +684,7 @@ body {
   bottom: 293px;
   right: 9vw;
 }
-/* line 642, ../sass/screen.scss */
+/* line 643, ../sass/screen.scss */
 .kalos .content_wrapper {
   height: fit-content;
   width: fit-content;
@@ -693,7 +694,7 @@ body {
   align-items: center;
   row-gap: 10vh;
 }
-/* line 651, ../sass/screen.scss */
+/* line 652, ../sass/screen.scss */
 .kalos .content_wrapper .vimeo {
   width: 65%;
   height: fit-content;
@@ -701,7 +702,7 @@ body {
   margin-top: 10vh;
   position: relative;
 }
-/* line 659, ../sass/screen.scss */
+/* line 660, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid {
   height: fit-content;
   width: 100vw;
@@ -709,7 +710,7 @@ body {
   flex-direction: column;
   row-gap: 3vh;
 }
-/* line 666, ../sass/screen.scss */
+/* line 667, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid_title {
   height: fit-content;
   width: fit-content;
@@ -721,7 +722,7 @@ body {
   color: #F9F9F9;
   margin-left: 14.25vw;
 }
-/* line 678, ../sass/screen.scss */
+/* line 679, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid {
   display: flex;
   flex-direction: column;
@@ -730,7 +731,7 @@ body {
   row-gap: 8px;
   margin-left: 14.25vw;
 }
-/* line 686, ../sass/screen.scss */
+/* line 687, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row {
   height: fit-content;
   width: fit-content;
@@ -738,7 +739,7 @@ body {
   flex-direction: row;
   column-gap: 8px;
 }
-/* line 693, ../sass/screen.scss */
+/* line 694, ../sass/screen.scss */
 .kalos .content_wrapper .letter_grid .grid .row .block {
   height: 9vh;
   width: 5vw;
@@ -752,32 +753,32 @@ body {
   font-size: 40px;
   color: #F9F9F9;
 }
-/* line 717, ../sass/screen.scss */
+/* line 718, ../sass/screen.scss */
 .kalos .content_wrapper .uppercase .grid .row .block {
   border: 1px solid #488A40;
   text-transform: uppercase;
 }
-/* line 727, ../sass/screen.scss */
+/* line 728, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid {
   margin-left: 25.25vw;
 }
-/* line 731, ../sass/screen.scss */
+/* line 732, ../sass/screen.scss */
 .kalos .content_wrapper .symbols .grid_title {
   margin-left: 25.25vw;
 }
-/* line 738, ../sass/screen.scss */
+/* line 739, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid {
   margin-left: 25.25vw;
 }
-/* line 742, ../sass/screen.scss */
+/* line 743, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid_title {
   margin-left: 25.25vw;
 }
-/* line 750, ../sass/screen.scss */
+/* line 751, ../sass/screen.scss */
 .kalos .content_wrapper .punctuation .grid .row .block {
   border: 1px solid #488A40;
 }
-/* line 758, ../sass/screen.scss */
+/* line 759, ../sass/screen.scss */
 .kalos .content_wrapper .floats {
   height: fit-content;
   width: 100vw;
@@ -786,7 +787,7 @@ body {
   justify-content: center;
   margin-top: 4vh;
 }
-/* line 766, ../sass/screen.scss */
+/* line 767, ../sass/screen.scss */
 .kalos .content_wrapper .floats .float_characters {
   height: fit-content;
   width: fit-content;
@@ -798,13 +799,13 @@ body {
   padding-top: 2.2vh;
   color: #F9F9F9;
 }
-/* line 780, ../sass/screen.scss */
+/* line 781, ../sass/screen.scss */
 .kalos .content_wrapper .numbers {
   position: relative;
   letter-spacing: .4em;
   margin-top: 4vh;
 }
-/* line 786, ../sass/screen.scss */
+/* line 787, ../sass/screen.scss */
 .kalos .content_wrapper .shots {
   height: fit-content;
   width: 100vw;
@@ -815,7 +816,7 @@ body {
   row-gap: 10vh;
   padding-bottom: 10vh;
 }
-/* line 796, ../sass/screen.scss */
+/* line 797, ../sass/screen.scss */
 .kalos .content_wrapper .shots #mock_up {
   height: fit-content;
   width: 60%;
